@@ -1,0 +1,671 @@
+---
+title: IBM Storage Easy Wins
+description: Products which should sell together and have benefits more than the sum of their parts
+---
+
+import { OrderedList, ListItem } from "carbon-components-react";
+
+<AnchorLinks small>
+  <AnchorLink>What is an easy win?</AnchorLink>
+  <AnchorLink>But what it's not a product I'm remunerated on?</AnchorLink>
+  <AnchorLink>What are the easy wins?</AnchorLink>
+  <AnchorLink>How can I get further help?</AnchorLink>
+</AnchorLinks>
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+---
+
+## What is an easy win?
+
+**IBM Storage Software Integration**: Put simply an easy win is where one IBM Storage Software product provides services to abother.
+IBM's software defined storage is highly integrated from a product to product point of view,
+IBM's software runs on extremely well on IBM hardware, but unlke other storage vendors' our software runs with no functional restrictions
+on 3rd party hardware, hybrid cloud or a mix thereof.
+<br/>
+
+There's therefore a number of distinct types of "easy win" where one product can integrate with or enable sales of another:
+<br />
+
+**IBM Software Product Enhances another IBM Software Product** eg: IBM Storage Protect backing up Scale. <br/>
+**IBM Software Product Enhances an IBM Hardware Product** eg: IBM Virtualize for Public Cloud extending an on-prem Flashsystem into cloud. <br/>
+**IBM Software Product Enhanves a 3rd Party Software Product** eg: IBM Storage Discover indexing data stored on Dell Isilon or NetApp Filers. <br/>
+**IBM Software Product Enhances a 3rd Party Hardware Product** eg: IBM Storage Archive controlling a 3rd party tape library. <br/>
+
+<br/>
+
+---
+
+## But what it's not a product I'm remunerated on?
+
+IBM has one of the largest software protfolios of any company and as such it is likely that you will come across different products on a pretty regular
+basis that are included in a sale and not something on which you're remunerated. To this end, you'll need to consider how selling different products
+enable the sale of others and how this can make IBM more sticky with the customer, or position products at a customer to enable IBM to move in to
+make larger sales in the long run.
+
+---
+
+## What are the easy wins?
+
+If IBM the IBM product linked below is installed at a customer, what is an easy win?
+<AnchorLinks small>
+  <AnchorLink>Archive</AnchorLink>
+  <AnchorLink>Ceph</AnchorLink>
+  <AnchorLink>Cloud Object Storage (COS)</AnchorLink>
+  <AnchorLink>Copy Data Manager (CDM)</AnchorLink>
+  <AnchorLink>Copy Services Manager</AnchorLink>
+  <AnchorLink>Defender Data Protect (Cohesity OEM)</AnchorLink>
+  <AnchorLink>Discover</AnchorLink>
+  <AnchorLink>Fusion SDS</AnchorLink>
+  <AnchorLink>Insights / Insights Pro</AnchorLink>
+  <AnchorLink>Protect (Spectrum Protect/TSM)</AnchorLink>
+  <AnchorLink>Protect for Containers</AnchorLink>
+  <AnchorLink>Protect Plus</AnchorLink>
+  <AnchorLink>Scale</AnchorLink>
+  <AnchorLink>Virtualize (SVC & Public Cloud)</AnchorLink>
+</AnchorLinks>
+
+<br/>
+
+---
+
+  ### Archive
+
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender (Suite)</ListItem>
+</orderedList>
+
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Defender Data Protect (Cohesity OEM)</ListItem>
+  <ListItem>Discover</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>IBM Tape Automation</ListItem>
+  <ListItem>3rd Party Vendor Tape Automation</ListItem>
+</orderedList>
+
+<br/>
+
+
+**Details:**
+
+**Archive** is an LTFS (Linear Tape File System) standards compliant data archival system. **Archive** is used as an integrated long term storage tier for **Scale**,
+cold storage in a highly data dense manner. With **Scale** as an ingest platform, it can integrate backup and archive services into one multi-protocol global namespace.
+Alongside **Scale**, **Arcive** should also be considered as a **tape** storage tier which can be integrated with **Defender Data Protect (Cohesity OEM)** as an alternative
+long term cold storage tier.
+
+When **Archive** is used alongside **Scale** or even as a direct filesystem ingest, it is a highly effective method to reduce ransomware blast ratius, potentially to zero.
+
+<br/>
+
+---
+
+  ### Ceph
+
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Defender Data Protect (Cohesity OEM)</ListItem>
+  <ListItem>Discover</ListItem>
+  <ListItem>IBM Storage Ready-Nodes</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Protect for Containers</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**IBM Storage Ceph**, is also currently called **Red Hat Ceph**, while contracts transition from RedHat to IBM. This product acts as a multi-protocol
+ scale out storage system. **Ceph** can ingest data in **S3 object** format as well as **file** formats and **block**. In addition it is able to store
+data immutably with **S3 WORM** compliance. This makes it particularly suitable for longer term
+ online storage for active archives and data protection for products like **Protect (Spectrum Protect/TSM)**, **Protect for Containers** or
+ **Defender Data Protect (Cohesity OEM)**. **Discover** can integrate with **Ceph**, indexing data
+stored in a Ceph cluster both the metadata can be indexed as well as deep-indexing whch can be carried out on a data type basis.
+<br/>
+
+The **IBM Storage Ready-Node** can be used as a building block for **Ceph** clusters, providing known scale and performance. 
+
+<br/>
+
+---
+
+  ### Cloud Object Storage (COS)
+
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Defender Data Protect (Cohesity OEM)</ListItem>
+  <ListItem>Discover</ListItem>
+  <ListItem>IBM Storage Ready-Nodes</ListItem>
+  <ListItem>Insights / Insights Pro</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Protect for Containers</ListItem>
+  <ListItem>Protect Plus</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**IBM Cloud Object Storage** is an erasure coded, exa-scale, globally distributed **S3 object** store, with verified exabyte+ instllations in operation. Common use cases for *S3 object*
+stores such as COS include online and nearline **immutable** and highly resilient storage systems, with multi-site erasure coding being able to maintain multiple disk,
+node and site failures while still allowing access to data. COS is used as a target for **Defender Data Protect (Cohesity OEM)**, **Protect (Spectrum Protect/TSM)**
+, **Protect for containers** and **Protect Plus**. In addition **Scale** can incorporate S3 data targets like COS for an inexpensive tiers in the global namespace. **Scale**
+is able to move data to and from its own storage, to and from S3, tape, etc as requried.
+
+**COS** can also be used to host snapshots from **Virtualize** enabling immutable snapshots of primary data storage where an additional **Virtualize (SVC/Cloud/Flashsystem)**
+instance isn't cost effective.
+<br/>
+
+The **IBM Storage Ready-Node** can be used as a building block for Cloud Object Storage clusters, providing known scale and performance. 
+
+<br/>
+
+---
+  ### Copy Data Manager (CDM)
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Protect Suite</ListItem>
+  <ListItem>Storage Suite</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+  <ListItem>Multiple 3rd Party Hardware & Software Products</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Copy Data Manager** typically abbreviated to **CDM** enables **self-service pre-defined workflows** to be run on various **block storage products from multiple vendors**.
+**CDM** integrates with many different software packages including databases (**Oracle**, **IBM DB2**, **Microsoft SQL Server**) enabling **application consistent snapshots**
+to be taken for day to day operations, data analytics, pre-post upgrade, etc. Self-service requests which used to require multiple highly skilled DBAs and days of change 
+approval can now be automated and data cen be moved into **test/dev** in a **psudonomised** form allowing developers and testers to work on production data which has had 
+**all PII removed**. This data cen be de-psudonomised and moved back into production once work has completed.
+
+Other use cases for **CDM** include **identification of orphaned storage snapshots**,
+allowing for recovery. Snapshots for backups, which can be automated and mounted into **Protect (Spectrum Protect/TSM)**. 
+
+**CDM** isn't just limited to databases, it supports Virtual Machine based workflows as well as many supported native applications.
+
+It is not uncommon for **CDM** to be run entirely on 3rd party non-IBM products, which should provide adequate opportunities for sales of
+products like **Virtualize SVC** or **Virtualize for Public Cloud** as well as for **Protect** snapshot integration. 
+
+<br/>
+
+---
+  ### Copy Services Manager
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Copy Data Manager (CDM)</ListItem>
+  <ListItem>Copy Services Manager</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Copy Services Manager** handles control and provisioning of IBM block storage systems. If a customer is using **CSM** you should consider **CDM** as a more feature rich package.
+
+<br/>
+
+---
+  ### Defender Data Protect (Cohesity OEM)
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Archive</ListItem>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Scale</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+IBM has started offering **Defender Data Protect** as de-facto replacement for the **Storage Protect Plus** product typically abbreviated to **SPP**. **Defender Data Protect**
+is a scale-out data protection system which is high performance - instant restores at scale, etc. While **Defender Data Protect** excells at operational recovery, 
+it is especially effective for longer retentions or archive functionality. To store data in a more dense format, potentially **tape** or **S3 object** consider **Protect (Spectrum PRotect/TSM)**
+as a longer term storage tier.
+
+If a customer is an existing **Scale** user and has no **Protect (Spectrum PRotect/TSM)**, **Scale** can be utilised as a method to move data into deeper/colder tiers, such as
+**Ceph S3**, **COS**, **Archive (Tape)**.
+
+<br/>
+**NB: While Defender Data Protect** has a function called "archive" this is really an off-load and should not be considered as an archive product.
+<br/>
+
+---
+
+### Discover
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Archive</ListItem>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>Windows / Linux / UNIX</ListItem>
+  <ListItem>3rd PArty - NetApp Filers</ListItem>
+  <ListItem>3rd PArty - Dell Isilon</ListItem>
+  <ListItem>POSIX Compliant Filesystems</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Discover** is a **metadata analytics** package, which has been enhanced to allow for **deep-indexing** and **access virtualisation**. Currently bundled with **Scale**
+it should be considered for deployment with any of products listed above. In particular **COS** and **Scale**, for which it provides real-time analytics. Other products
+use periodic scans to poll for updates. **Discover** is able to track files across multiple systems in an entire enterprise, so it is important that there are supported
+backup packages like **Protect** and the most popular third party scale up and scale out file sysetms. 
+
+Customers are able to use **Discover** to create simple "agents" based on the any of the monitored data points. For example: An agent could be written to alert a security 
+team to tell them that an unusual amount of files have been accessed in a short period of time; an agent can search for duplicate files; an agent can trigger searches for PII
+within different kinds of file types as they appear.
+
+It is important that you can articulate what **Discover** does and why customers should want to use it, this has in the past been something that has been difficult for
+many sellers to explain. Prepare before you need to do this!
+
+<br/>
+
+---
+  ### Fusion SDS
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Standalone</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Protect for Containers</ListItem>
+  <ListItem>Protect Plus</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>OpenShift Data Protection</ListItem>
+  <ListItem>Kubernetes Data Protection</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Fusion SDS** should be considered as not only a **Storage Foundation** for Fusion, but which through **Protect for Containers** a system to enable delivery of data protection for
+**OpenShift** and **Kubernetes** systems. **Protect for Containers** sould be considred as the de-facto migration for **Protect Plus (SPP)** installations which 
+protect container orchestration environments such as **K8S/RHOS**. If you have a customer on legacy **Portworx** environments for storage and data proetction, **Fusion SDS**
+should replace these. This is especially the case for those **customers who were sold Portworx by IBM** and haven't been migrated to IBM software.
+
+
+<br/>
+
+---
+  ### Insights / Insights Pro
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Standalone</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Copy Services Manager</ListItem>
+  <ListItem>Fusion SDS</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**IBM Storage Insights** is a Cloud Hosted storage monitoring system which is used to monitor, provide proactive alerts and supply information such as error logs
+and compliance information to to IBM for software and hardware products. **Storage Insights** should always be installed if one of the supported packages is
+in operation at a client site. **Storage Insights** acts as a good stepping stone for **Storage Insights Pro**, which can be enabled via subscription
+from the **Storage Insights** console.
+<br/>
+
+**Storage Insights Pro** provides a more in-depth feature rich service with features like AI based predictive analytics, etc. While CSMs are not remunerated
+for sales of Insights Pro, it is a desirable product for customers to operate as it significantly enhances products for which they are.
+
+<br/>
+
+---
+  ### Protect (Spectrum Protect/TSM)
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Protect Suite</ListItem>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Copy Data Manager (CDM)</ListItem>
+  <ListItem>Defender Data Protect (Cohesity OEM)</ListItem>
+  <ListItem>Discover</ListItem>
+  <ListItem>Protect for Containers</ListItem>
+  <ListItem>Protect Plus</ListItem>
+  <ListItem>Scale</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+  <ListItem>IBM Tape / LTO</ListItem>
+  <ListItem>3rd Party Virtual Tape Library VTL ingest</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Protect** is a higly effective secondary storage package. It handles **Data Protection**, **Archive**, **Hierachical Storage Management (HSM)** and **S3 Ingest**.
+**Protect** can scale up more than any other data protection package, addressing more than 4PB of online data (deduplication data) per single server. This makes
+**Protect** ideally placed to protect **Scale** environments, even if a **Scale** environment contains more data than a single **Protect** server can address, **Protect**
+can work in groups of servers to aggregate storage to protect an entire **Scale** environment. In addtiion, **Protect** can store its own data to **Scale**
+with multiple **Protect** servers addressing a single **Scale** cluster, acting as part of the cluster itself, not just going through an entry point into the cluster.
+
+**Protect** can write data to a multi-location **COS** cluster, this data cen then be replicated **Metadata Only**, meaning ultra-fast geo-dispursed recovery points.
+
+**Protect** can store deduplicated data in S3, meaning making **COS** and **Ceph** ideal for longer term storage, such as archive or HSM.
+This storage of data in cloud is highly write efficient, with local read/write "cloud cache" which won't drop objects, until they're no longer needed, 
+meaning a real cash saving in the amount of HTTP GET operations required per recovery.
+
+Block storage sytems like **Virtualize** (including **SVC**, **Flashsystem** and **Virtualize for Public Cloud**) can have snapshots orchestrated by **Protect** meaning
+fast low-impact data proetction. These sysetms can also be used to storag data which is written by **Protect**, many customers are moving to **Flashsystem**
+for data protection - protect can address 1PB of usable flashsystem in than 4U including server, delivering as much as 4PB of usable storage.
+
+**Virtual Tape**/**VTL** can be utilised by **Protect** meaning that **a third party VTL can be used until fully depreciated**, then have its data **automatically ingested**
+into a deduplciation storage pool.
+
+**Tape** is a highly efficient storage medium for low power and highly secure storage of large amounts of data. **Protect** has best in class tape media handling.
+
+<br/>
+
+---
+  ### Protect for Containers
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Fusion SDS</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Fusion SDS</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Protect for containers** delivering backup simplification is the #1 use case for **Fusion** both appliances and SDS. **Protect for containers** should be sold as
+**RHOS** and **K8S** data protection services.
+**Protect for Cotainers** should be considered the de-facto migration point for **Protect Plus/SPP**, if a customer is still using **Portworx Backup** which was
+briefly sold by IBM, it should be considered as an immideate replacement candidate.
+
+<br/>
+
+---
+  ### Protect Plus
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Fusion SDS</ListItem>
+  <ListItem>Protect Suite</ListItem>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Defender Data Protect (Cohesity OEM)</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Protect for Cloud</ListItem>
+  <ListItem>Protect for Containers</ListItem>
+  <ListItem>Scale</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+While **Protect Plus** should no longer be sold for new installations, it should be considered how customers intende to be migrated from **SPP** to the replacemnt packages.
+Primary replacement will be **Defender Data Protect (Cohesity OEM)**, however it may be the case that elements will go to **Protect for Cloud** (M365, SaaS, etc)
+and others to **Protect for Containers** (K8S, RHOS, Fusion).
+
+**Scale**, **Ceph** and **COS** have historically been used to store data from **Protect Plus** it may be the case that these are expanded, or that when the services
+are moved from **Protect Plus** to the replacemnt systems, these are freed up for other use cases: Bear this in mind when designing new products.
+
+<br/>
+
+---
+  ### Scale
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Fusion SDS</ListItem>
+  <ListItem>Protect Suite</ListItem>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Archive</ListItem>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Discover</ListItem>
+  <ListItem>IBM Storage Ready-Node (Single node Scale)</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Scale** has many integrated systems, primarily if a customer has a modern installation of **Scale**, it will have come with an entitlement for **Discover** included.
+All customers should have **Discover** configured and operating, familiarity with **Discover** will drive adoption for other **Discover** use cases. If a customer
+is not using **Protect (Spectrum Protect/TSM)** for data protection, it should be an easy sell, **Protect's** integratino with **Scale** is by far the best available
+in the market. 
+
+**Scale** can tier its data to different storage from flash based hot/fast, through S3 for cooler/less fast through cold/nearline in Tape. There should be use cases
+for **Ceph S3**, **COS**, etc. **Archive** Enterprise Edition is designed for long term integrated storage providing the **tape** tier for **Scale**.
+
+<br/>
+
+---
+  ### Virtualize (SVC & Public Cloud)
+
+** Available as part of, or licensed as:**
+
+<orderedList>
+  <ListItem>Defender</ListItem>
+  <ListItem>Standalone</ListItem>
+  <ListItem>Storage Suite</ListItem>
+  <ListItem>Storage Suite for cloud Paks</ListItem>
+</orderedList>
+<br/>
+
+**Associated Offerings:**
+
+<orderedList>
+  <ListItem>Ceph</ListItem>
+  <ListItem>Cloud Object Storage (COS)</ListItem>
+  <ListItem>Copy Data Manager (CDM)</ListItem>
+  <ListItem>Copy Services Manager</ListItem>
+  <ListItem>Insights / Insights Pro</ListItem>
+  <ListItem>Protect (Spectrum Proetct/TSM)</ListItem>
+  <ListItem>Virtualize (SVC & Public Cloud)</ListItem>
+  <ListItem>IBM SAN Volume Controller (SVC)</ListItem>
+  <ListItem>IBM Flashsystem (SVC)</ListItem>
+  <ListItem>3rd Party Virtaiulized Storage</ListItem>
+</orderedList>
+
+<br/>
+
+**Details:**
+
+**Virtualize SVC** and **Virtualize for Public Cloud** are an important part of the IBM SDS portfolio. **Virtualize** is a key enabler for many of the modern software storage
+systems, both primary and secondary. Much of the **Defender portfolio** is based on functionality delivered by Virtualize. This includes **real-time ransoware detection**;
+**Sentinel** detection, protection and recovery orchestration for **Oracle**, **Epic Healthcare System**, **SAP HANA**.
+
+Virtualize can be insatlled on-prem as the operating software of **IBM Flashsystem**. It can virtualize 3rd party vendors' storage sysetms and integrate them into services offered
+by IBM products thus allowing all **Virtualize** services to be offered on 3rd party products - including **Safeguard Copy Immutable Snapshots**, a feature reserved by
+many competitors for their top end products, which is offered across the board by IBM.
+
+**Virtualize for Public Cloud* can offer all the services from on-premises in hyperscaller cloud, extending a tertiary replica point to cloud, or enabling far more smooth
+movement of workloads around hybrid environments. Meaning that not only can hyperscaller be used as a DR point, but also that compute can be moved to wherever it is
+most effective, not requireing large replications to and from cloud or format translations.
+ 
+S3 targets such as **COS**, **Ceph**, **Protect (Spectrum Protect/TSM)**, can be used as targets for **flashcopy** snapshots to be written to, should there be no additional
+array or requirements for them to be online.
+
+If a customer already owns **Vitualize**, **SVC** or **Flashsystem** or **Virtualize for Public Cloud**, it should be considered that **Insights** is free, see **Insights**
+page above. **Copy Data Manager** should be considred, as a method to enhance and simplify copy data "snapshot" services. 
+
+If a customer has **Virtualize for Public Cloud**, it should be considred that Virtualize running on SVC on premises virtualizing 3rd party storage systems will deliver and
+end-to-end storage product line running on a single toolchain. This is unparalleled in the industry.
+
+<br/>
+
+
+---
+
+## How can I get further help?
+
+If it's urgent contact your Practice Lead: Fraser MacIntosh <br/>
+Slack: @fraser <br/>
+Email: fraser.macintosh@uk.ibm.com <br/>
+Cell/Mobile: +44 (0) 7747633322 (please note Fraser is a UK resident) <br/>
+
+If it's not urgent: There are weekly AmA meetings scheduled on Thursdays for both eastern and western timezones,
+drop into one of these meetings at https://ibm.webex.com/meet/fraser.macintosh/
+
+---
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<Aside>
+
+<strong>Customer Success Practice Leaders:</strong>
+<OrderedList>
+  <ListItem>- Fraser MacIntosh (@fraser)</ListItem>
+  <ListItem>- Lorrie Heiken (@lorrieheiken)</ListItem>
+  <ListItem>- Noel Colon (@ncolon)</ListItem>
+  <ListItem>- Venkata Gadepalli (@vishy)</ListItem>
+</OrderedList>
+
+</Aside>
+
+<Aside>
+<strong>Slack Resources</strong>
+<br/>
+<strong>CSM Slack Channel:</strong> <a
+  href="https://ibm-cloudplatform.slack.com/archives/C04MG0NEJ2C"
+  target='_blank' rel='noreferrer noopener'
+>
+  #csm-storage
+</a>
+<br/>
+<strong>IBM Systems Slack Workspace:</strong> <a
+  href="https://ibm-systems-storage.slack.com"
+  target='_blank' rel='noreferrer noopener'
+>
+Join Workspace
+</a>
+<br />
+
+</Aside>
+
+</Column>
+
+</Row>

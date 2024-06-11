@@ -1,0 +1,85 @@
+// This is where your application styles could go.
+
+$screen-xs-max: 767px;
+// Small screen (768px)
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+// Medium screen (992px)
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+// Large screen (1200px)
+$screen-lg: 1200px;
+
+// Spacing for headings
+h2 {
+margin-top : 20px!important;
+margin-bottom : 5px!important;
+}
+
+h3 {
+margin-top : 15px!important;
+margin-bottom: 1px!important;
+}
+
+.bx--row, .cds--row, .bx--list--unordered, .cds--list--unordered {
+  margin-top: 15px!important;
+}  
+
+.bx--list--unordered, .cds--list--unordered {
+  width: 100%;
+}
+
+.bx--row, .bx--list--ordered--native, .cds--list--ordered--native {
+  margin-top: 15px!important;
+} 
+
+.bx--list--ordered--native, .cds--list--ordered--native {
+width: 100%;
+}
+
+.bx--list--nested, .cds--list--nested {
+   margin-top: 5px!important;  
+}
+
+.bx--side-nav__items.sidenav-list, .cds--side-nav_items.sidenav-list {
+    padding-top: 25px;
+}
+
+
+p {
+  padding-top: 5px;
+}
+
+.bx--accordion__content .square-card-group.bx--row, .cds--accordion__content .square-card-group.cds--row > div {
+
+  @media(min-width: $screen-lg) {
+    max-width: 25% !important;
+  }
+
+  @media(min-width: $screen-sm-min) {
+    max-width: 33.33333% !important;
+  }
+
+  @media(min-width: $screen-sm-min) {
+    max-width: 50% !important;
+  }
+
+  @media(max-width: $screen-xs-max) {
+    max-width: 100% !important;
+  }
+
+}
+
+.AnchorLinks-module--link--c72ed {
+    color: currentColor;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    transition: color .25s;
+}

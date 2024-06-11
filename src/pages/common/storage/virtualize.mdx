@@ -1,0 +1,349 @@
+---
+title: IBM Storage Virtualize
+description: Technical content on IBM Storage Virtualize and Virtualize for Public Cloud
+---
+
+import { OrderedList, ListItem } from "carbon-components-react";
+
+<AnchorLinks small>
+  <AnchorLink>What is IBM Storage Virtualize and what does it do?</AnchorLink>
+  <AnchorLink>
+    What are the pain points that IBM Storage Virtualize addresses?
+  </AnchorLink>
+  <AnchorLink>What do CSM driven deployments look like?</AnchorLink>
+  <AnchorLink>
+    Why would a customer deploy IBM Storage Virtualize if they already have an
+    existing solution?
+  </AnchorLink>
+  <AnchorLink>
+    The steps to deploy and who is responsible for what, when?
+  </AnchorLink>
+  <AnchorLink>How do I expand and grow IBM Storage Virtualize usage?</AnchorLink>
+  <AnchorLink>There isn't a current use case, where do I start?</AnchorLink>
+  <AnchorLink>Frequently asked questions</AnchorLink>
+  <AnchorLink>
+    How do I measure and report my IBM Storage Virtualize capacity-based deployment?
+  </AnchorLink>
+</AnchorLinks>
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+---
+
+## What is IBM Storage Virtualize and what does it do?
+
+**IBM Storage Virtualize** in the [IBM Storage](https://www.ibm.com/storage) portfolio is a flexible software foundation that consolidates 
+block storage management across differing storage resources delivering the same features for any virtualized storage. To better 
+understand the benefits, costs, and risks associated with this investment, 
+Forrester interviewed several customers with years of experience using 
+IBM Storage Virtualize. The purpose of this study is to provide readers 
+with a framework to evaluate the potential financial impact of IBM
+Storage Virtualize on their organizations. IBM Storage Virtualize 
+software is packaged with IBM FlashSystem arrays and SAN Volume 
+Controller; it also operates as IBM Storage Virtualize for Public Cloud in Hyperscaler cloud providers.
+<br/>
+
+
+**Key Challenges addressed by Storage Virtualize**
+Customers using IBM Storage Virtualize, interviewed organizations faced the following common challenges:
+
+**Storage vendor silos with different management needs and pockets of capacity.**  Organizations struggled with islands of storage that were preventing admins from improving utilization, replicating 
+data, moving data around, and cost effectively migrating to new storage hardware. However, these organizations also wanted the flexibility afforded by not being locked into any one hardware vendor.
+
+**Rapid data growth juxtaposed against shrinking budgets.** The organizations also struggled with rapidly growing data volumes and capacity needs while also facing increasing pressure on infrastructure 
+costs. Some organizations experienced up to 15% data growth per year. As these heterogenous environments grow, they become increasingly complex and expensive to manage
+
+**Impacts to business-critical applications.** As a result of having silos of storage infrastructure, admins lacked the visibility to make decisions that could improve performance or availability. The organizations 
+sought to reduce latency and downtime and improve backup capabilities in order to lessen the impact on business users. 
+
+
+---
+
+## The steps to deploy and who is responsible for what, when?
+
+IBM Storage Virtualize follows the traditional model of: 
+
+1: Identifying a pain point, sponsor and use case
+The IBM team of Sales, Tech Sales and potentially CSM can use the list of pain points above along with a Client Engineering engagement to identify use cases and sponsors
+Some Pain points:
+
+Implementation with 3rd Party Storage. The main pain point experienced is that a fair amount of unavoidable migration from 3rd party storage native configurations will need to take place. Virtualize/SVC doesn’t simply re-use features of the underlying storage - such as replication, snapshots, etc. Instead, Virtualize sits in the datapath and replaces these features with its own. This means that initial virtualizations of 3rd party storage need to be carefully planned, typically as a land and expand type exercise.
+
+Safeguard Copy and 3rd Party Storage. It is imperative to understand that while a Virtualize/SVC system can implement SGC (Safeguard Copy) with third party storage hosting the snapshots. If the data are to remain immutable, there must be sufficient access controls on the third party storage so as to prevent any access to re-configure the storage.
+
+
+
+Benefits /Results for Clients:
+
+Improved agility creates simplicity and cost effectiveness. By consolidating storage management within one software platform, organizations drastically simplify operations. Storage admins are now able to — without disruption — move data to different storage systems from IBM or third-party vendors, to optimize performance, i.e., tier data to cost effective storage and easily migrate storage to new hardware. Storage personnel can use saved time for more strategic work. 
+
+Access to advanced storage functionality without a hardware upgrade. Organizations use IBM Storage Virtualize to take advantage of data reduction techniques (like deduplication and compression) and encryption to improve their security. Admins can extend these newer capabilities across all storage, regardless of if it is
+native to the underlying hardware, avoiding hardware upgrades otherwise needed to get that functionality. 
+
+Access to innovative hardware without disruption. When organizations want to introduce new storage hardware, IBM Storage Virtualize makes it much easier. Considering the platform supports 
+most vendors (more than 500 heterogenous storage systems), admins can quickly add new hardware without having to make major changes or undergo a big data migration effort. Virtualize for Public Cloud can inter-operate allowing cloud providers to host additional storage systems with no additional investment in tooling for cloud based block storage.
+
+Improved Business Continuity & Cyber Resiliency. Instead of ad hoc backups, organizations create consistent backup processes that improve RPOs and reduce impact to users in the event of a disruption in the primary data center. Near real-time ransomware detection can alert to suspicious writes; immutable snapshots can recover to known good pre-attack positions. Additionally, organizations experience less unplanned downtime associated with storage management processes, and storage admins reduce off-hours work associated with planned downtime.
+
+Operational Simplicity
+With IBM Storage Virtualize, organizations consolidate all storage and manage it as one storage pool, separate from hardware. This results in simplified management, with a consistent approach to 
+data reduction and encryption across all storage. Provisioning new storage, maintenance, backups, and recovery are all completed more efficiently by storage admins. Admins can also better manage capacity between primary and secondary environments. Customers can also improve visibility with IBM Storage Insights by collecting data from storage systems and using AI to proactively monitor storage KPIs to predict and prevent issues before
+they impact the business.
+
+
+Solutions:
+
+2: Proving value (proof of experience (PoX)
+Tech Sales, Client Engineering, and CSM can work together to connect IBM Storage Virtualize to the customers’ systems and prove the capabilities resolve the pain points.
+
+3: Implementation project
+[Technology Expert Labs](https://ibm.seismic.com/app?ContentId=98831243-fd93-4fe7-b259-9f90b0ae611b#/doccenter/f6bc8873-d580-4ee8-a903-[…]4-43b3-4571-a5ae-d04e2294ab1b/grid/) can take ownership of an implementation project using their pre-packaged offerings.  See more at the [this link](https://ibm.seismic.com/app?ContentId=98831243-fd93-4fe7-b259-9f90b0ae611b#/doccenter/f6bc8873-d580-4ee8-a903-[…]4-43b3-4571-a5ae-d04e2294ab1b/grid/)
+
+---
+
+## What do CSM driven deployments look like?
+
+Common use cases for Storage Virtualize are in the below areas: 
+Hybrid cloud migration and disaster recovery 
+Using sophisticated replication technology, IBM Storage Virtualize enables migration of data between on-premises storage and IBM Cloud, AWS, or Microsoft Azure. It also supports continuous replication from on-premises storage to public cloud or between public cloud data centers, for disaster recovery purposes. Synchronous and asynchronous mirroring support a range of RPO and RTO targets depending on business needs.
+Cyber resilience 
+IBM Storage Virtualize for Public Cloud helps you prepare for fast recovery from a cyber attack by enabling creation of data copies that are isolated from servers. On AWS, create “air gapped” snapshots of data on S3 storage. On Azure, use IBM Safeguarded Copy to regularly create immutable copies of data that cannot be altered by ransomware or other threats, Use these copies to recover data quickly following an attack, either on-prem or in the cloud.
+Hybrid cloud capability for storage you already own 
+IBM Storage Virtualize for Public Cloud works with on-premises systems built with IBM Storage Virtualize software: IBM SAN Volume Controller, IBM FlashSystem family and VersaStack. And because these systems can also connect to over 500 storage systems from IBM and other vendors, you can deploy hybrid cloud capability without changing the storage you have.
+Consistent management of Hybrid Cloud Storage
+Paired with IBM Storage Virtualize in storage systems, manage storage in IBM Cloud, AWS, and Microsoft Azure in the same manner, and using the same interfaces, as you do on premises, dramatically simplifying the task of implementing a hybrid cloud storage strategy.
+Enhance public cloud storage:  with the rich functionality you're accustomed to on premises. Including nondisruptive data movement, IBM FlashCopy®️ snapshots, and IBM Easy Tier®️ automated tiering.
+
+
+---
+
+## Why would a customer deploy IBM Storage Virtualize if they already have an existing solution?
+
+Unparalleled support: IBM Storage Virtualize supports over 400 third party systems, meaning that once implemented all of IBM Storage Virtualize’s features are available across the customer’s entire estate. This drastically reduces cost and complexity for the customer.
+All the features at no extra cost: IBM’s policy is that Storage Virtualize allows all the features from entry level to enterprise. The overwhelming majority of existing (non IBM) solutions require extra licensing to implement features such as replication and snapshots. Many features such as immutability or Container Storage need upper tiers of hardware as these are considered “Enteprise” and come with a price tag to match. IBM Storage Virtualize supports IBM iSeries, UNIX, Linux, Windows, Hypervisors and Container Storage Interface all from the same product.
+Unparalleled Cyber Resiliency: IBM’s cyber resiliency features, such as near real-time detection of ransomware attacks, safeguard copy and integration with IBM’s Defender product line can be implemented with Virtualize/SVC where they simply don’t exist with pre-existing products.<br/>
+[Link to DEMOS here](https://techzone.ibm.com/collection/6182e33579b0330017e34609)<br/>
+[What to say and Show](https://ibm.seismic.com/Link/Content/DCdJf7bgh7M3FGmVfGCXMC8V7XhV#/?anchorId=5b8f5c17-4945-4c19-9d4b-9d4d73685e07)<br/>
+[What to Know- Seller presentations](https://ibm.seismic.com/Link/Content/DCdJf7bgh7M3FGmVfGCXMC8V7XhV#/?anchorId=5b8f5c17-4945-4c19-9d4b-9d4d73685e07)<br/>
+
+**IBM Storage Virtualize Battlecard**
+
+Battlecards: \- Currently there are no published dedicated battlecards
+
+[Follow this link to a seismic search results page for current related competitive links](https://ibm.seismic.com/app?ContentId=6b3bb3c1-3c73-4e06-b324-0b8e1a326edb#/search?appType=DocCenter&keyword=svc%2520battlecards&contentType=All%20Documents&selectedProperties=ContentProfiles:IBM%2520Technology%2520Sales;Brand:Storage;&folderId=&folderName=&fromAppType=&currentTeamSiteId=&sharedTeamSiteId=&pageIndex=0)
+
+
+
+---
+
+## The steps to deploy and who is responsible for what, when?
+
+See [IBM Storage Scale: Concepts, Planning, and Installation Guide](http://www.ibm.com/support/knowledgecenter/STXKQY/ibmspectrumscale_welcome.html)
+
+---
+
+## How do I expand and grow IBM Storage Virtualize usage?
+
+Understand the pain points that the customer has, many customers acquire additional client types and storage infrastructures over time through acquisition and merging of different internal departments. Virtualize is there to drive simplification of complex heterogeneous infrastructure becoming the default for new storage.
+**Ask your customer** if they are interested in new anti-ransomware features?
+**Ask your customer** if they are interested in Safeguard Copy Immutable Snapshots?
+**Does your customer** want to put a DR site in public cloud or a tertiary replication step?
+
+
+---
+
+## There isn’t a current use case, where do I start?
+
+**Agility:** Move data without disruption among storage systems.
+**Bridging:** Bridge to new storage technologies or application areas, such as containers.
+**Cloud:** Add consistent hybrid cloud capability to all your storage.
+**Data reduction:** Store more data on the storage you already own to support growing volumes of data or avoid new purchases.
+**Encryption:** Improve cyber resiliency by encrypting data at rest.
+
+Customer Success Practice Leaders:
+1.	- Fraser MacIntosh (@fraser) 
+2.	- Noel Colon (@ncolon)
+3.	- Venkata Gadepalli (@vishy)
+4.	- Lorrie Heiken (@lorrieheiken)
+
+**CSM Slack Channel: #csm-storage
+
+**Demo:**  [What to Say and Show](https://techzone.ibm.com/collection/6182e33579b0330017e34609)
+
+**Seismic:** [IBM Storage Virtualize Sales Kit](https://ibm.seismic.com/Link/Content/DCdJf7bgh7M3FGmVfGCXMC8V7XhV)
+
+**Product Documentation:**	[Storage Virtualize SAN Volume Controller](https://www.ibm.com/products/san-volume-controller)
+[Storage Virtualize for public Cloud](https://www.ibm.com/docs/en/storagevirtualizecl)
+
+Product Specifications: https://www.ibm.com/products/san-volume-controller?mhsrc=ibmsearch_a&mhq=storage%20virtualize
+
+**Build your skills  / What to Know **
+Seismic - [Top Assets](https://ibm.seismic.com/Link/Content/DCdJf7bgh7M3FGmVfGCXMC8V7XhV#/?anchorId=681eff7c-6732-4e8d-810a-4c807c6b5883)
+Follow the Top Assets link above for seller presentations and videos; client presentations and videos; Level 2 enablement.
+**Data Sheets:** [SVC](https://www.ibm.com/docs/en/sanvolumecontroller/8.6.x) -- [Storage Virtualize for Public Cloud](https://www.ibm.com/docs/en/storagevirtualizecl/8.6.x)
+
+**Contacts / Who can help me?**
+Primary Contact for help is Fraser MacIntosh, (@fraser) the Community of PRactice lead for Storage.
+
+
+---
+
+## Frequently asked questions
+
+- **As an IBM CSM, do I get credit for deploying IBM Storage Virtualize?**
+
+Yes, IBM Storage Virtualize and IBM Storage Virtualize for Public Cloud are [Growth Offerings that IBM CSMs cover.](https://w3.ibm.com/w3publisher/customersuccess/the-practice/csm-covered-offerings)
+
+---
+
+## How do I measure and report my IBM Storage Virtualize capacity-based deployment?
+
+Capacity reporting for Virtualize and Virtualize for Public Cloud are done through IBM Storage Insights. If your customer doesn’t have Storage Insights, or Storage Insights Pro already installed, follow this link for the free version of Storage Insights [getting started](https://www.ibm.com/docs/en/storage-insights?topic=getting-started)
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<Aside>
+
+<strong>Customer Success Practice Leaders:</strong>
+<OrderedList>
+  <ListItem>- Fraser MacIntosh (@fraser)</ListItem>
+  <ListItem>- Noel Colon (@ncolon)</ListItem>
+  <ListItem>- Venkata Gadepalli (@vishy)</ListItem>
+  <ListItem>- Lorrie Heiken (@lorrieheiken)</ListItem>
+</OrderedList>
+
+</Aside>
+
+<Aside>
+<strong>Slack Resources</strong>
+<br/>
+<strong>CSM Slack Channel:</strong> <a
+  href="https://ibm-cloudplatform.slack.com/archives/C04MG0NEJ2C"
+  target='_blank' rel='noreferrer noopener'
+>
+  #csm-storage
+</a>
+<br/>
+<strong>IBM Systems Slack Workspace:</strong> <a
+  href="https://ibm-systems-storage.slack.com"
+  target='_blank' rel='noreferrer noopener'
+>
+Join Workspace
+</a>
+<br />
+<strong>Product Slack Channel:</strong> <a
+  href="https://ibm-systems-storage.slack.com/archives/C34UGS5K9"
+  target='_blank' rel='noreferrer noopener'
+>
+  #virtualize-help
+</a>
+<br />
+</Aside>
+
+<Aside>
+<strong>Demo:</strong>
+<a
+  href="https://ibm.seismic.com/Link/Content/DCdJf7bgh7M3FGmVfGCXMC8V7XhV#/?anchorId=681eff7c-6732-4e8d-810a-4c807c6b5883"  
+  target='_blank' rel='noreferrer noopener'
+>
+  IBM Storage Virtualize Sales Kits including Demos, Videos and Presentations
+</a>
+<br />
+
+<a
+  href="https://ibm.seismic.com/Link/Content/DC8GW66GXBjbq8MQPfCBVgjpX9BB"  
+  target='_blank' rel='noreferrer noopener'
+>
+  IBM Storage Virtualize for Public Cloud Sales Kits including Demos, Videos and Presentations
+</a>
+<br />
+
+
+<strong>Roadmap:</strong> Not Generally Available <br /> 
+
+
+<strong>Seismic:</strong> <a
+  href="https://ibm.seismic.com/Link/Content/DCQDCTgTqjC2M8m22JRCFhpBH2PV"
+  target='_blank' rel='noreferrer noopener'
+>
+  Sales Kit
+</a> with Presentations and Pre-sales assets
+<br />
+
+<strong>Tech Zone:</strong> - <a
+  href="https://techzone.ibm.com/search?searchbox=%22Storage+Virtualize%22&StatusFilter=Active%2CEnabled&VisibilityFilter=%5B%22IBMers%22%5D&BrandsFilter=%5B%22Data+and+AI%22%2C%22Storage+Systems%22%2C%22Sustainability+Software%22%2C%22Security%22%5D&ProductsFilter=%5B%22Storage+Virtualize%22%2C%22Storage+Protect%22%2C%22Storage+Ceph%22%5D"
+  target='_blank' rel='noreferrer noopener'
+>
+  Pre-populated Search for 'Virtualize' assets
+</a>
+<br />
+
+<strong>Product Documentation:</strong> <a
+  href="https://www.ibm.com/docs/en/sanvolumecontroller"
+  target='_blank' rel='noreferrer noopener'
+>
+  SAN Volume Controller / Virtualize Documentation
+</a>
+ <a
+  href="https://www.ibm.com/docs/en/storagevirtualizecl"
+  target='_blank' rel='noreferrer noopener'
+>
+  Virtualize for Public Cloud Documentation
+</a>
+
+<br/>
+</Aside>
+
+<Aside>
+
+<strong>Build your skills</strong>
+<br/>
+
+
+<strong>Storage Virtualize for Public Cloud (AKA SV4PC) Level 2:</strong> <a
+  href="https://yourlearning.ibm.com/activity/PLAN-056E4779DDEE"
+  target='_blank' rel='noreferrer noopener'
+  >
+  Leraning Plan
+  </a>
+  <br />
+
+<strong>FlashSystem/Storage Virtualize Overview:</strong> <a
+  href="https://yourlearning.ibm.com/activity/PLAN-08918EF0289A"
+  target='_blank' rel='noreferrer noopener'
+  >
+  Leraning Plan
+  </a>
+  <br />
+</Aside>
+
+
+
+
+<Aside>
+  <strong>Training and Workshops</strong>
+  <br />
+  <a
+    href="https://www.ibm.com/training/search?query=virtualize"
+    target='_blank' rel='noreferrer noopener'
+  >
+    IBM Training
+  </a>
+</Aside>
+
+<Aside>
+<strong>Contacts</strong><br/>
+Principal Worldwide Sales Leader, Virtualize and Defender: <a href="https://w3.ibm.com/#/people/379255897" target='_blank' rel='noreferrer noopener'>Shelly Howrigon</a><br/>
+VP, Storage SW Sales: <a href="https://w3.ibm.com/#/people/209617897" target='_blank' rel='noreferrer noopener'>Melissa Downer</a><br/>
+Tech Sales Enablement: <a href="https://w3.ibm.com/#/people/5G7324897" target='_blank' rel='noreferrer noopener'>Roger Kasten</a><br/>
+Tech Sales Enablement: <a href="https://w3.ibm.com/#/people/014602649" target='_blank' rel='noreferrer noopener'>Chris Volmar</a><br/>
+
+
+</Aside>
+
+</Column>
+
+</Row>

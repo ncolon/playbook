@@ -1,0 +1,160 @@
+---
+title: IGC/IKC Modernization
+description: Practices, tools, learning, modernization guide, modernization, quick links
+---
+
+import {Link} from 'gatsby';
+import FileLink from '../../../components/FileLink';
+
+## Contacts
+
+| WW contact | Name |
+| --- | --- |
+| **Customer Success Practice Leaders:** | Campbell Robertson |
+| **Technology Expert Labs Solution Engineering Leader** | Bala Vaithyalingam |
+| **Technology Expert Labs Delivery Leader:** | Akram Abdouch |
+| **Technology Expert Labs Product Management:** | TBD |
+| **IKC Product Management** | Marcus Boone |
+
+## Scope
+IGC/IKC modernization is the process of taking customers from **IBM InfoSphere® Information Governance Catalog (IGC) and/or IBM Information Analyzer (IA)** and moving them to IBM Knowledge Catalog running on Cloud Pak for Data on OpenShift. You can learn more about IBM Knowledge Catalog on our [playbook page](/data-ai/csm-data-ai-watson-knowledge-catalog)
+
+## Modernization Conversations
+While we have largely achieved functional parity with **IBM InfoSphere® Information Governance Catalog (IGC)and/or IBM Information Analyzer (IA)** with the release of IKC on Cloud Pak for Data 4.8, CSMs and Account Teams should be very deliberate in how and when to have these conversations with clients. <br/><br/>
+
+**What’s the risk?** <br/>
+In addition to the functional gaps we closed with Cloud Pak for Data 4.7, we also introduced a set of semi-automated migration tools to assist clients who deployed the XMETA-based components that were part of IKC. These tools help clients get from older versions of IKC to IKC  4.7, but they did not support the semi-automated migration from IGC/IA to IKC. These tools have been enhanced throughout 2H23 and will support IGC/IA migration to Cloud Pak for Data with the release of 4.8. <br/><br/>
+
+**Is Information Server reaching end of life?** <br/>
+No. While it's true our investment in data movement, transformation and governance is focused on IKC and IKC on Cloud Pak for Data, there are no imminent plans to end support for Information Server. If it's working for clients, they can continue to run this environment and be confident they will continue to receive support. <br/><br/>
+
+**What about this Free Migration Assessment?** <br/>
+Its true! Expert Labs has developed a free migration assessment. The data collection part of the assessment can be useful to help plan for the eventual migration <br/><br/>
+
+**So what should I do?** <br/>
+- Engage with your client now.  Understand their current IGC deployment and what problems or upcoming use cases they need to address.
+- Plan an account strategy for 1H24.  Where are they going?  What unmet needs do they currently have?  Are the blind spots in their data estate they want to address?
+- Position IKC to address new use cases.  Don't start with a modernization play.  Start with a strategy to deploy IKC to address the new use cases.  Start small.
+- Plan the modernization.  2024 will be here soon.  After successfully deploying that first IKC use case, what's next?  Are there other gaps or is it time to plan a modernization discussion?
+
+### Why should a customer modernize?
+IBM Cloud Pak for Data and IBM Knowledge Catalog provides customers with the next generation of IBM InfoSphere® Information Governance Catalog (IGC) and/or IBM Information Analyzer (IA) and includes the following benefits:
+- *Consume and extract value from more data* – IKC’s data protection enabled multi-catalog approach improves the ability to organize and distribute data across the organization
+- *Control data risk and ensure data quality* – IKC’s data protection rules, SLA rules, and Next Gen Data Quality ensures the safety and quality of data for improved use in Analytics and BI
+- *Automate manual processes and speed up time to value* – robust automation integrated across the product to enable faster governance of data so that you can use more of your data across your organization
+
+| Modernization Video Overview | PPT | Description |
+| --- | --- | --- |
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCM9Wmff4FVpGGCJ4JVQ6Pjm8D7P">Data Catalog Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCT9fT22BW4c6G2Xp7p9QBq3gQcd">Data Catalog PPT</a> | Video outlining main differences between the IIS Information Governance Catalog and IBM Knowledge Catalog. **The key value of the modern catalog is the support for multiple access controlled catalogs as opposed to having only one catalog.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCBC2p7f9JJjWGHBF3BbX8bggmTV">Platform Concepts Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCMjQRmjdCpfMGWG8GqTJh3gppDB">Platform Concepts PPT</a> | Video outlining differences between IIS and Cloud Pak for Data. **The main value of CPD is the the end-to-end integration of tools for numerous data use cases as well as the support for data protection within the platform.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCdJFh3VPpgmFGMXbmT37mgJh72P">Profiling and Curation Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCgFWgV283Cp3G2G26mM2mchWGBG">Profiling and Curation PPT</a> | Video detailing difference between Information Analyzer and IKC Metadata Enrichment with emphasis on the **value of automated and AI-enabled profiling and discovery over and above what was possible in IA.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCG4WbQBmGDbdGCTR8gdFP7Ggm8G">Data Quality Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCQ6BWBXB9GFj8T2JMhbj4hpG42G">Data Quality PPT</a> | Video detailing difference between Information Analyzer and IKC Data Quality. **The key value of modern Data Quality is the improved automation and enhanced integration with Next Gen IKC.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCVTq79XbV7bWGqVhPmH2dDRJM4G">Data Lineage Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCTc4PfpFG4G9GMFJRq8JJ4cCH7B">Data Lineage PPT</a> | Video outlines differences between IIS Lineage and IKC Automated Data Lineage with Manta. In contrast to the manual lineage support in IIS, **modern Lineage is automated and supported for more soures.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCd8QbRcg3gVJGmDTd2hFpqVb9q8">Business Glossary Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCFR428JCJjWpGcFPcm7BdmpPgHj">Business Glossary PPT</a> | Video outlining the differences between IGC's Glossary and the IKC Business Glossary. | 
+
+### How complex is modernization?
+Modernization ranges from fully automated to manual. **The purpose of the FREE Technology Expert Labs Assessment is to analyze the existing environment and create a customized modernization plan**. The <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCGmpRf8dgCpP8fHC6TMmq9mXChG">Legacy Migration Sales Guide</a> has a summary of the migration limitations of the semi-automated tooling and the comparisons of functionality between IGC and IKC.  
+
+Note: Customers will first need to upgrade to the latest IGC version, before modernizing to IKC. 
+
+## IGC/IKC Modernization journey
+This diagram shows the IKC Modernization journey at a high level. Each section is broken down in detail with links to assets below.
+
+![Modernization Process Overview](../images/ikc-modernization-2.png)
+
+## Engage Client phase
+**Led by:** Customer Success and/or Brand Technical Seller<br/>
+**Audience:** Executive/Sponsor
+
+Before entering this phase it is necessary to discuss the topic of IKC modernization with the account team and Account Technical Leader to ensure that it is part of the overall account plan.
+
+This phase covers the steps necessary to have the first conversation with the customer about IKC modernization (**Executive level meeting**). We've provided a sample *Compelling Reason to Act* which is generic and applicable to most IGC customers as well as a deck from Product Management that goes into more depth on the value of modernization from IBM InfoSphere® Information Governance Catalog (IGC) and/or IBM Information Analyzer (IA) and moving them to IBM Knowledge Catalog running on Cloud Pak for Data on OpenShiftn.
+
+The **outcome** of this phase is that a sponsor is interested in a **Modernization Briefing** and workshop where IBM and the customer will work together to scope and plan the modernization project.
+
+
+<Row>
+<Column colMd={12} colLg={12}>
+
+**Process and assets:**
+
+| Task | Role |
+| --- | --- |
+| Perform account planning to identify target personas and related metrics related to IKC modernization | CSM |
+| Create a Success/Growth Plan in Gainsight to track the progress of this potential project. <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/c94rbjsigkrpznx5a41vy6i314ay4ucp" > Sample Growth Plan</a> | CSM |
+| Enhance one of the provided <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCB2pC48mdQ938CDHJMQV6mmBWXj">compelling reasons to act</a> to reflect specific personas and metrics | CSM |
+| Insert a customized Compelling Reason to Act into the <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/brdu0205jpsg5c7p68sm0y015tujtycm">Executive IKC Modernization Overview Deck</a> | CSM |
+| Present the Executive IKC modernization overview deck including customized Compelling Reason to Act to **customer executives or sponsors** | CSM |
+
+</Column>
+</Row>
+
+## Modernization briefing phase
+**Led by:** Customer Success and/or Technology Expert Labs Solution Architect<br/>
+** Audience:** Customer architect, developer, operations team
+
+This phase will typically be an in-person meeting with the following participants:
+- IBM CSM, Technology Expert Labs Solution Architect, Account Team, ATL
+- Customer architect, developer, operations team
+
+The modernization briefing is used to articulate the capabilities and benefits of IBM Knowledge Catalog on Cloud Pak for Data and position and prepare for the Technology Expert Labs assessment. We have provided a set of assets that should be used in the briefing below. They include an agenda, the IKC Modernization deck and feature comparison videos to show to the customer in the briefing.
+
+You can engage the Technology Expert Labs Solution Architect for assistance with the assessmentgineering PoX Phase* section below.
+
+The outcome of this phase is that the technical IKC team at the customer understands the capabilities and benefits of IBM Knowledge Catalog and that they are prepared for the Technology Expert Labs assessment.
+
+**Process and assets:**
+
+<Row>
+<Column colMd={12} colLg={12}>
+
+| Task | Role |
+| --- | --- |
+|Engage the Technology Expert Labs Seller (if you don't know your Technology Expert Labs Seller they <a target='_blank' rel='noreferrer noopener' href="https://clientresourcelocator.wdc1a.cirrus.ibm.com/">can be found here</a>) | CSM |
+| Create an ISC record and engage the Technology Expert Labs Solution Architect (if necessary) | Technology Expert Labs Seller |
+| Review the <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/b8rift7vfik3sozd4xar75twdjzf66s2">IKC Modernization Licensing considerations</a> | CSM |
+| Modify <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/hypuhdl0h9r9r4dz5az3hzi9u37ply5h">Briefing Agenda</a> to insert demonstrations or hand on labs if necessary. | CSM |
+| Use the <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCbRbJfD32FgfGC2VqB2XFH74F3j">IBMs Data Fabric PoV Deck</a> | CSM |
+| Use the <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/brdu0205jpsg5c7p68sm0y015tujtycm">Executive IKC Modernization Overview Deck</a> | CSM |
+
+**Demo and Lab assets:**
+
+| Modernization Video Overview | PPT | Description |
+| --- | --- | --- |
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCM9Wmff4FVpGGCJ4JVQ6Pjm8D7P">Data Catalog Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCT9fT22BW4c6G2Xp7p9QBq3gQcd">Data Catalog PPT</a> | Video outlining main differences between the IIS Information Governance Catalog and IBM Knowledge Catalog. **The key value of the modern catalog is the support for multiple access controlled catalogs as opposed to having only one catalog.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCBC2p7f9JJjWGHBF3BbX8bggmTV">Platform Concepts Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCMjQRmjdCpfMGWG8GqTJh3gppDB">Platform Concepts PPT</a> | Video outlining differences between IIS and Cloud Pak for Data. **The main value of CPD is the the end-to-end integration of tools for numerous data use cases as well as the support for data protection within the platform.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCdJFh3VPpgmFGMXbmT37mgJh72P">Profiling and Curation Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCgFWgV283Cp3G2G26mM2mchWGBG">Profiling and Curation PPT</a> | Video detailing difference between Information Analyzer and IKC Metadata Enrichment with emphasis on the **value of automated and AI-enabled profiling and discovery over and above what was possible in IA.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCG4WbQBmGDbdGCTR8gdFP7Ggm8G">Data Quality Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCQ6BWBXB9GFj8T2JMhbj4hpG42G">Data Quality PPT</a> | Video detailing difference between Information Analyzer and IKC Data Quality. **The key value of modern Data Quality is the improved automation and enhanced integration with Next Gen IKC.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCVTq79XbV7bWGqVhPmH2dDRJM4G">Data Lineage Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCTc4PfpFG4G9GMFJRq8JJ4cCH7B">Data Lineage PPT</a> | Video outlines differences between IIS Lineage and IKC Automated Data Lineage with Manta. In contrast to the manual lineage support in IIS, **modern Lineage is automated and supported for more soures.** | 
+| <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCd8QbRcg3gVJGmDTd2hFpqVb9q8">Business Glossary Video</a> | <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCFR428JCJjWpGcFPcm7BdmpPgHj">Business Glossary PPT</a> | Video outlining the differences between IGC's Glossary and the IKC Business Glossary. | 
+
+</Column>
+</Row>
+
+## Assessment and Strategy Phase
+**Led by:** Technology Expert Labs Solution Architect/Solution Engineer<br/>
+
+Technology Expert Labs (Solution Architect/Solution Engineer) will use a questionnaire and ISX export from IGC along with an assessment tool to analyze the customer's IGC environment and provide a findings report card complete with a migration analyisis and one or more service options to align with the customer's requirements.
+![Modernization Process Overview](../images/ikc-tel.png)
+
+## Propose, Negotiate, and Close phase
+**Led by:** Technology Expert Labs Seller
+
+**Technology Expert Labs Offerings:** 
+
+- <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DChTBdhh2f8jg8mHCbCTB8FfD683">Expertise Connect</a>
+
+The purpose of the Propose, Negotiate, and Close phase is to close a services deal. The IBM Sales team: Digital/Services Seller, Solution Architect/Solution Engineer presents the customer with a Services proposal for IKC Modernization based on their budget and requirements.   
+
+IBM Technology Expert Lab Services’ team recommended implementation methodology is built on a premise of phase-based implementations for IGC/IKC modernization, which enable quick “wins” in terms of go-live dates and milestones. This approach allows organizations to better manage the overall roll-out approach, while simultaneously building enthusiasm and confidence in the program. IBM Technology Expert Labs team leverages best practices and a proven methodology to support your modernization journey success with backing from IBM Software Labs. In IBM’s experience, roll-outs can be segmented by a variety of business and technical areas, including product lines, geographies and business units, source and destination systems, and business processes. IBM Technology Expert Lab is highly skilled at working with customers to develop optimal roll-out plans to match individual client requirements based on the current usage of IKC, complexity of the environment, modernization assessment results, key dependencies between IKC Projects and critical milestones for the program
+
+Required inputs by CSM: None; however CSM will want to maintain awareness for continued engagement with the client.
+
+## Implement Phase
+**Led by:** Technology Expert Labs Solution Engineer
+
+**Technology Expert Labs Offering:** <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DChTBdhh2f8jg8mHCbCTB8FfD683">Expertise Connect</a>
+
+During the delivery phase, the Technology Expert Labs Delivery team will perform the services as agreed upon in the Propose Negotiate and Close Phase.
+
+Required inputs by CSM: None; however CSM may want to shadow/maintain awareness for continued engagement with the client.

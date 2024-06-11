@@ -1,0 +1,176 @@
+---
+title: IBM Knowledge Catalog
+description: Technical content on IBM Knowledge Catalog
+---
+
+<AnchorLinks small>
+<AnchorLink>What is IBM Knowledge Catalog and what does it do?</AnchorLink>
+<AnchorLink>How does IBM Knowledge Catalog work with watsonx.data</AnchorLink>
+<AnchorLink>What are the pain points that IBM Knowledge Catalog addresses?</AnchorLink>
+<AnchorLink>What should I know about IBM Governance Catalog (IGC) modernization to IKC?</AnchorLink>
+<AnchorLink>What do CSM driven deployments look like?</AnchorLink>
+<AnchorLink>The steps to deploy and who is responsible for what, when?</AnchorLink>
+<AnchorLink>How do I expand and grow IBM Knowledge Catalog usage?</AnchorLink>
+<AnchorLink>There isn't a current use case, where do I start?</AnchorLink>
+</AnchorLinks>
+
+<Row>
+<Column colMd={7} colLg={7} noGutterMdLeft>
+
+## What is IBM Knowledge Catalog and what does it do? <br/>
+IBM® Knowledge Catalog is a data catalog tool that facilitates intelligent, self-service discovery of data, models and more. The cloud-based enterprise metadata repository activates information for AI, machine learning (ML) and deep learning. Access, curate, categorize and share data, knowledge assets and their relationships, wherever they reside. IBM Knowledge Catalog (IKC) is part of the <a href='https://pages.github.ibm.com/csm-playbook/playbook/data-ai/csm-data-ai-pattern-data-fabric#datafabric-data-governance' target='_blank' rel='noreferrer noopener'>Data Fabric pattern</a> and is shown in the <a href='https://ibm.seismic.com/Link/Content/DCM6qQggMbTq3GFTPmXH9R3dVJ2P' target='_blank' rel='noreferrer noopener'>Data Fabric Reference Architecture</a> 
+
+## How does IBM Knowledge Catalog work with watsonx.data? 
+watsonx.data tables can be cataloged in IBM Knowledge Catalog for protection and business context. Watch this <a href='https://ibm.seismic.com/Link/Content/DCJCBPpfFWd2D84PJ87dg9bcPJm8' target='_blank' rel='noreferrer noopener'>2-minute video</a> for more on how watsonx.data and IKC integrate and can be used together. 
+
+
+## What are the pain points that IBM Knowledge Catalog addresses?
+
+**Pain Point: Data Governance:** Organizations need to establish a governance foundation with common business vocabulary that is well understood across the enterprise and sets policies to comply with regulatory and privacy requirements <br/>
+*Target persona: Chief Data Protection Office:* needs to ensure that data is protected and leveraged to mitigate risks to the business (GDPR, CCPA, HIPAA, etc)<br/>
+*Target persona: Data Governance/Chief Risk Office:* needs confidence in the ability to comply with current and growing industry regulation (Based, Sarbanes-Oxley, etc)<br/>
+*Target persona: Chief Data Office:* needs to ensure organization data is understood, trusted and being used in the most optimal way to drive business growth<br/><br/>
+**Pain Point: Data Quality and Discovery:** Organizations struggle to deliver timely, trusted, quality data for business consumption. Data is trusted only if its quality, content and structure is well understood, and maintained over time<br/>
+*Target persona: Data Quality Officer:* needs to measure, monitor and address data quality issues and determine data’s suitability for downstream applications including ML and AI<br/>
+*Target persona: Data Steward:* needs to discover, classify data at scale and drive data quality remediataion<br/>
+*Target persona: Data Quality Analyst:* needs intelligent automation to timely assess data quality across a very large number of data assets<br/><br/>
+**Pain Point: Data Consumption:** Enterprises need to surface business-ready data to consumers allowing them to deliver timely value to the business and make better business decisions<br/>
+*Target persona: Data Citizens:* need quick access to the right enterprise data assets to find information across silos and make business decisions<br/>
+*Target persona: Business Analyst:* need quick access to data to drive and create analytical assets to make business decisions<br/>
+*Target persona: Data Scientist:* need to spend less of their time looking for and preparing data. Data science teams are looking for an easier way to find and consume existing data, functions, models and track lineage<br/>
+*Target persona: Data Architect:* need the requisite data in a real-time fashion to overcome data lack challenges<br/><br/><br/>
+More details are available in the <a href='https://ibm.seismic.com/Link/Content/DCbRbJfD32FgfGC2VqB2XFH74F3j' target='_blank' rel='noreferrer noopener'>Client Presentation</a>
+
+## What should I know about IBM Governance Catalog (IGC) modernization to IKC?
+While we have largely achieved functional parity with IBM InfoSphere® Information Governance Catalog (IGC)and/or IBM Information Analyzer (IA) with the release of IKC on Cloud Pak for Data 4.8, CSMs and Account Teams should be very deliberate in how and when to have these conversations with clients. <br/><br/>
+
+**What’s the risk?** <br/>
+In addition to the functional gaps we closed with Cloud Pak for Data 4.7, we also introduced a set of semi-automated migration tools to assist clients who deployed the XMETA-based components that were part of WKC. These tools help clients get from older versions of WKC to IKC  4.7, but they do not support the semi-automated migration from IGC/IA to IKC. These tools have been enhanced throughout 2H23 and will support IGC/IA migration to Cloud Pak for Data with the release of 4.8. <br/><br/>
+
+**Is Information Server reaching end of life?** <br/>
+No. While its true our investment in data movement, transformation and governance is focused on DataStage and IKC on Cloud Pak for Data, there are no imminent plans to end support for Information Server. If it's working for clients, they can continue to run this environment and be confident they will continue to receive support. <br/><br/>
+
+**What about this Free Migration Assessment?** <br/>
+It's true! Expert Labs has developed a free migration assessment. The data collection part of the assessment can be useful to help plan for the eventual migration <br/><br/>
+
+**So what should I do?** <br/>
+Refer to the <a href='https://pages.github.ibm.com/csm-playbook/playbook/common/modernization/modernization-igc-wkc' target='_blank' rel='noreferrer noopener'>modernization play for IGC to IKC</a> for modernization specific guidance.
+
+## The steps to deploy and who is responsible for what, when?
+
+IBM Knowledge Catalog follows the traditional model of: <br/><br/>
+1: **Identifying a pain point, sponsor and use case**<br/>
+The IBM team of Sales, Tech Sales and potentially CSM can use the list of pain points above to identify use cases and sponsors<br/><br/>
+2: **Demonstrating how a given pain point can be addressed (demo)**<br/>
+The <a href='https://ibm.seismic.com/Link/Content/DCpJhJb8RBMhb8228FqVgbGhmqfV#/?anchorId=1355e213-3b9c-44e9-accd-26b96a389fc5' target='_blank' rel='noreferrer noopener'>demonstrations</a> in Seismic can be used to help show the customer how IBM Knowledge Catalog can be used to address the problem areas<br/><br/>
+3: **Proving value (proof of experience (PoX))**<br/>
+Tech Sales, Client Engineering and CSM can work together to connect IBM Knowledge Catalog to the customers' systems and prove the capabilities resolve the pain points.<br/><br/>
+4: **Implementation project**<br/>
+Technology Expert Labs, Business Partners and IBM Consulting can take ownership of an implementation project and guide the customer through the implementation project.<br/>
+
+## What do CSM driven deployments look like?
+
+<a href='https://w3.ibm.com/w3publisher/customersuccess/spotlight-stories/2022-csm-spotlight/lockheed-martin' target='_blank' rel='noreferrer noopener'>Lockheed Martin</a> is an illustration of an IKC deployment that was driven by a CSM. Joe, along with Technology Expert Labs, guided Lockheed Martin through the identification and co-creation of use cases. Data Fabric is a broad subject area and it was critical to break down and prioritize the use cases into achievable chunks. The partnership between CSM, Expert Labs and the customer facilitated skills transfer to help with the long-term ownership and management of the platform
+
+## How do I expand and grow IBM Knowledge Catalog usage?
+
+Use Case and Sponsors will ensure a successful first project deployment. From there, the positioning of additional services driven by new use cases will validate the need for additional compute or CP4D services.<br/>
+Data Governance use cases can lead to Data Quality & Discovery and vice-versa. Data Discovery use cases lead to Data Consumption use cases.
+
+
+## There isn't a current use case, where do I start?
+As a CSM drive to at least gain approval from the customer to run a discovery workshop to identify and prioritize use cases and potential solution designs. <br/>
+Do this with the participation of IT and LOB in the room or MURAL session at the same time. <br/>
+If you need assistance running a workshop reach out to the Practice Leaders: Dave Mulley or Campbell Robertson for assistance. <br/>
+You can also ask to have Client Engineering, Data Elite Team, Data Science Elite team or Technology Expert Labs (Paid Engagement)
+
+## IBM Fusion HCI Storage Considerations
+
+IBM Fusion HCI is a hyper-converged infrastructure (HCI) solution that integrates the Red Hat OpenShift container platform with a hybrid cloud data platform. It offers a turn-key enterprise-grade solution for deploying Red Hat OpenShift and simplifies the management of hardware and software. This solution is designed to be highly scalable, with features like erasure coding for data resilience, local and remote backup and recovery, and a global data platform for storage resources.
+
+Key technical aspects of IBM Spectrum Fusion HCI include:
+- Integrated HCI appliance for containers
+- Scalable containerized file system
+- Data resilience for backup and recovery
+- Simple installation and maintenance
+- Global data platform for storage resources
+- Integration with IBM Cloud Satellite® and Red Hat ACM
+- Support for AI applications with optional NVIDIA A100 GPUs
+- Scalability from 6 to 20 servers.
+
+IBM Spectrum Fusion HCI eliminates the need for excess VM layers typical in container environments, providing an optimized solution for running cloud-native applications and containers. It offers transparent access to data, simplifying both development and operational tasks. The solution is designed to be simple to manage, integrate with current and hybrid cloud environments, build and run container applications, deploy Red Hat OpenShift, and manage storage services efficiently.
+
+In summary, IBM Fusion HCI (IBM Spectrum Fusion HCI) is a comprehensive hyper-converged infrastructure solution that combines the capabilities of Red Hat OpenShift with a hybrid cloud data platform to provide a scalable, resilient, and easy-to-manage environment for containerized applications and AI workloads.
+
+For further information go to the Storage section of the <Link to='/common/storage/fusionHCI/'>Fusion HCI playbook.</Link>
+
+</Column>
+
+<Column colMd={5} colLg={5} noGutterMdLeft>
+
+<br/>
+
+<Aside>
+
+**Customer Success Practice Leader:** Dave Mulley (@Dave Mulley)<br/>
+**CSM Slack Channel:** <a href='https://ibm-cloud.slack.com/archives/C01L3NASBUJ' target='_blank' rel='noreferrer noopener'>csm-data-ai</a><br/>
+**Learn:** <a href='https://ibm.seismic.com/Link/Content/DCbRbJfD32FgfGC2VqB2XFH74F3j' target='_blank' rel='noreferrer noopener'>IBM Knowledge Catalog Introduction</a> <br/>
+**Demo:** <a href='https://ibm.seismic.com/Link/Content/DCpJhJb8RBMhb8228FqVgbGhmqfV#/?anchorId=1355e213-3b9c-44e9-accd-26b96a389fc5' target='_blank' rel='noreferrer noopener'>Functionality Demonstrations</a> <br/>
+**Roadmap:** <a href='https://ibm.seismic.com/Link/Content/DCpJhJb8RBMhb8228FqVgbGhmqfV#/?anchorId=ae9df2a5-b457-462d-b5dc-c48adc5054d9' target='_blank' rel='noreferrer noopener'>Seismic</a><br/>
+**Seismic:** <a href='https://ibm.seismic.com/Link/Content/DCpJhJb8RBMhb8228FqVgbGhmqfV' target='_blank' rel='noreferrer noopener'>Sales Kit</a> with Presentations and Pre-sales assets<br/>
+**Tech Zone:** <a href='https://techzone.ibm.com/collection/data-ai-live-demos-collection' target='_blank' rel='noreferrer noopener'>Assets</a> with Demo environments and enablement<br/>
+
+</Aside>
+
+<Aside>
+
+**Build your skills**<br/>
+CSM U <a href='https://w3.ibm.com/w3publisher/customersuccess/get-learning/csm-university/cloud-pak-platform' target='_blank' rel='noreferrer noopener'>Self-paced learning plan</a><br/>
+Use the tutorials <a href='https://ibm.seismic.com/Link/Content/DCpJhJb8RBMhb8228FqVgbGhmqfV#/?anchorId=1355e213-3b9c-44e9-accd-26b96a389fc5' target='_blank' rel='noreferrer noopener'>in Seismic</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Who can help me?**<br/>
+**Client Engineering** and **Tech Sales** also have the skills required to perform Proof of Value engagements.<br/>
+**Technology Expert Labs** can deliver solution design, deploy production environments, deliver full stack observability, create outcome SOW and account plans (for a fee)<br/>
+**TEL locator: <a href='https://ibm.biz/FindIBMSellers' target='_blank' rel='noreferrer noopener'>>Find IBM Sellers</a>**<br/>
+**TEL Contacts: <a href='http://ibm.biz/ExpertLabs-WWContacts' target='_blank' rel='noreferrer noopener'>>TEL-SW Services Sales</a>**<br/>
+**TEL Assistance: <a href='https://ibm.biz/grow-my-deal' target='_blank' rel='noreferrer noopener'>>www.ibm.biz/grow-my-deal</a>**<br/>
+**TEL <a href='https://w3.ibm.com/w3publisher/americasexpertlabs/our-team/solution-architect-team' target='_blank' rel='noreferrer noopener'>>Solution Architects</a>**<br/>
+**Slack: <a href='https://ibm.biz/ask-expert-labs' target='_blank' rel='noreferrer noopener'>>#ask-expert-labs</a> (IBMers only)**<br/>
+**Technology Expert Labs Data & AI Offerings Detail: <a href='https://ibm.seismic.com/Link/Content/DCRjRRmhcDWJc8mMgGh2CHCPV7Gj' target='_blank' rel='noreferrer noopener'>Link</a>**<br/>
+
+</Aside>
+
+<Aside>
+
+**Customer facing case studies?**<br/>
+<a href='https://www.ibm.com/blogs/journey-to-ai/2021/01/danske-bank-brings-teams-together-with-data-governance-and-privacy' target='_blank' rel='noreferrer noopener'>Danske Bank</a> evolves their data governance practicw with IBM IBM Knowledge Catalog <br/>
+<a href='https://www.ibm.com/blogs/journey-to-ai/2020/06/standard-bank-group-is-preparing-to-embrace-africas-ai-opportunity' target='_blank' rel='noreferrer noopener'>Standard Bank</a> drives growth in challenging times with IBM Cloud Pak for Data and IBM DataOps solutions
+
+</Aside>
+
+<Aside>
+
+**Workshops**<br/>
+<a href='https://ibm.seismic.com/Link/Content/DCMf2TXmDc3FX8WJ2mWGfJm2j6md' target='_blank' rel='noreferrer noopener'>Technology Expert Labs Jumpstart</a><br/>
+<a href='https://ibm.seismic.com/Link/Content/DCdWq462gq9b48hDb7bmX96qHPjG' target='_blank' rel='noreferrer noopener'>Technology Expert Labs Initiate</a><br/>
+</Aside>
+
+
+<Aside>
+
+**Technology Expert Labs offerings**
+<a href='https://ibm.seismic.com/Link/Content/DC7RBFDmHfpQFGMCJV227XGjdJmd' target='_blank' rel='noreferrer noopener'>Establish a Data Catalog</a><br/>
+<a href='https://ibm.seismic.com/Link/Content/DCDVRqXhBhRDG84DXgFjpPmhGRR8' target='_blank' rel='noreferrer noopener'>Install</a><br/>
+<a href='https://ibm.seismic.com/Link/Content/DCWHgD7fp7C7VG7M9mWgRC3gHH38' target='_blank' rel='noreferrer noopener'>Day 2 operations</a><br/>
+<a href='https://ibm.seismic.com/Link/Content/DCCQWqj7P2pXJ82WXcgDTfpjgXB8' target='_blank' rel='noreferrer noopener'>Performance assessment and recommendations</a><br/>
+<a href='https://ibm.seismic.com/Link/Content/DCRjRRmhcDWJc8mMgGh2CHCPV7Gj' target='_blank' rel='noreferrer noopener'>All offerings</a><br/>
+</Aside>
+
+</Column>
+
+</Row>
+

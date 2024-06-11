@@ -1,0 +1,425 @@
+---
+title: DRAFT watsonx SaaS Security
+description: Content on watsonx SaaS Security Consirations and planning
+keywords: 'watsonx security'
+date: 23 April 2024
+---
+
+import {Link} from 'gatsby'
+
+**NOTE: THIS IS A DRAFT PAGE**.  All content and effort was provided by [Mebhoob Alam](mehboob@us.ibm.com), STSM, Security and Compliance for Data & AI.  Please reach out to the Practice Leaders @cir to work through the material provide feedback and or suggestions.
+
+## Logical Access Controls
+
+IBM Cloud logical access controls protect watsonx system resources from unauthorized access in accordance with defined security policies and procedures. These policies and procedures consist of controls that are designed for the identification and authentication of users, the setting of secure system parameters, the logging of access and the identification and reporting of access violations, as necessary. To this effect, the Security Operations Team monitors the settings so that access levels remain correct.
+
+Account security mechanisms for IBM watsonx are provided by IBM Cloud. These security mechanisms, including SSO and role-based, group-based, and service-based access control, protect access to resources and provide user authentication.
+
+| **Mechanism**  | **Purpose** | **Responsibility** | **Configured on** |
+| ---- | ---- | ---- | --- |
+| [Access (IAM) roles](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#iam-access-roles)                         | Provide role-based access control for services                                                           | Customer           | IBM Cloud         |
+| [Access groups](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#access-groups)                                 | Configure access groups and policies                                                                     | Customer           | IBM Cloud         |
+| [Resource groups](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#resource-groups)                             | Organize resources into groups and assign access                                                         | Customer           | IBM Cloud         |
+| [Service IDs](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#service-ids)                                     | Enables an application outside of IBM Cloud access to your IBM Cloud services                            | Customer           | IBM Cloud         |
+| [Service ID API keys](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#service-id-api-keys)                     | Authenticates an application to a Service ID                                                             | Customer           | IBM Cloud         |
+| [Activity Tracker](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#activity-tracker)                           | Monitor events related to IBM watsonx                                                                    | Customer           | IBM Cloud         |
+| [Multifactor authentication (MFA)](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#multifactor-authentication) | Require users to authenticate with a method beyond ID and password                                       | Customer           | IBM Cloud         |
+| [Single sign-on authentication](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-account.html?context=wx&audience=wdp#single-sign-on)                | Connect with an identity provider (IdP) for single sign-on (SSO) authentication by using SAML federation | Shared             | IBM Cloud         |
+IBM watsonx provide ID administration services on all computing platforms within the IBM watsonx systems. IBM Software’s responsibilities for IBM watsonx include the following:
+
+-develop and document procedures;
+
+-manage and fulfill access requests;
+
+-create and maintain accounts;
+
+-revalidate authorized IBM watsonx devops access and modify access according to responses;
+
+-revoke/re-assign system access associated with IBM watsonx devops terminated users and revoke/re-assign customer system access upon notification;
+
+-respond to access-related trouble tickets;
+
+-implement, maintain, administer, and use the software tools;
+
+-control and manage emergency and privileged access (e.g., root access on Linux); and provide support for major changes (e.g., people moves, infrastructure changes).
+
+**Devops access** to bare metal and virtual machines in the IBM Cloud Kubernetes Service(IKS) environment and Red Hat OpenShift Kubernetes Service (ROKS) Cloud  is provisioned and managed either locally at the device-level, or through Active Directory (AD) privilege groups. Devops access to virtual Kubernetes worker node clusters used by IBM watsonx team is provisioned and managed through access policies provisioned through the Identity Access Management (IAM) portal. All access regardless of source, is tracked in a user ID management tool to support the following ID Administration control processes.
+
+**New User Provisioning:** User profile privileges are granted only to authorized personnel based on required job functions. System users are authorized in accordance with the defined security policy with the approval of management. In order to obtain access to the IBM watsonx systems, user access requests are required to be submitted through the user ID management tool. If user access requests are done manually, evidence of manual access request and corresponding approval is recorded. Access is granted based upon business role requirements, with each access request requiring approval in accordance with defined security policy.
+
+**User Revalidation:** Processes are in place to review user access rights periodically through a revalidation program, which evaluates continued business need. On a periodic basis, the user ID management tool automatically generates a revalidation notification to all managers. The notification includes all active users and their corresponding system access rights. Managers receive a revalidation notification for all direct reports and are required to review the access list within the notification and determine whether a continued business need exists. If access for a user is no longer required, the manager will submit a delete/revoke request. Once a delete/revoke request has been submitted, access is required to be disabled in accordance with the defined security policy. If user access is managed manually, evidence of all active users and their corresponding system access rights are revalidated for continued business need and manually recorded in accordance with defined security policy.
+
+**Terminated User De-provisioning:** IBM Software has a formal global separation process designed to promote consistent management activities, but which may also have country specific activities and variations. User access assigned to any terminated individuals on IBM watsonx networks, platforms, operating systems, or devices is designed to be deleted or re-assigned to a new owner in accordance with the defined security policy. Upon termination of an employee, the Security Operations Team is notified via a user access delete/revoke request, and access is designed to be deleted/revoked in accordance with the defined security policy.
+
+Where customers create service specific user IDs on the IBM watsonx systems, customers are responsible for management of these accounts including fulfilling access requests, revoking/reassigning access, revalidation, and responding to access-related issues.
+
+IBM watsonx provides attribute-based access control to protect workspaces such as projects and catalogs. You control access to workspaces by assigning roles and by restricting collaborators.
+
+| Collaborator security mechanisms for IBM watsonx                                                                                                          |                                              |                    |                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ------------------ | ----------------- |
+| **Mechanism**                                                                                                                                             | **Purpose**                                  | **Responsibility** | **Configured on** |
+| [Collaborator roles](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-collab.html?context=wx&audience=wdp#collaborator-roles) | Assign roles to control access to workspaces | Customer           | IBM watsonx       |
+### Collaborator roles
+
+Everyone working in IBM watsonx is assigned a role that determines the workspaces that they can access and the tasks that they can perform. Collaborator roles control access to projects, deployment spaces, and catalogs using permissions specific to the role. Roles are assigned in IBM watsonx to provide **Admin**, **Editor**, or **Viewer** permissions.
+
+Users also have an IAM Platform access role for the Cloud account and they may also have an IAM Service access role for workspaces. To understand how the roles provide secure access, see [Roles in IBM watsonx](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/roles.html?context=wx&audience=wdp).
+
+To understand the permissions for each collaborator role, see [Project collaborator roles](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/collaborator-permissions.html?context=wx&audience=wdp).
+
+# Data Security
+
+In IBM watsonx, data security mechanisms, such as encryption, protect sensitive customer and corporate data, both in transit and at rest. A secure, and other mechanisms protect your valuable corporate data. A secure IBM Cloud Object Storage instance stores data assets from projects, catalogs, and deployment spaces.
+
+| Data security mechanisms for IBM watsonx                                                                                                                                                                  |                                                                                    |                         |                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------- | -------------------------- |
+| **Mechanism**                                                                                                                                                                                             | **Purpose**                                                                        | **Responsibility**      | **Configured on**          |
+| [Configuring Cloud Object Storage](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=wx&audience=wdp#configuring-cloud-object-storage)                       | IBM Cloud Object Storage is required to store assets                               | Customer                | IBM Cloud                  |
+| [Controlling access with service credentials](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=wx&audience=wdp#controlling-access-with-service-credentials) | Authorize a Cloud Object Storage instance for a specific project                   | Customer                | IBM Cloud and IBM watsonx  |
+| [Encrypting at rest data](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=wx&audience=wdp#encrypting-at-rest-data)                                         | Default encryption is provided. Use IBM Key Protect to manage your own keys.       | Shared                  | IBM Cloud                  |
+| [Encrypting in motion data](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=wx&audience=wdp#encrypting-in-motion-data)                                     | Encryption methods such as HTTPS, SSL, and TLS are used to protect data in motion. | IBM, Third-party clouds | IBM Cloud, Cloud providers |
+| [Backups](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-data.html?context=wx&audience=wdp#backups)                                                                         | Use IBM Cloud Backup to manage backups for your data.                              | Shared                  | IBM Cloud                  |
+### Configuring Cloud Object Storage
+
+IBM Cloud Object Storage provides storage for projects, catalogs, and deployment spaces. You are required to associate an IBM Cloud Object Storage instance when you create projects, catalogs, or deployment spaces to store files for assets, such as uploaded data files or notebook files. Information that is stored in IBM Cloud Object Storage is encrypted and resilient. Each workspace has its own dedicated bucket.
+
+You can encrypt the Cloud Object Storage instance that you use for workspaces with your own key. See [Encrypt IBM Cloud Object Storage with your own key](https://dataplatform.cloud.ibm.com/docs/content/wsj/console/wdp_admin_cos.html?audience=wdp&context=analytics#byok).
+
+When you create a workspace, the Cloud Object Storage bucket defaults to Regional resiliency. Regional buckets distribute data across several data centers that are within the same metropolitan area. If one of these data centers suffers an outage or destruction, availability and performance are not affected.
+
+If you are the account owner or administrator, you administer Cloud Object Storage from the **Resource list > Storage** page on the IBM Cloud dashboard. For example, you can upload and download assets, manage buckets, and configure credentials and other security settings for the Cloud Object Storage instance.
+
+You can also access data sources in an IBM Cloud Object Storage instance. To access data IBM Cloud Object Storage, you create an IBM Cloud Object Storage connection when you want to connect to data stored in IBM Cloud Object Storage. An IBM Cloud Object Storage connection has a different purpose from the IBM Cloud Object Storage instance that you associate with a project, deployment space, or catalog.
+
+The IBM Cloud Identity and Access Management (IAM) service securely authenticates users and controls access to IBM Cloud Object Storage. See [IBM Cloud docs: Getting started with IAM](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-iam "Opens a new window or tab") for instructions on setting up access control for Cloud Object Storage on IBM Cloud.
+
+See [IBM Cloud docs: Getting started with IBM Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)
+
+### Controlling access with service credentials
+
+Cloud Object Storage credentials consist of a service credential and a Service ID. Policies are assigned to Service IDs to control access. The credentials are used to create a secure connection to the Cloud Object Storage instance, with access control as determined by the policy.
+
+For more information, see [Controlling access to Cloud Object Storage buckets](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/cos_buckets.html?context=wx&audience=wdp)
+
+### Encrypting at rest data
+
+By default, at rest data is encrypted with randomly generated keys that are managed by IBM. If the default keys are sufficient protection for your data, no additional action is needed. To provide extra protection for at rest data, you can create and manage your own keys with IBM® Key Protect for IBM Cloud™. Key Protect is a full-service encryption solution that allows data to be secured and stored in IBM Cloud Object Storage.
+
+To encrypt your Cloud Object Storage instance with your own key, create an instance of the IBM Key Project service from the IBM Cloud catalog. Not all Watson Studio plans support customer-generated encryption keys.
+
+- For instructions on encrypting your Cloud Object Storage instance with your own key, see [Setting up IBM Cloud Object Storage for use with IBM watsonx](https://dataplatform.cloud.ibm.com/docs/content/wsj/console/wdp_admin_cos.html?context=wx&audience=wdp)
+- For an overview of how to encrypt data with your own keys, see [IBM Cloud docs: Encrypting data with your own keys](https://cloud.ibm.com/docs/overview?topic=overview-key-encryption)
+- For the complete documentation for Key Protect, see [IBM Cloud docs: IBM Key Protect](https://cloud.ibm.com/docs/key-protect)
+- For an overview of how encryption works in the IBM Cloud Security Architecture, see [Data security architecture](https://www.ibm.com/cloud/architecture/architectures/data-security-arch)
+
+### Encrypting in motion data
+
+Data is encrypted when transmitted by IBM on any public networks and within the Cloud Service's private data center network. Encryption methods such as HTTPS, SSL, and TLS are used to protect data in motion.
+
+### Backups
+
+To avoid loss of important data, create and properly store backups. You can use IBM Cloud Backup to securely back up your data between IBM Cloud servers in one or more IBM Cloud data centers. See [IBM Cloud docs: Getting started with IBM Cloud Backup](https://cloud.ibm.com/docs/Backup?topic=Backup-getting-started)
+
+**Learn More** For more information, see [IBM Cloud docs: Getting started with Security and Compliance Center](https://cloud.ibm.com/docs/security-compliance "Opens a new window or tab").
+
+**Parent topic:** [Security](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-overview.html?context=wx&audience=wdp)
+
+# Health Checking
+
+A health check policy is defined for each system based on the security configuration documented in the security requirements or security standard. Health checks are performed in accordance with the IBM watsonx systems security policy using the BigFix or Tenable Nessus health checking security tools or manually, which includes but is not limited to the following parameter checks:
+
+-All mandatory access control system options are set correctly, including authentication controls (e.g., minimum password length, detection/prevention of an unlimited number of invalid logon password attempts, and prevention of password re-use until after a specified number of iterations).
+
+-The required harmful code detection programs are installed and operational where they are available for the respective operating environment.
+
+-The required access and activity logs exist.
+
+Any deviations identified by service offerings during periodic health checks for worker nodes are documented and remediated by service offerings within the timeframes per the defined security policy.
+
+In addition to health checking virtual machines, network devices, and their corresponding operating systems, service offering teams performs health checks on container images in the production environment and the service offering teams perform health checks on container images in the production environment, except the IKS managed (armada-master) container images, according to configuration requirements set in the Vulnerability Advisor (VA) tool. VA checks the security status of container images both before deployment and while the container is running. Configuration deviations for active container images are identified via periodic reports generated from VA. If a configuration deviation is identified, the appropriate service offering team builds and deploys new container images that address the deviation within the timeframe required per the defined policy. The service offering IKS (armada-master) container images are automatically upgraded by the IKS team when any security vulnerabilities or configuration deviations are identified, and a new master fix is available. The Kubernetes master fix version changelog is published and made available within the IBM Cloud website.
+
+# Workstation Security
+
+IBM workstations employ a diagnostic tool that checks for core workstation security features, which automatically correct issues, or notifies workstation users of noncompliance. These checks include hard drive security (password protection or full disk encryption); screen saver; antivirus; firewall; database encryption, if required based on data sensitivity; workstation user account passwords; operating system pack level and security patch currency; as well as checks to verify certain features are not enabled such as file sharing capabilities.
+
+When non-compliance issues are identified, email notifications are sent to the registered user of each workstation requiring remediation. If not resolved, escalations via email are sent to managers of the employees that are not in compliance with the workstation policy, until the issue is resolved.
+
+# Security Patching
+
+The IBM watsonx service offering team is responsible for implementing the security patches within timeframes documented by policies and procedures for the IBM watsonx systems. Implementation of security patches is administered through the change management process. Monitoring is performed to verify the timely identification and implementation of security patches. IBM watsonx service offering responsibilities include the following:
+
+- develop and maintain applicable processes and procedures;
+
+-evaluate security patches as to applicability in the respective operating environments;
+
+-for applicable security patches, invoke change management processes;
+
+-implement applicable security patches in the respective operating environments; and
+
+-maintain records to demonstrate that the security patch implementation process is being performed.
+
+IBM Cloud Kubernetes Service is responsible for identifying patches applicable to all service offerings and making updated worker node images available to service offerings. Service offerings are responsible for updating all worker node systems with images released by IBM Cloud Kubernetes Service according to timeframes, per the defined security policy.
+
+In addition to patching virtual machines and their corresponding operating systems, the service offering teams monitor for security patches applicable to container images in the production environment and the service offering teams monitor for vulnerabilities on container images, except the IKS managed (armada-master) container images. The Vulnerability Advisor (VA) tool scans for required security patches of fixes applicable to container images both before deployment and while the container is running. Vendor-supplied security patches and fixes are identified via periodic reports generated from VA. If a security patch or fix is deemed required, the appropriate service offering team is responsible for building and deploying new container image updates within a timeframe appropriate to the nature and severity of the finding, per the defined policy. The service offering IKS (armada-master) container images are automatically upgraded by the IKS team when any security vulnerabilities or configuration deviations are identified and a new master fix is available. The Kubernetes master fix version changelog is published and made available within the IBM Cloud website.
+
+Furthermore, CrowdStrike Endpoint Detection and Response (EDR) monitoring agents are installed on all Kubernetes worker nodes to assess any anomalous activities that could represent inappropriate access and/or exploitation of unmitigated vulnerabilities. The log data is sent to the IBM Corporate Security Operations Center (SOC) via QRadar for further investigation. QRadar rules and custom monitoring rules in the CrowdStrike ruleset are used to determine that corrective action is required by the SOC team. The SOC team will open an incident ticket to the impacted service team through the IBM Cyber Security Incident Response Team (CSIRT) tool. Subsequently, the implementation of corrective actions is administered through the change management process. IBM is responsible for configuration and management of the monitoring rules including periodic review of the rulesets.
+
+# Vulnerability Scanning
+
+Vulnerability scans are executed against all production devices within the IBM watsonx systems. Vulnerability scans are executed based on the frequency defined within the policy for each device type. After the vulnerability scan is complete, a report is generated and any vulnerabilities identified are assigned severity levels based on the defined security policy.
+
+Vulnerabilities identified are tracked and remediated based on severity levels, as necessary, per the requirements of the defined security policy. Implementation of corrective actions are administered through the change management process.
+
+# Network Security
+
+IBM watsonx provides network security mechanisms to protect infrastructure, data, and applications from potential threats and unauthorized access. Network security mechanisms provide secure connections to data sources and control traffic across both the public internet and internal networks.
+
+| Network security mechanisms for IBM watsonx |  |  |  | 
+|**Mechanism**  | **Purpose**  | **Responsibility** | **Configured on** |
+| [Private network service endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#private-network-service-endpoints) | Access services through secure private network endpoints                                                          | Customer                        | IBM Cloud                  |
+| [Access to private data sources](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#access-to-private-data-sources)       | Connect to data sources that are protected by a firewall                                                          | Customer                        | IBM watsonx                |
+| [Integrations](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#integrations)                                           | Secure connections to Third-party clouds through a firewall                                                       | Customer and Third-party clouds | IBM watsonx                |
+| [Connections](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#connections)                                             | Secure connections to data sources                                                                                | Customer                        | IBM watsonx                |
+| [Connections to data behind a firewall](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#secure)                        | The Satellite Connector and Satellite location provide secure connections to data sources in a hybrid environment | Customer                        | IBM Cloud and IBM watsonx  |
+| [VPNs](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#vpns)                                                           | Share data securely across public networks                                                                        | Customer                        | IBM Cloud                  |
+| [Allow specific IP addresses](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#allow-specific-ip-addresses)             | Protect from access by unknown IP addresses                                                                       | Customer                        | IBM Cloud                  |
+| [Allow third party URLs](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#thirdpartyurls)                               | Allow third party URLs on an internal network                                                                     | Customer                        | Customer firewall          |
+| [Multi-tenancy](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#multi-tenancy)                                         | Provide isolation in a SaaS environment                                                                           | IBM and Third-party clouds      | IBM Cloud, Cloud providers |
+### Private network service endpoints
+
+Use private network service endpoints to securely connect to endpoints over IBM private cloud, rather than connecting to resources over the public network. With Private network service endpoints, services are no longer served on an internet routable IP address and thus are more secure. Service endpoints require virtual routing and forwarding (VRF) to be enabled on your account. VRF is automatically enabled for Virtual Private Clouds (VPCs).
+
+For more information about service endpoints, see:
+
+- [Securing connections to services with private service endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/endpoints-vrf.html?audience=wdp?context=wx&audience=wdp)
+- [Blog: Introducing Private Service Endpoints in IBM Cloud Databases](https://www.ibm.com/cloud/blog/introducing-private-service-endpoints-in-ibm-cloud-databases?mhsrc=ibmsearch_a&mhq=private%20cloud%20endpoints)
+- [IBM Cloud docs: Secure access to services using service endpoints](https://cloud.ibm.com/docs/account?topic=account-service-endpoints-overview)
+- [IBM Cloud docs: Enabling VRF and service endpoints](https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint)
+- [IBM Cloud docs: Public and private network endpoints](https://cloud.ibm.com/docs/watson?topic=watson-public-private-endpoints&mhsrc=ibmsearch_a&mhq=public%20cloud%20endpoints)
+ ## Access to private data sources
+
+Private data sources are on-premises data sources that are protected by a firewall. IBM watsonx requires access through the firewall to reach the data sources. To provide secure access, you create inbound firewall rules to allow access for the IP address ranges for IBM watsonx. The inbound rules are created in the configuration tool for your firewall.
+
+See [Configuring firewall access](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/firewall_ovrvw.html?context=wx&audience=wdp)
+
+
+Connections require valid credentials to access data. The account owner or administrator configures the type of credentials that are required, either shared or personal, at the account level. Shared credentials make the data source and its credentials accessible to all collaborators in the project. Personal credentials require each collaborator to provide their own credentials to use the data source.
+
+Connections require valid credentials to access data. The account owner or administrator configures the type of credentials that are required at the account level. The connection creator enters a valid credential. The options are:
+
+- **Either shared or personal** allows users to specify personal or shared credentials when creating a new connection by selecting a radio button and entering the correct credential.
+- **Personal** credentials require each collaborator to provide their own credentials to use the data source.
+- **Shared** credentials make the data source and its credentials accessible to all collaborators in the project. Users enter a common credential which was created by the creator of the connection.
+
+For more information about connections, see:
+
+- [Adding connections to projects](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/create-conn.html?context=wx&audience=wdp)
+- [Adding data from a connection to a project](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/create-conn.html?context=wx&audience=wdp)
+- [Adding platform connections](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/platform-conn.html?context=wx&audience=wdp)
+- [Managing your account settings](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/account-settings.html?context=wx&audience=wdp#set-the-credentials-for-connections)
+
+### Connections to data behind a firewall
+
+Secure connections provide secure communication among resources in a hybrid cloud deployment, some of which might reside behind a firewall. You have the following options for secure connections between your environment and the cloud:
+
+- [Satellite Connector](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#link)
+- [Satellite location](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/security-network.html?context=wx&audience=wdp#location)
+
+#### Satellite Connector
+
+A Satellite Connector uses a lightweight Docker-based communication that creates secure and auditable communications from your on-prem, cloud, or Edge environment back to IBM Cloud. Your infrastructure needs only a container host, such as Docker. For more information, see [Satellite Connector overview](https://cloud.ibm.com/docs/satellite?topic=satellite-understand-connectors&interface=ui "Opens a new window or tab").
+
+See [Connecting to data behind a firewall](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/securingconn.html?context=wx&audience=wdp##satctr) for instructions on configuring a Satellite Connector.
+
+Satellite Connector is the replacement for the deprecated Secure Gateway. For the Secure Gateway deprecation announcement, see [IBM Cloud docs: Secure Gateway Deprecation Overview](https://cloud.ibm.com/docs/SecureGateway?topic=SecureGateway-dep-overview "Opens a new window or tab")
+
+#### Satellite location
+
+A Satellite location provides the same secure communications to IBM Cloud as a Satellite Connector but adds high availability access by default plus the ability to communicate from IBM Cloud to your on-prem location. A Satellite location requires at least three x86 hosts in your infrastructure for the HA control plane. A Satellite location is a superset of the capabilities of the Satellite Connector. If you need only client data communication, set up a Satellite Connector.
+
+See [Connecting to data behind a firewall](https://dataplatform.cloud.ibm.com/docs/content/wsj/manage-data/securingconn.html?context=wx&audience=wdp#sl) for instructions on configuring a Satellite location.
+
+### VPNs
+
+Virtual Private Networks (VPNs) create virtual point-to-point connections by using tunneling protocols, and encryption and dedicated connections. They provide a secure method for sharing data across public networks.
+
+Following are the VPN technologies on IBM Cloud:
+
+-[IPSec VPN](https://cloud.ibm.com/catalog/infrastructure/ipsec-vpn): The VPN facilitates connectivity from your secure network to IBM IaaS platform’s private network. Any user on the account can be given VPN access.
+
+-[VPN for VPC](https://cloud.ibm.com/vpc-ext/provision/vpngateway): With Virtual Private Cloud (VPC), you can provision generation 2 virtual server instances for VPC with high network performance.
+
+-The Secure Gateway deprecation announcement provides information and scenarios for using VPNs as an alternative. See [IBM Cloud docs: Migration options](https://cloud.ibm.com/docs/SecureGateway?topic=SecureGateway-dep-migration-options#virtual-private-network "Opens a new window or tab").
+
+### Allow specific IP addresses
+
+Use this mechanism to control access to the IBM cloud console and to IBM watsonx. Access is allowed from the specified IP addresses only; access from all other IP addresses is denied. You can specify the allowed IP addresses for an individual user or for an account.
+
+When allowing specific IP addresses for Watson Studio, you must include the CIDR ranges for the Watson Studio nodes in each region (as well as the individual client system IPs that are allowed). You can include the CIDR ranges in IBM watsonx by following these steps:
+
+1. From the main menu, choose **Administration > Cloud integrations**.
+2. Click **Firewall configuration** to display the IP addresses for the current region. Use CIDR notation.
+3. Copy each CIDR range into the **IP address restrictions** for either a user or an account. Be sure to enter the allowed individual client IP addresses as well. Enter the IP addresses as a comma-separated list. Then, click **Apply**.
+4. Repeat for each region to allow access for Watson Studio.
+
+For step-by-step instructions for both user and account restrictions, see [IBM Cloud docs: Allowing specific IP addresses](https://cloud.ibm.com/docs/account?topic=account-ips "Opens a new window or tab")
+
+### Allow third party URLs on an internal network
+
+If you are running IBM watsonx behind a firewall, you must allowlist third party URLs to provide outbound browser access. The URLs include resources from IBM Cloud and other domains. IBM watsonx requires access to these domains for outbound browser traffic through the firewall.
+
+This list provides access only for core IBM watsonx functions. Specific services might require additional URLs. The list does not cover URLs required by the IBM Cloud console and its outbound requests.
+
+| Third party URLs allowlist for IBM watsonx |                                                    |
+| ------------------------------------------ | -------------------------------------------------- |
+| **Domain**                                 | **Description**                                    |
+| *.bluemix.net                              | IBM legacy Cloud domain - still used in some flows |
+| *.appdomain.cloud                          | IBM Cloud app domain                               |
+| cloud.ibm.com                              | IBM Cloud global domain                            |
+| *.cloud.ibm.com                            | Various IBM Cloud subdomains                       |
+| dataplatform.cloud.ibm.com                 | IBM watsonx Dallas region                          |
+| *.dataplatform.cloud.ibm.com               | CIBM watsonx subdomains                            |
+| eum.instana.io                             | Instana client side instrumentation                |
+| eum-orange-saas.instana.io                 | Instana client side instrumentation                |
+| cdnjs.cloudflare.com                       | Cloudflare CDN for some static resources           |
+| nebula-cdn.kampyle.com                     | Medallia NPS                                       |
+| resources.digital-cloud-ibm.medallia.eu    | Medallia NPS                                       |
+| udc-neb.kampyle.com                        | Medallia NPS                                       |
+| ubt.digital-cloud-ibm.medallia.eu          | Medallia NPS                                       |
+| cdn.segment.com                            | Segment JS                                         |
+| api.segment.io                             | Segment API                                        |
+| cdn.walkme.com                             | WalkMe static resources                            |
+| papi.walkme.com                            | WalkMe API                                         |
+| ec.walkme.com                              | WalkMe API                                         |
+| playerserver.walkme.com                    | WalkMe player server                               |
+| s3.walkmeusercontent.com                   | WalkMe static resources                            |
+|                                            |                                                    |
+|                                            |                                                    |
+|                                            |                                                    |
+|                                            |                                                    |
+### Network Segregation
+
+For IBM watsonx service offering, internal boundaries are established and maintained through logical access configurations within IAM. IBM watsonx users receive user IDs during. Each of these IDs is assigned to a unique access group created specifically for that user. Access privileges are then assigned to that group and the IDs within it, which dictate what data the user can access. The IDs, groups, and the data they can access, are secured via security certificates (known as tokens), which prohibit and grant access to customer data, depending upon the assigned security values. A given user can only access the data allowed by their token, which corresponds to the customer account they fall under. By maintaining segregation between customer access groups, the associated security restrictions prevent customers from accessing data other than their own.
+
+### Network and Intrusion Detection/Prevention System (IDS/IPS) Activity Monitoring
+
+IBM watsonx service offering team monitor and analyze the behavior of all critical network and server components, including remote access. Monitoring tools, such as Qradar, enable IBM Software to perform activity log monitoring and analysis of unusual behaviors or patterns. These tools monitor activity logs within the environment, triggering the generation of automated security alerts when offenses or potential threats are identified indicating that software is performing incorrectly, hardware faults are generated, or security issues are detected.
+
+Offenses that trigger automated alerts are pre-configured based on activity type, and depending on the offense severity level, are documented, tracked and responded to in accordance with the requirements of the defined security policy. Implementation of corrective actions are administered through the change management process.
+
+### Network Rule/Policy Revalidation
+
+A periodic network rule/policy revalidation is performed on all perimeter endpoints. Current endpoint configurations are reviewed in order to identify any unauthorized changes. If an unauthorized change is identified during the revalidation, the deviation is documented, tracked, and resolved via an incident management ticket, in accordance with the defined security policy.
+
+If a change to the endpoint configuration is required, the change management process is invoked accordingly. The change management record and the incident management ticket cross-reference to verify appropriate tracking of the deviation through to resolution, in accordance with the defined security policy.
+
+On at least an annual basis, the network endpoint configurations are reviewed for appropriateness.
+
+### Private endpoints
+
+## Penetration Testing
+
+External penetration tests are conducted on the IBM watsonx systems. The penetration tests are designed to discover IT security flaws that could be exploited by a malicious attacker to compromise internal systems and data. The assessments are conducted in three phases: reconnaissance, exploitation, and post-exploitation. As an outcome of the review, recommended solutions are proposed to mitigate or remediate the flaws identified. IBM watsonx service offering team develop remediation plans and, as necessary, changes are implemented through the change management process to remediate vulnerabilities.
+
+## Secure Data Transmissions (SSL/SSH) / Secure Data Storage
+
+Access to production systems is via SSH or a TLS-encrypted HTTPS connection. To provide security over the transmission of customer data, IBM watsonx network policy requires all network traffic traversing the Internet do so via an encrypted channel. Inbound and outbound data transmissions are secured using a combination of Rivest–Shamir–Adleman (RSA) public-key and Advanced Encryption Standard (AES) encryption.
+
+Systems (i.e., customer clusters) that store customer data at rest for the service offerings are subject to encryption. Customer data housed within a production environment are subject to at rest encryption utilizing Advanced Encryption Standard (AES) encryption and key management systems separating encryption keys from the data they encrypt.
+
+## Capacity Monitoring
+
+IBM Software manages defined system processing capacity and usage for the IBM watsonx systems, ensuring it monitors and responds to alerts in accordance with the defined security policy. The capacity monitoring process includes active monitoring to be able to identify and correct capacity/usage related issues before they affect system performance. Where appropriate, processes are in place to prevent resources from being unavailable by implementing fault tolerance mechanisms, prioritizing tasks, and equitable resource allocation mechanisms.
+
+## Logging/Monitoring
+
+### Activity Tracker events
+
+You can see the events for actions for watsonx service instances that you provisioned in the IBM Cloud Activity Tracker. You can use the information that is registered through the IBM Cloud Activity Tracker service to identify security incidents, detect unauthorized access, and comply with regulatory and internal auditing requirements.
+
+To get started, provision an instance of the IBM Cloud Activity Tracker service. See [IBM Cloud Activity Tracker](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started "Opens a new window or tab").
+
+View events in the Activity Tracker in the same IBM Cloud region where you provisioned your services. To view the account and user management events and other global platform events, you must provision an instance of the IBM Cloud Activity Tracker service in the **Frankfurt (eu-de)** region. See [Platform services](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-cloud_services_locations#cloud_services_locations_core_integrated "Opens a new window or tab").
+
+- [Events for account and user management](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp#acct)
+- [Events for Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp#ws)
+- [Events for Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp#wml)
+- [Events for model evaluation (Watson OpenScale)](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp#wos)
+
+## Incident Management
+
+### Overview
+
+Incident management systems are designed and in place so that non-standard operational events are recorded, analyzed, and responded to in a timely manner, other than those incidents that are beyond IBM Software’s control to respond to, including incidents requiring assistance from outside parties, customers, or others where they were notified within the defined timeframe and are not available or choose not to respond to the incident within the specified timeframe. Incident management procedures are for isolating and responding to incidents with production systems and are adhered to by personnel. These procedures include the review, prioritization, and escalation of incidents based on the associated risks, and incident reports are created in the case of significant incidents.
+
+### Security Incident Management
+
+Security incidents are handled in accordance with IBM Software’s incident response, taking into account any data breach notification requirements under applicable law. Customers can report security incidents through the help/support desk or through the client support portal.
+
+When a report of a potential vulnerability is received, an IBM Product Security Incident Response Team (PSIRT) is logged in ServiceNow with the supporting details and a tracking number. The ServiceNow PSIRT is routed to the appropriate IBM Cloud service offering team for analysis. The service offering team subsequently attempts to reproduce the issue to verify whether it is a true vulnerability. After the initial analysis, the vulnerability undergoes further investigation by the service offering team to determine the underlying cause and possible methods of exploitation. The team completes the remediation plan for the vulnerability, taking into consideration the affected versions.
+
+Security incidents that have either already occurred or are identified in progress are logged with IBM CSIRT. Upon receiving notification of a security incident, The IBM CSIRT team takes ownership of investigating and resolving the reported security incident, with no further action required of the service offering unless otherwise instructed by the CSIRT team.
+
+### Internal and External Incident Management
+
+The ServiceNow incident management system provides an audit trail that allows tracing an incident to its underlying cause. Incident management integrates with change management, availability management and the configuration management systems. User support is established within a help desk function and responsible individuals interact with incident management personnel.
+
+The incident management process defines the targets for responding to customer raised incidents within the documented response time objectives, per the defined security policy. Customers initiate incident tickets via ServiceNow. Incident severity can be assigned by the customer reporting the incident based on pre-defined incident severity criteria. If an incorrect severity level is assigned by the customer, IBM Software support personnel have the ability to either downgrade or upgrade the incident severity when performing the initial incident assessment.
+
+Response time objectives (RTOs) are in place and communicated to each customer, which define the timeframe objective for incident response. Incident response is prioritized based on actual severity criteria, and each incident is documented, tracked, and responded to via an incident management ticket, per the defined security policy.
+
+## Change Management
+
+### Overview
+
+The overall change management process addresses implementations that may potentially impact the environment and includes changes to infrastructure and systems. The change management process does not include changes that are not within the scope of Operations support or have no effect on services.
+
+IBM Software is responsible for implementing changes in the IBM watsonx runtime environment including changes to individual components (e.g., equipment, systems and applications software, procedures, and environmental facilities) and coordination of changes across all components (collectively, “Change Management”). Existing controls take into consideration the identification, and prioritization of changes, emergency procedures, impact assessment, and change authorization.
+
+### Normal Change Management Process
+
+Normal, disruptive changes are subject to approval and testing prior to implementation. Both disruptive and non-disruptive changes require a formal change record (CR) in the change management tool. The CR is used to record the type of change/risk level. Disruptive changes are reviewed and approved prior to implementation. Non-disruptive (routine) changes to the infrastructure that do not have an impact on customer service are pre-approved therefore do not require approval within the change record.
+
+Test plans and backout plans are required for the majority of changes, however, this is dependent on the change type. Certain change types do not require test plans or backout plans as it may not be feasible or relevant. For change types that are subject to testing, each change passes through the development and staging environments for testing and will not progress to production deployment until each stage has been approved. Where applicable, backout plans are documented within the ServiceNow change record.
+
+Changes are not deployed prior to being reviewed and approved. Depending on the change type and impacted environment, the number and level of required reviewers and approvers may differ. Changes that may impact/disrupt the target environment require notification to affected users in advance of the disruption.
+
+### Emergency / Expedited Change Management Process
+
+When a production problem is encountered and an immediate fix is required in order to restore service and continue processing, operations have full authority to approve all changes and temporarily bypass the standard process. The process is designed so that a Severity 1 incident record should accompany all emergency category changes. This incident record details the nature of the problem and response.
+
+The change initiator is responsible for creating an implementation change record, from which he or she will document the changes installed outside of the standard Change Management process. The record, at a minimum, contains the incident ticket number, and indicates that it was created for auditing purposes. Verbal approval is sufficient prior to implementation, however, electronic approval of the change record must be in place prior to the change record being closed. An emergency change record can be documented after the change is implemented, however, it must be opened, electronically approved, and closed within one business day following the implementation of the change. The required approvers in the emergency change management process are the same as the approvers required in the standard change management process.
+
+### Pre-Approved Non-Disruptive Change Management Process
+
+A Pre-Approved Non-Disruptive Change occurs when there is already an existing process to handle routine operations on a regular basis. This type of change only applies to recurring low risk non-disruptive infrastructure changes, including but not limited to: routine component deployments of new builds, common maintenance, routine client environment migrations. Changes categorized as Pre-Approved Non-Disruptive are pre-approved based on the routine nature of the change, including the established process to effectively implement the change to production on a recurring basis without disruption.
+
+### Software Support, Maintenance and Upgrades
+
+IBM Software provides support, routine and preventive maintenance, and upgrades for all of the software used or provided by IBM watsonx, as appropriate. This includes coordinating support from third-party vendors that supply hardware and software.
+
+IBM Software performs provisioning activities and performs installation and maintenance activities in scheduled maintenance windows. IBM Software notifies the customer promptly of any problems that might be expected to affect availability of the system within established maintenance windows. Maintenance or upgrade activity is administered through the change management process. When a maintenance or upgrade activity necessitates system downtime, IBM Software will, in certain cases, notify the impacted customers.
+
+## Computer Operations
+
+### Restoration
+
+Customer data residing within the IBM watsonx systems is replicated across data centers/regions. In case of a disruption at one site, the other site continues uninterrupted functionality. On an annual basis, the IBM watsonx service offering team performs a restore test in non-production environments to verify that if a data center goes down, a customer is not impacted and is able to continue to use the service offering with limited interruption. Any necessary remediation over the replication settings is made based on the result of the restore test.
+
+Based on the IBM Cloud Kubernetes service commitments, worker nodes in one zone are not guaranteed to be on separate physical compute hosts. To protect against this failure, it is the responsibility of the customer to implement and manage customer owned system level backup and restoration processes, which may include setting up a multizone cluster or creating multiple single zone clusters in different zones.
+
+### Business Continuity & Disaster Recovery
+
+Both a Business Continuity Plan (BCP) and Disaster Recovery Plan (DRP) have been designed to be used in the event of a disaster affecting the IBM watsonx systems. A business disruption or disaster can result from a number of accidental, malicious, or environmental events such as fire, flood, terrorist attack, cyber-attack, pandemic, human error, and software or hardware failures. The BCP and DRP provide for the identification and response to threats, notification and intercommunication for data center employees and management, procedures to follow during a disaster, damage assessment, and team member roles and responsibilities.
+
+The decision to initiate business continuity or disaster recovery procedures will be taken by executive management after assessing the situation following a disaster or crisis. If management decides to initiate continuity or recovery procedures, employees are required to follow the procedures contained within the BCP and DRP until normal operation is restored.
+
+The BCP and DRP plans are reviewed and tested at least annually.
+
+### Backup
+
+IBM Software holds responsibility for IBM watsonx core component backups on systems that are not redundant, or are configured in such a way that a cluster would not provide the necessary recovery options. Service offering teams identify critical data and perform backups periodically to meet service objectives.  IBM watsonx backups are monitored by the IBM Software operations teams for any issues. Any issues identified during the backups are documented, tracked, and responded to in accordance with the requirements of the defined security policy.
+
+### Data
+
+The integrity and conformity with regulatory requirements of data sent to the IBM watsonx systems are solely the responsibility of the customers of the IBM watsonx systems. The IBM watsonx systems is at no time fulfilling the responsibilities of the Data Controller. Customers are responsible for maintaining their data and appointing the appropriate Data Controllers.

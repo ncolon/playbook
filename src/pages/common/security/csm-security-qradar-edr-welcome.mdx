@@ -1,0 +1,50 @@
+---
+title: QRadar EDR / XDR SaaS welcome letter
+description: Content on QRadar EDR welcome letter
+keywords: 'EDR ReaQta'
+date: 22 February 2024
+---
+
+
+## Example welcome email when QRadar EDR is provisioned for customer use
+
+
+Subject: Welcome to QRadar EDR
+
+Hello,
+
+Your IBM QRadar EDR deployment is ready.
+
+Access your IBM Security QRadar Suite - EDR offering at (EDR URL), you can log in with admin@reaqta.com. You will receive a second email shortly with an encrypted file containing your password. To decrypt the file, use this password: (decryption pass)
+
+The Endpoint Registration address is: (agents url)
+
+You can access your (non-EDR offerings) offering(s) at (UAX URL). The following users have been given access:
+
+(List of on boarded emails)
+
+Users who do not have an associated IBMid were not added to your deployment. These users can create IBMids at: https://ibm.com/account
+
+To add additional users, see (offering onboarding doc link). Your IBM Verify instance URL is (IBM Verify domain).
+
+If you have a firewall blocking outgoing traffic, please be sure to open the firewall between the DC machine and port 9194 on the Kafka server. There are three potential Kafka servers in the backend, which have these IP addresses:
+- kafka-01_bootstrap_servers_external_ip_1 <br /> 
+- kafka-01_bootstrap_servers_external_ip_2 <br />
+- kafka-01_bootstrap_servers_external_ip_3 <br />
+
+This will be the list of domain names that will be utilized:
+- kafka-01_bootstrap_servers_external_1 <br />
+- kafka-01_bootstrap_servers_external_2 <br />
+- kafka-01_bootstrap_servers_external_3
+
+Read the IBM Security QRadar Suite documentation here at: (list applicable doc links)
+
+To contact Customer Support, or to provide feedback, click the support icon in IBM Security QRadar Suite.
+
+You can subscribe to updates at https://statuspage.ibmcloudsecurity.com/ for the operational status of IBM QRadar Suite.
+
+Thank you for using IBM Security QRadar Suite!
+
+Regards,
+
+IBM Security QRadar Suite Team

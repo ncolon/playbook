@@ -1,0 +1,369 @@
+---
+title: watsonx.governance
+description: Technical content on watsonx.governance
+keywords: 'watsonx.gov, watsonx.gov deployment acceleration'
+date: 6 June 2024
+---
+
+import {Link} from 'gatsby'
+
+<InlineNotification kind="warning">
+
+
+**Note:**
+
+<ul>
+<li>All watsonx <strong>PLATFORM SaaS</strong> deployment threshold automation is under evaluation.
+<ul>
+<li>CSMs mark customers deployed in a Growth Plan with manager sign-off.</li>
+<li>Submit <a href='https://ibm.biz/watsonxdeploymentrequest' target='_blank' rel='noreferrer noopener'>the approval form</a> for WW reviews and validation. The status of approval will be communicated through email.</li>
+</ul>
+</li>
+<li><strong>AI Assistants and APIs</strong>(NON-PLATFORM) watsonx <strong>SaaS</strong> products the automated thresholds remain in place. If you are a CSM or market leader who believes your NON-PLATFORM product is deployed but is not reaching the threshold you can ask for an override through approval process as described below. A Growth Plan with manager sign-off must be in place before sending an override request.
+<ul>
+<li>For override and additional deployment, CSM or market leader should submit <a href='https://ibm.biz/watsonxdeploymentrequest' target='_blank' rel='noreferrer noopener'>the approval form</a>. The status of approval will be communicated through email.</li>
+</ul>  
+</li>
+<li>Only 2024 new SaaS deployments with a success plan will be approved.</li>
+<li>Each watsonx product deployed will be counted. i.e. A RAG use case with watsonx Assistant and watsonx.ai count as two deployments.</li>
+</ul>
+</InlineNotification>
+
+<AnchorLinks>
+<AnchorLink>Overview</AnchorLink>
+<AnchorLink>What are the watsonx.governance use cases?</AnchorLink>
+<AnchorLink>What is watsonx.governance?</AnchorLink>
+<AnchorLink>Key concepts for watsonx.governance</AnchorLink>
+<AnchorLink>watsonx.governance terminology</AnchorLink>
+<AnchorLink>watsonx.governance scoping, sizing, and implementation considerations</AnchorLink>
+<AnchorLink>watsonx.governance competitors</AnchorLink>
+<AnchorLink>watsonx.governance components</AnchorLink>
+<AnchorLink>IBM Fusion HCI considerations</AnchorLink>
+</AnchorLinks>
+
+
+<Row className="resource-card-group">
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+      subTitle="Guide and nurture your customers who have a watsonx.goverance SaaS entitlement"
+      title="watsonx.governance SaaS"
+      href="/common/data-ai/csm-data-ai-watsonx-gov-saas/">
+
+![watsonx.data saas](../images/watsonx-data.svg)
+
+</ResourceCard>
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+      subTitle="Work with CE and TEL to ensure the client starts their watsonx.governance deployments"
+      title="watsonx.governance acceleration"
+      href="/common/acceleration-plays/watsonx-gov-play/">
+
+![watsonx.data saas](../images/watsonx-data.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Compute and storage services for Watson AI, data and governance and watsonx.data"
+      title="watsonx & Fusion acceleration"
+      href="/common/acceleration-plays/watsonx-fusion-play/">
+
+![watsonx.data fusion accel](../images/watsonx-data.svg)
+
+</ResourceCard>
+
+</Column>
+</Row>
+
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+
+## Overview
+
+The core watsonx products are watsonx.ai and watsonx.data and watsonx.governance.  Understanding how they all fit together is important to conceptualize the capabilities and more importantly the value to a client. <br/><br/>
+Cloud Pak for Data is a key factor in the overall strategy for a client.  CP4D is the robust data fabric architecture and deployment platform for other key services in the Data & AI portfolio. <br/><br/> 
+
+
+
+## What are the watsonx.goverance use cases?
+IBM watsonx.governance is designed to help organizations streamline compliance processes and govern their entire AI lifecycle. Here are some key use cases for watsonx.governance:
+
+**Credit risk management:** Implement fair and transparent approval processes for credit decisions. Monitor models with alerts to detect risks like bias or inaccuracy, and automate documentation of model metadata with factsheets.<br/>
+
+**Responsible AI for business process outsourcing:** Monitor chatbot conversations for red flags like toxicity or personal information sharing. Support activities across finance, HR, and procurement with dashboards and customizable workflows.
+
+**Supply chain transparency:** Promote accountability within supply chains by proactively detecting and mitigating potential bias or errors in AI systems used for logistics optimization, cycle time reduction, and energy consumption management.
+
+**AI model risk monitoring:** Detect and mitigate risks like fairness issues, bias, and model drift across AI models from IBM, open-source, and other providers. Monitor new metrics for large language models (LLMs).
+
+**AI governance for Amazon SageMaker:** The integration allows monitoring and managing risks throughout the AI lifecycle for models deployed on Amazon SageMaker, ensuring responsible development practices.
+
+**Regulatory compliance:** Translate emerging AI regulations like the EU AI Act into enforceable policies within the organization's AI workflows.
+
+In summary, watsonx.governance provides tools to implement AI governance best practices, mitigate risks, promote transparency, and anticipate compliance across a wide range of enterprise AI use cases.
+
+
+## What is watsonx.governance? <br/>
+
+IBM watsonx.governance is a comprehensive toolkit designed to help organizations effectively govern and monitor their artificial intelligence (AI) models, including both generative AI (powered by Large Language Models or Foundation Models) and traditional machine learning models. 
+
+## Key Features and Capabilities:
+
+### Lifecycle Governance
+- Automates and scales model governance processes across the AI lifecycle
+- Provides stakeholder visibility through customizable dashboards and reports
+- Captures model metadata with factsheets for effortless documentation and reporting.
+
+### Risk Management
+- Monitors for fairness, bias, drift, and new metrics specific to Large Language Models
+- Proactively detects and mitigates risks based on pre-set thresholds
+- Enables organizations to manage risks associated with AI models, particularly those powered by Large Language Models or Foundation Models.
+
+### Compliance
+- Helps organizations anticipate and prepare for compliance with evolving AI regulations and industry standards
+- Translates regulations into enforceable policies to aid compliance efforts.
+### Transparency and Explainability
+- Enhances transparency by providing tools and processes that make AI model operations and results more understandable
+- Improves explainability and documentation of model health and functions.
+
+## Key Benefits
+- Provides a single integrated platform to govern both generative AI and machine learning models
+- Offers model choice and flexibility, supporting models from IBM, open-source communities, and other providers
+- Enables deployment on cloud or on-premises environments
+- Automates governance processes to reduce manual errors and accelerate responsible AI development
+- Increases visibility and control over AI deployments to ensure they operate as intended.
+
+IBM watsonx.governance aims to address the challenges organizations face in deploying AI safely and responsibly, enabling them to innovate with AI while maintaining transparency, accountability, and control over their AI initiatives.
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<br/><br/>
+
+<Aside>
+
+**Customer Success Practice Leader:** <br/>Campbell Roberstson (@cir), <br/>Tal Shahar (@Tal Shahar)<br/>
+**CSM Slack Channel:** <a href='https://ibm-cloud.slack.com/archives/C01L3NASBUJ' target='_blank' rel='noreferrer noopener'>csm-data-ai</a><br/>
+**FAQ:** <a href='https://ibm.seismic.com/Link/Content/DC7mpTM7XbPQW8fWgbM8FWPp9dJP' target='_blank' rel='noreferrer noopener'>Document</a><br/>
+**Learn:** <a href='https://ibm.ent.box.com/s/tkpc91j8xquzfc06iu6jtk8bobj1dyb1' target='_blank' rel='noreferrer noopener'>Enablement presentation</a><br/>
+**Demo:** <a href='https://watsonx.demohub.techzone.ibm.com/details/beb079b0-edc9-11ee-b1d8-2112d849a1a9' target='_blank' rel='noreferrer noopener'>Environment</a> <br/>
+**Roadmap:** <a href='https://ibm.seismic.com/Link/Content/DCMmpHHmJchDq8qW3dM9TX8qjW9d' target='_blank' rel='noreferrer noopener'>Deck</a> <br/>
+**Seismic:** <a href='https://ibm.seismic.com/Link/Content/DC2gJqq6D6TWRGWCQHGGHfTB2CXd' target='_blank' rel='noreferrer noopener'>Sales Kit</a> with Presentations and Pre-sales assets<br/>
+
+</Aside>
+
+<Aside>
+
+**Build your skills**
+
+### Foundational learning 
+
+watsonx.goverance <a href='https://ibm.seismic.com/Link/Content/DCJV3GBV4FfBR872W7BfpmqRpm7G' target='_blank' rel='noreffer noopener'> Functional Architecture</a><br/>
+
+CSMs should complete <br/> 
+<a href='https://yourlearning.ibm.com/activity/PLAN-E3DED51F67AA' target='_blank' rel='noreferrer noopener'>AI for Business Level 1 course</a><br/>
+<a href='https://yourlearning.ibm.com/activity/PLAN-402D037C5668' target='_blank' rel='noreferrer noopener'>AI Fundermentals Level 1 course</a><br/>
+<a href='https://yourlearning.ibm.com/activity/PLAN-08E169AA237E' target='_blank' rel='noreferrer noopener'>IBM watsonx.governance Level 2 course </a><br/>
+<a href='https://yourlearning.ibm.com/activity/PLAN-07AEB3D2563D' target='_blank' rel='noreferrer noopener'>Technical Sales Level 3 course </a><br/>
+<a href='https://yourlearning.ibm.com/activity/PLAN-D3476BF58A08' target='_blank' rel='noreferrer noopener'>Technical Sales Level 4 course </a><br/>
+
+
+</Aside>
+
+<Aside>
+
+**Who can help me?**
+
+**Client Engineering** and **Tech Sales** also have the skills required to perform Proof of Value engagements.<br/>
+
+Technology Expert Labs: 
+
+**TEL locator: <a href='https://ibm.biz/FindIBMSellers' target='_blank' rel='noreferrer noopener'>Find IBM Sellers</a>**<br/>
+**TEL Contacts: <a href='http://ibm.biz/ExpertLabs-WWContacts' target='_blank' rel='noreferrer noopener'>TEL-SW Services Sales</a>**<br/>
+**TEL Assistance: <a href='https://ibm.biz/grow-my-deal' target='_blank' rel='noreferrer noopener'>www.ibm.biz/grow-my-deal</a>**<br/>
+**TEL <a href='https://w3.ibm.com/w3publisher/americasexpertlabs/our-team/solution-architect-team' target='_blank' rel='noreferrer noopener'>Solution Architects</a>**<br/>
+
+**Slack: <a href='https://ibm.biz/ask-expert-labs' target='_blank' rel='noreferrer noopener'>#ask-expert-labs</a> (IBMers only)**<br/>
+
+</Aside>
+
+<Aside>
+
+**Customer-facing case studies?**
+
+Coming soon. However, some beta use cases were covered in Janine's <a href='https://secure.video.ibm.com/channel/25075714' target='_blank' rel='noreferrer noopener'>all hands call</a>  
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+
+| Key Challenges in LLM Model Governance                | IBM watsonx.governance Differentiators                                                                          |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Ensure accuracy and avoiding hallucinations | Automated factual accuracy checks and ability to compare outputs against reference data.                        |
+| Mitigating bias and discrimination                    | Bias detection and mitigation capabilities, including tracking model performance metrics like ROUGE, SARI, etc. |
+| Maintaining transparency and explainability           | Provides "factsheets" - AI nutrition labels for transparency into model inputs, outputs, and performance.       |
+| Managing compliance                                   | Mitigate AI risks by tracking the end-to-end AI lifecycle to aid compliance with internal policies and external regulations. |
+| End-to-end lifecycle governance                       | Supports full model lifecycle from development to testing to production deployment.                             |
+| Governing models across multiple platforms            | Ability to govern models built on IBM, AWS, Microsoft, Google and other platforms.                              |
+| Monitoring model drift over time                      | Model monitoring capabilities to detect drift or performance degradation.                                       |
+
+The key differentiator of IBM watsonx.governance is its comprehensive, end-to-end platform for governing generative AI models across the full lifecycle, while addressing critical challenges around accuracy, bias, transparency, compliance, and risk management. Its ability to govern models built on multiple platforms is also a standout capability.
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={9} colLg={9} noGutterMdLeft>
+
+## Key concepts for watsonx.governance
+
+IBM watsonx.governance is a comprehensive platform designed to manage and govern AI models within an enterprise. Here are some key technical concepts you need to understand:
+
+## Model Inventory and Metadata Management
+watsonx.governance maintains a centralized inventory of all AI models deployed across the organization. It captures and organizes metadata about these models throughout their lifecycle, including training data, algorithms, performance metrics, and more. This metadata is crucial for ensuring transparency, auditability, and compliance.
+
+## Risk Management
+The platform helps identify and mitigate risks associated with AI models, particularly those powered by large language models (LLMs) or foundation models. It can detect issues like data quality problems, bias, model drift, and potential leakage of personal or confidential information.
+
+## Transparency and Explainability
+watsonx.governance enhances the transparency of AI models by providing tools and processes that make their operations and decision-making more understandable. It can generate model factsheets, explanations, and visualizations to shed light on how models arrive at their outputs.
+
+## Continuous Monitoring and Alerting
+Continuous monitoring of deployed AI models is essential to ensure their reliability and performance over time. watsonx.governance offers real-time monitoring capabilities, performance tracking, and automated alerts for issues like model degradation, drift, or bias.
+
+## Governance Automation
+The platform enables organizations to automate various AI governance processes, such as model approval workflows, policy enforcement, and corrective actions. This helps maintain control over AI deployments and ensure they operate as intended.
+
+## Regulatory Compliance
+As AI regulations evolve, watsonx.governance assists organizations in anticipating and preparing for compliance with future AI-focused regulations. It can translate these regulations into enforceable policies and support compliance efforts.
+
+## Integration with IBM Cloud Pak for Data
+watsonx.governance integrates with IBM Cloud Pak for Data, providing a unified platform for end-to-end AI lifecycle management, including data management, model building, deployment, and monitoring.
+
+By understanding these key technical concepts, organizations can leverage watsonx.governance to implement responsible and trustworthy AI practices, manage risks, enhance transparency, and ensure compliance with emerging regulations.
+
+
+## watsonx.data terminology
+
+Here are some key technical terms related to IBM watsonx.governance that you should be familiar with:
+
+## AI Factsheets
+A component that automatically collects and documents metadata about machine learning models and prompt templates across their lifecycle. This aids in transparency and explainability.
+
+## Watson OpenScale  
+A tool within watsonx.governance that allows you to configure monitors to evaluate deployed AI assets (models, prompts) against specified thresholds for metrics like fairness, accuracy drift, toxic language, etc. It provides alerts when thresholds are breached.
+
+## Model Health Monitor
+A specific monitor in Watson OpenScale that provides real-time performance tracking for deployed models.
+
+## AI Risk Atlas
+An educational resource that describes potential risks when working with AI models like generative AI, foundation models, and machine learning. It provides context on risks rather than prescriptive guidance.
+
+## AI Use Case
+A defined business problem that requires an AI solution like a model or prompt template. Watsonx.governance allows tracking assets through the full lifecycle from use case definition to deployment.
+
+## Bias Monitoring 
+The ability to monitor models for unfair bias against protected groups or subpopulations during deployment.
+
+## Drift Monitoring
+Tracking when a model's predictions start deviating from its training data distribution, indicating a need for retraining.
+
+So in summary, key terms cover the factsheets for documenting models, the monitoring capabilities for evaluating deployed models, the AI use case concept for lifecycle tracking, and specific risk areas like bias and drift that can be monitored.
+
+
+## watsonx.data scoping, sizing, and implementation considerations
+
+When deploying IBM watsonx.governance, there are several key scoping, sizing, and implementation considerations to keep in mind:
+
+## Scoping Considerations
+
+- Identify the AI/ML use cases and models that require governance across the enterprise. This will determine the scope of watsonx.governance deployment.
+- Assess the existing data infrastructure, data sources, and data pipelines that feed into the AI/ML models to ensure proper data governance.
+- Evaluate the regulatory and compliance requirements specific to your industry and region that need to be addressed through AI governance.
+
+## Sizing Considerations  
+
+- Estimate the number of AI/ML models, their complexity, and the volume of data involved to determine the compute, storage, and scalability requirements.
+- Consider the number of stakeholders (data scientists, developers, business users) who will interact with the governance platform and their respective roles and permissions.
+- Assess the frequency of model retraining, monitoring, and reporting needs, as this will impact the resource requirements.
+
+## Implementation Considerations
+
+- Decide on the deployment model: on-premises, cloud, or hybrid, based on your organization's infrastructure and data residency requirements.
+- Integrate watsonx.governance with existing data management, model development, and deployment tools and platforms within your organization.
+- Establish governance policies, processes, and workflows aligned with your organization's AI ethics principles and regulatory requirements.
+- Plan for user onboarding, training, and change management to ensure smooth adoption of the governance platform.
+- Implement robust data lineage, model explainability, and bias detection mechanisms to enable responsible AI practices.
+- Set up monitoring, alerting, and reporting mechanisms to track model performance, drift, and compliance over time.
+
+By carefully considering these scoping, sizing, and implementation factors, organizations can effectively deploy IBM watsonx.governance to manage AI/ML models responsibly, mitigate risks, and ensure compliance with regulations and ethical standards
+
+**If sizing information is not available, refer** to the watsonx.governance sizing tools: <a href='https://app.ibmsalesconfigurator.com/#/zen/home' target='_blank' rel='noreferrer noopener'> Sales Configurator link</a> and the <a href ='https://ibm.seismic.com/Link/Content/DC4QGj6Q4Bjm487X6jp6dqm2QGqd' target='_blank' rel='noreferrer noopener'>watsonx.goverance T-Shirt Sizing.</a><br/><br/>
+
+
+## watsonx.governance competitors
+Given that watsonx.governance is addressing both the data lake and data warehousing fields by providing an open and flexible lakehouse topology the competitive field is broad this is the high-level view of of our major competitors. 
+
+
+Competitors are also covered in the <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DC23QRHj4h8XGG42q38FbH8gMFCd">seller enablement deck</a> and <a target='_blank' rel='noreferrer noopener' href="https://ibm.box.com/s/je7i8wf2tigejgj7r02bph9vrjld026w">CSM Office Hours recording</a>
+
+## watsonx.governance components
+IBM watsonx.governance is a platform designed to help organizations responsibly manage and govern the deployment of large language models (LLMs) and other AI models. Here are the key technical components of watsonx.governance:
+
+**Model Evaluation**: It evaluates AI models by producing various metrics associated with accuracy, drift, bias, and safety. This includes metrics indicating the use of potentially harmful language or how personally identifiable information (PII) is handled.
+
+**Lifecycle Management**: It provides automated alerts when models operate in ways they were not designed for and produces documentation on how models were developed and implemented to demonstrate compliance with regulations.
+
+**Risk Assessment**: It introduces a human element to governing AI rollouts by automating basic tasks while identifying areas requiring human intervention for accountability and transparency. This includes creating auditable documents showing which agents carried out specific checks on model behaviors.
+
+**Model Monitoring**: It monitors the health of models based on the size of the training dataset, throughput, latency, and other performance metrics to identify bottlenecks or drift.
+
+**Transparency and Explainability**: It aims to increase transparency and "explainability" of LLMs by providing tools to validate and understand their reasoning and outputs.
+
+**Regulatory Compliance**: It helps organizations anticipate and comply with upcoming AI regulations by translating regulatory requirements into enforceable policies within the platform.
+
+**Multi-Model Governance**: It allows organizations to manage, monitor, and govern AI models from various sources, including IBM, open-source communities, and other providers.
+
+In summary, watsonx.governance provides a comprehensive toolkit for organizations to evaluate, monitor, document, and govern the deployment of AI models, with a focus on transparency, risk management, and regulatory compliance.
+
+
+## IBM Fusion HCI considerations
+
+IBM Fusion HCI is a hyper-converged infrastructure (HCI) solution that integrates the Red Hat OpenShift container platform with a hybrid cloud data platform. It offers a turn-key enterprise-grade solution for deploying Red Hat OpenShift and simplifies the management of hardware and software. This solution is designed to be highly scalable, with features like erasure coding for data resilience, local and remote backup and recovery, and a global data platform for storage resources.
+
+Key technical aspects of IBM Spectrum Fusion HCI include:
+- Integrated HCI appliance for containers
+- Scalable containerized file system
+- Data resilience for backup and recovery
+- Simple installation and maintenance
+- Global data platform for storage resources
+- Integration with IBM Cloud Satellite® and Red Hat ACM
+- Support for AI applications with optional NVIDIA A100 GPUs
+- Scalability from 6 to 20 servers.
+
+IBM Spectrum Fusion HCI eliminates the need for excess VM layers typical in container environments, providing an optimized solution for running cloud-native applications and containers. It offers transparent access to data, simplifying both development and operational tasks. The solution is designed to be simple to manage, integrate with current and hybrid cloud environments, build and run container applications, deploy Red Hat OpenShift, and manage storage services efficiently.
+
+In summary, IBM Fusion HCI (IBM Spectrum Fusion HCI) is a comprehensive hyper-converged infrastructure solution that combines the capabilities of Red Hat OpenShift with a hybrid cloud data platform to provide a scalable, resilient, and easy-to-manage environment for containerized applications and AI workloads.
+
+For more information, go to the Storage section of the [Fusion HCI](/common/storage/fusionHCI/) playbook.
+
+</Column>
+
+
+
+</Row>

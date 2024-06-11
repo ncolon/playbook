@@ -1,0 +1,302 @@
+---
+title: Milestones in Gainsight
+description: Milestones in Gainsight, not started, usage milestones, ocp, scorecard
+keywords: 'usage milestone, CADET'
+date: 07 May 2024
+---
+
+import {Link} from 'gatsby'
+
+<AnchorLinks small>
+<AnchorLink>Understand and report on deployment progress</AnchorLink>
+<AnchorLink>How are milestones created?</AnchorLink>
+<AnchorLink>Relationships without milestones</AnchorLink>
+<AnchorLink>Sources for milestones</AnchorLink>
+<AnchorLink>Growth plan criteria</AnchorLink>
+<AnchorLink>Requirements for a Growth plan to appear in CADET</AnchorLink>
+<AnchorLink>Customer reported accounts</AnchorLink>
+<AnchorLink>Deployments that might churn</AnchorLink>
+<AnchorLink>SaaS Usage Milestones</AnchorLink>
+<AnchorLink>How is the Not Started Milestone set for SaaS offerings with milestones based on usage data?</AnchorLink>
+</AnchorLinks>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Understand and report on deployment progress
+
+It is critical that you understand the deployment progress of your customers since you are responsible for assessing the risk and communicating that progress in Gainsight. The Customer Success leadership team uses Milestones to understand and report on deployment progress for CSM-covered offerings with some differences for IBM Cloud.
+
+Deployment progress for IBM Cloud is tracked in two ways:
+* Public Cloud CSMs use ratings and invoice data. 
+* CSMs covering the Data and AI portion of the IBM Cloud portfolio use Milestones generated either by growth plans or usage. 
+
+Milestones are created in CADET, which feeds the Executive Scorecard. For entitlements that have annuity revenue in the IBM Ledger, CADET will calculate a Milestone. 
+
+</Column>
+
+<Column colMd={3} colLg={3}>
+<br/>
+<br/>
+<Aside>
+
+**Viewing Milestones**
+
+<a href="https://ibm.ent.box.com/file/1003167581008?s=220aaqdi72874cxwk08otyjf9mhq7x37" target='_blank' rel='noreferrer noopener'>Use the R360 Milestones report</a> to see the milestones for your relationship.
+</Aside>
+
+<br/>
+
+<Aside>
+
+**Milestone definitions (aka Deployment stages)**
+
+<Link to='/deploy/document-the-plan/'>Explanation of each milestone</Link>
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## How are milestones created?
+
+Milestones are calculated by CADET based on data from different sources. There is a hierarchy for determining the source to use:
+
+  1 - Customer Reported <br/>
+  2 - Usage <br/>
+  3 - Gainsight <br/>
+  4 - IBM Sales Cloud (ISC) deployment opportunities<br/>
+
+Customer Reported milestones: After a customer reports a deployment, the Deployed milestone is set for that relationship - regardless of the status of a success plan. It is relatively rare for a customer to report a deployment that you are not already aware of, but it can happen.
+
+Usage milestones:  These are generated out of Gainsight based on specific usage criteria.  For a select set of SaaS offerings, milestones are determined by either the success plan stage or usage. Read more details about <Link to='/onboard/gainsight-milestones/#usage-milestones'>Usage Milestones</Link>.
+
+For Gainsight and ISC, milestones are tied to the deployment stage and are generated for the Scorecard from either Gainsight projects or IBM Sales Cloud deployment opportunities, so you must keep your growth plan project stage up to date.
+
+Every day at 11 p.m. US ET, Gainsight growth plans are sent to CADET, which is the engine that drives the executive scorecard.  CADET calculates milestones for each offering and sends milestone data back to Gainsight.  Milestones in Gainsight are typically updated by 5 p.m. US ET the next day. Each day, the milestones are calculated and the previous status is not saved.   Each quarter, Gainsight stores the final reported milestone in a table and uses that value as the milestone for that quarter.  Previous quarter milestones are a point in time and are not changed.
+
+In addition to displaying the current quarter (CQ) milestone, Gainsight preserves milestone history over the past 5 quarters (Previous Quarter + 4 more quarters).  You can see the history in the Scorecard Milestones report on the Milestones tab of the R360. 
+
+Milestones are calculated based on Active Client by Product and License Type. The unique 
+identifier for a Milestone is:  
+* **Client:** Domestic buying group + Country
+* **Product:** UT30 and Pillar
+* **License Type:** SaaS, Subscription License or Perpetual
+
+
+
+## Relationships without milestones
+
+All deployments are important. As a CSM, you get credit for every deployment, whether it is reported on the Executive Scorecard or not.
+
+If your relationship does not have milestones, it simply means that it does not currently flow to the Executive Scorecard.  Continue to use Growth Plans to work through the deployment of your relationships and keep the project stage updated to indicate your progress.  Management reviews all growth plans to understand the deployment progress of the entitlement.
+
+## All or OpenShift Container Platform (OCP) scorecard 
+
+Previous versions of the Scorecard were split by Cloud Pak vs Growth.  The current version shows All deployments and OpenShift Container Platform (OCP) deployments.  OCP is a subset of All Deployments and contains those offerings that are eligible to be deployed on OpenShift and where the deployment platform is selected as OpenShift.   Do not add the OCP widget numbers to the All widget numbers as that would count the OCP data twice. 
+
+## Sources for milestones
+
+The Milestone Source column on the Milestone tab in the R360 shows where the milestone was sourced from.
+
+| Milestone source | Comments |
+| --- | --- |
+| Customer reported | The Customer Reported Updates column includes a comment indicating if the milestone is related to customer reporting.  If the project stage is Deployed but the milestone is Deploying, likely that the customer has not yet reported. |
+| Usage	| Milestone has been determined based on actual usage of the product. See <Link to='/onboard/gainsight-milestones/#usage-milestones'>Usage Milestones</Link> for details. |
+| Gainsight | The success plan that generated the milestone is shown.  You can also see the growth plans in the All Project Plans report, which is also available on the Milestones tab. |
+| ISC | There should be a CRM Opp ID and/or a Link to ISC. You can click on the Link to ISC (if available) to go directly to the deployment opportunity in ISC (assuming you have ISC access.  To request access <a href="https://w3.ibm.com/w3publisher/customersuccess/community-connections/tools-of-the-trade/ibm-sales-cloud" target='_blank' rel='noreferrer noopener'>start on this page.</a>) |
+
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Milestones that move backward 
+
+The Quarter to Date (QTD) Deployed widget shows milestones reported in the Executive Scorecard for the current and prior quarters and contains a Delta column to calculate if the milestone will be included in the current quarter numbers.  A Delta of +1 means that the milestone was not in the previous quarter so is considered new for this quarter.  A Delta of -1 means that the milestone was in the previous quarter but is not in the current quarter.  The widget displays the sum of the delta values.
+Check the "Reason for Delta" column in the QTD deployed widget for a clue as to what has caused the delta.<br/><br/>
+**TIP:** Often a -1 is offset by a +1, so it is a good idea to sort the QTD deployed widget by Customer and Relationship and look at all lines for a growth plan.  Filtering only on -1 deltas might not give you all the information you need.
+
+A milestone will move backward when the previous quarter has a more advanced milestone than the current quarter.  A good example of this is when a Deployed milestone comes from ISC and now a project exists in Gainsight.  After a project exists in Gainsight for a relationship, all milestones come from Gainsight regardless of previously existing milestones.
+
+Check the Milestones report and the All Project Plans report, both on the Milestones tab. You will likely see a Deployed milestone in a previous quarter and not see that same milestone on that same platform in the current quarter.  To resolve this:
+
+* Ensure that the previously reported milestone was indeed correct.  This may require you to reach out to the sales team who created the initial deployment in ISC.
+* If it was not a valid deployment, no action is needed.  The errant deployment will be removed during the weekly processing.
+* If it was valid, you should create a Closed, Deployed growth plan on that same deployment platform.  In the use case field, explain why you're creating this plan and set the due date and the Forecast Production Go Live date to the quarter in which the previous milestone was set.  During weekly processing, this project will be fed to the scorecard and the milestone will be regenerated.
+
+</Column>
+<Column colMd={3} colLg={3}>
+<br/><br/>
+
+<Aside>
+
+**Short videos to explain the fields**
+
+<a href='https://ibm.box.com/s/zll0tg65v4bg02tutuhf6s3ubw3l7rhu' target='_blank' rel='noreferrer noopener'>Deployment outlook widgets</a>
+
+ <br/><br/>
+
+<a href='https://ibm.box.com/s/rtqmbqfiue5911vcilma5mvopj0dajgz' target='_blank' rel='noreferrer noopener'>QTD Widget explained</a>
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Growth plan criteria
+
+Gainsight growth plans are sent to Cadet daily, then Cadet determines milestones for each entitlement that has annuity revenue in the ledger.  The Forecast widgets show plans that should receive a Cadet Deployed milestone after certain criteria are met.  The Cadet Pipeline shows revenue forecasted to be burned down by use cases for Diamond ELA Clients.  If a plan does not contain required information or meet specific criteria, it will not be sent to Cadet, a milestone will not be generated, it will not appear in the Forecast widgets, or it will be missing from the Cadet Pipeline. 
+
+If all these criteria appear to be met, then check the Last Modified Date on the growth plan. If it shows as yesterday or today then it's possible that a change was recently made to meet the above criteria and the update has not fully processed through the system yet.
+
+If you still can't determine why your growth plan does not appear, Slack in the <a href='https://ibm-cloud.slack.com/archives/C8ML3GJFP' target ='_blank'>#gainsight-community</a> or <a href='https://github.ibm.com/hybrid-cloud/gainsight-support/issues/new/choose' target='_blank' rel='noreferrer noopener'>open a support ticket</a>.
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={12} colLg={12}>
+
+### Requirements for a Growth plan to appear in CADET
+
+For your deployment to appear in CADET or the Forecast widget, it must meet certain requirements.
+
+<Accordion>
+
+<AccordionItem title='CADET milestone - QTD requirements'>
+
+ * Gainsight C360 is Active (noted in the top left of the C360) 
+ * Gainsight R360 is Active -- not Churned or Inactive (noted in the top left of the R360) 
+ * The "In Deployment Scorecard" flag is true (shown on the R360 Summary tab in the Details section) 
+ * License Type is populated with a value 
+ * Project Stage is populated with a value 
+ * Growth Plan status is Active or Closed, not Draft 
+ * "Deployment Type" = "Initial Deployment" or "Additional Licenses Used".   The Cadet scorecard measures growth, so a null value or a value of "No Incremental License Usage" will not be sent to Cadet nor included in the forecast. 
+ * The Product is a currently covered CSM Product that is visible inside Dashboards 
+ * If the Customer must report Deployment flag is true, then non-Deployed plans will appear in the Stretch widget.
+ * Additional "Deployed" requirements: 
+ <br/> &nbsp;&nbsp; - If the Growth Plan was deployed on or after Jan 1, 2022, then these 5 fields must be completed. If these fields are not complete, the milestone is set as "Deploying".  
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;"How is the system used? (Exec Summary)" 
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;"Q1: Answer" 
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;"Q2: Answer" 
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;"Q3: Answer" 
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;"Deployment Type" 
+ <br/> &nbsp;&nbsp; - If the Growth Plan was deployed on or after Jan 1, 2022 and "Q1: Answer", "Q2: Answer", "Q3: Answer are ALL answered, then at least one of the answers must be "Yes" to be sent. 
+ <br/> &nbsp;&nbsp;- If the Customer Must Report Deployment flag is true (shown on the R360 Summary tab in the Details section), then the customer must report their deployment before the milestone will be set to Deployed. (until the customer reports, the milestone is "Deploying") <br/>
+ * For Data and AI offerings, on the IBM Cloud relationship, use the Cloud Growth Plan type and select at least one product in the Products to be Deployed field.
+
+</AccordionItem>
+</Accordion>
+
+<Accordion>
+
+<AccordionItem title='Forecast widget requirements'>
+
+Same criteria for the CADET milestone, plus: 
+* Production Go-Live date is in CQ or NQ. 
+* Project stage is not yet Deployed <br/>OR <br/> Project stage is Deployed and the Customer Must Report Deployment flag is true.  These plans will appear in the Stretch widgets.
+
+</AccordionItem>
+
+</Accordion>
+
+<Accordion>
+
+<AccordionItem title='CADET Pipeline requirements'>
+
+Same criteria as above plus: 
+* Revenue Used Forecast field filled out (if blank, can still show in the pipeline but will have $0) * ELA UCI field filled out (plans will be sent without this field completed; but if the value in this field does not match the UCI in Cadet, the plan will not be tied to the pipeline) 
+* Forecast Go-Live date provided (if blank, it will be in the overall pipeline but not in a particular quarter) 
+* If the plan is on the Other Diamond Products relationship, a selection must be made in the "IBM Product" field (so that Cadet knows what product this plan is for)
+
+</AccordionItem>
+</Accordion>
+
+
+## Customer reported accounts
+
+For customers with a reporting clause in the catalog portion of their ELA, CADET will only accept the Deployed milestone after the customer reports it.  This can cause a mismatch between the Gainsight Deployed milestone as reported by the CSM and the executive milestone from CADET.  The "Customer must report Deployment" indicator will tell you that the Customer might have Reporting requirements.
+
+The "Customer must report Deployment" indicator is on the Summary tab of each R360 for a Reporting client. It is also visible in the deployment widgets, Milestone drill-through dashboard reports, and on the Search: All Customers reports.
+
+This flag will change if the customer's Reporting requirements change.  The CSM does not have to take any action other than be aware of possible mismatches in deployment forecasts.
+
+"Diamond clients" are the most common type of reporting customers. For more information on Diamond clients, <a href="https://w3.ibm.com/w3publisher/client-success-and-software-adoption/program-overview" target='_blank' rel='noreferrer noopener'> see this site. </a>
+
+## Deployments that might churn
+
+The Deployments that May Churn widget shows deployments that might disappear from the scorecard in the next few months for one of the following reasons:
+
+* The entitlement has not been renewed and there has been no reported annuity revenue in the last 1 or 2 months.  
+* The deployed usage criteria have not been met for a prior month. If this occurs for 3 months, the deployment will churn out.
+
+
+Expanding the widget will show the month in which the deployment is expected to drop from the scorecard.
+
+The ledger loaded into Cadet and Gainsight is at least one month delayed - the Gainsight status page tells you what ledger month has been loaded.
+
+If a relationship is expected to renew late, you can select the "Late Renewal Expected" box on the R360 Attributes tab.  This will result in deployments for this relationship being excluded from the "May Churn" widgets.
+
+
+### A Deployed milestone against a growth plan that is in Planning. Why?
+
+Chances are that this has happened because the customer has reported a deployment.  If a customer reports a deployment and there is not already a Deployed milestone, then CADET will set the milestone to Deployed.  When it does this, it will tie the deployed milestone to the growth plan that is in the most advanced stage.  If there is more than one plan in the same stage, it will arbitrarily select a plan to tie the milestone to - and this association can change.
+
+Note:  If the first Deployed milestone is caused by customer reporting, and a growth plan is later set to Deployed, this will not generate another deployment.  The Deployed milestone that has been reported is now tied to a Deployed plan.  Additional Deployed milestones are generated when additional plans are set to Deployed.
+
+To see if this is the situation:  Navigate to the Milestones tab of the R360.  In the Scorecard Milestones report, check the "Customer Reported Updates" column.  If it says "Matched and status upgraded due to client-reported deployment" this means that the customer has reported.  If this message is not there and you're not able to figure it out, feel free to <a href='https://github.ibm.com/hybrid-cloud/gainsight-support/issues' target='_blank' rel='noreferrer noopener'>submit a ticket</a>.
+
+## SaaS Usage Milestones
+
+A select set of SaaS offerings have milestones based on usage data.   Usage criteria are used to determine Deploying and Deployed milestones and success plans are used for other milestone status.
+
+| Brand | Milestone usage criteria |
+| --- | --- |
+| **Automation** | <Link to='/common/saas-growth/#automation-milestones-based-on-usage'>Automation milestones</Link> |
+| **Data & AI** | <Link to='/common/saas-growth/#data-and-ai-saas-milestones-based-on-usage'>Data and AI milestones</Link> |
+| **Sustainability** | <Link to='/common/saas-growth/#sustainability-software-saas-milestones-based-on-usage'>Sustainability software milestones</Link>
+| **Security** | <Link to='/common/saas-growth/#security-milestones-based-on-usage'>Security</Link> | 
+| **zSW** | <Link to='/common/saas-growth/#zsw-milestones-based-on-usage'>zSW SaaS milestones</Link> | 
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+### How is the Not Started Milestone set for SaaS offerings with milestones based on usage data?
+
+**Standalone SaaS offerings:**  These offerings have their own relationships in Gainsight.  If CADET finds annuity revenue in the ledger for the offering but there is no usage and no growth plan in Gainsight, the milestone is set to Not Started.
+<br/>
+
+**SaaS offerings that run on IBM Cloud:** These offerings run as services on the IBM Cloud relationship. Milestones are generated based on either a growth plan (Identify through Planning) or usage (Deploying or Deployed).  The milestone is set to Not Started under the following conditions:
+* There is revenue in the Ledger AND
+* There is no usage or CPP on Cloud growth plan with the Product to be Deployed 
+selected.<br/>
+**OR**<br/>
+* There is no revenue in the Ledger AND
+* There is no usage AND
+* There is no CPP on Cloud growth plan with the Product to be Deployed selected AND
+*	The customer has an entitlement for at least one of these subscriptions:
+    *	watsonx as a service (Not Started will be recorded for watsonx.ai).
+    *	watsonx code assistant (Not Started will be recorded for watsonx Code Assistant for Z and for watsonx Code Assistant for Ansible).
+    *	Other Watson subscriptions (Not Started will be recorded for Watson Subscription and Expert Labs).
+
+</Column>
+</Row>

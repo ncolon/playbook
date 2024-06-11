@@ -1,0 +1,191 @@
+---
+title: Size the Diamond ELA Deployment for a use case
+description: Size the Diamond ELA Deployment for a use case
+---
+
+import {Link} from 'gatsby';
+import FileLink from '../../components/FileLink';
+
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## What is the Diamond ELA deployment sizing?
+
+As a CSM, your mission is to unlock the full potential of IBM solutions in the customers' contract. One way to measure progress internally is through the Rate and Pace metric of deployment, which is visible in Cadet. To assess the deployment risk of the ELA, you need to forecast the deployment pipeline or the impact of future deployments on the Rate and Pace metric.
+This pipeline is tracked via the Gainsight growth plan and defines how much of an entitlement you expect to be deployed at a given point in time for a specific use case.
+
+Forecasting the rate pace impact is only required for products in the reporting section of a client's ELA. The steps below will help you determine if this is the case.
+
+## When do I create a deployment sizing?
+
+As soon as you have a new use case to support the deployment plan for a product in your customer’s Diamond ELA, you should create a Growth Plan in Gainsight. Estimate the sizing as soon as you have enough information about the use case, then continue to refine it as the deployment progresses.
+The Rate and Pace metric is expressed in terms of the US dollar value the use case is expected to generate. Over time, there can be several growth plans for the Diamond client as the CS Account Specialist and different Brand Architects work with the client to leverage their ELA catalog.
+
+## Steps to create the deployment value estimate
+
+For Diamond clients, after you determine the license that the client is going to use, you need to estimate the number of units the customer expects to activate based on the terms of their contract, then convert the units to a dollar figure and enter it in Gainsight. Follow the steps to develop your estimate:
+
+**Step 1: Determine the license the client will use**<br/>  After you have identified the new potential use case and created the growth plan, you need to consider what license the client is going to use. Many of our clients have more than one license and can choose which one they will use for a particular use case (e.g., a client deploying MQ could use MQ, or could use Cloud Pak for Integration).
+
+First you need to understand how the client is entitled to the product. Use CADET to locate your customer and the products in their ELA.  CADET will indicate if the product is Fixed or Reporting or both.
+
+If they are using a non-reporting license, such as an active S&S or fixed license, stop here and proceed to work with the client on the deployment. With these types of licenses, the client will likely only start using the catalog after they have used 100% of the non-reporting entitlements.  If you anticipate they will use one of their Diamond ELA entitlements then proceed with the next steps.
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/><br/>
+
+<Aside>
+
+**Create a Growth Plan in Gainsight**
+
+<Link to='/onboard/gainsight-create-growth-plan' target='_blank' rel='noreferrer noopener'>Steps to create a Growth Plan</Link>
+
+
+</Aside>
+
+<Aside>
+
+**Diamond Program**
+
+<a href='https://w3.ibm.com/w3publisher/customersuccess/the-practice/diamond-
+program' target='_blank' rel='noreferrer noopener'>Diamond Program publisher page</a>
+
+</Aside>
+
+<br/>
+
+<Aside>
+
+**How to do a deployment sizing and create a growth plan**
+
+<a href='https://yourlearning.ibm.com/activity/PLAN-919BD88EA45F' target='_blank' rel='noreferrer noopener'>Learning plan</a>
+
+</Aside>
+
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+**Step 2: Estimate the number of units the customer will consume with this growth plan**<br/> The primary tool used to estimate a deployment sizing is the Sales Configurator. This tool supports solutions based on OCP. The Sales Configurator has a user-friendly 3D interface and can provide the number of units needed. The units are the estimated quantity for deployment in the next step.
+
+If you find that your product is not in the Sales Configurator, you should go to the product’s sales kit page in Seismic. The Sales Kits generally have a section labeled Sizing and Pricing.
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+
+<Aside>
+
+**Sales configurator**
+
+<a href='https://app.ibmsalesconfigurator.com/#/' target='_blank' rel='noreferrer noopener'>Sales Configurator tool</a>
+
+</Aside>
+
+<br/>
+
+<Aside>
+
+**Product pricing links**
+
+<a href='https://ibm.box.com/s/qv61rkq4lx5p35q1finbbtrvrprsmrx2' target='_blank' rel='noreferrer noopener'>XSL spreadsheet of links</a>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+**Step 3: Prepare the ELA deployment value estimate using CADET**<br/>
+Locate the product in the correct ELA contract in the Deployment Heatmap in CADET. (Go to Diamond Management System, Deployment tab, Deployment Heatmap tab, and select the appropriate customer contract.)
+
+There are many parts listed in the ELA. You should use your best judgment to find the part by category and type based on what you or the account team think the customer will use. If you know the part number that the customer will deploy, search for that specific part.
+
+While you’re in CADET, make note of the ELA UCI - unique contract identifier. You will need to add this value to the ELA UCI field on the growth plan.
+
+* Multiply the estimated quantity of licenses being deployed by the Internal Trans
+Consumption Rate (PPQ) to size the deployment. (All dollar values in CADET are USD.)
+
+* See the following example to understand how to calculate the deployment. The result of the calculation is the internal deployment dollar value you’ll use in Step 3.
+
+![deployment sizing example](/../../images/deployment-sizing-example.png)
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+
+<Aside>
+
+**CADET**
+
+<a href="https://w3.ibm.com/w3publisher/client-success-and-software-adoption/cadet" target='_blank' rel='noreferrer noopener'>Using CADET</a>
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+**Step 4: Enter the calculated internal deployment dollar value into the Growth Plan in Gainsight**<br/>
+Now that you’ve calculated the internal deployment dollar value, you can enter this number in the Revenue Forecast Used (USD) field in the Diamond ELA Plans section of your growth plan (round to the nearest $100). This is the total expected deployment for the use case in US dollars. You will also need to add the ELA UCI to the growth plan in the ELA UCI field, which you can get from CADET or from the R360 Entitlements tab on the ELA Attributes report.
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+
+<Aside>
+
+**Create a Growth Plan for a Diamond ELA**
+
+<Link to='/onboard/gainsight-create-growth-plan#build-a-diamond-ela-growth-plan' target='_blank' rel='noreferrer noopener'>Steps to create the plan</Link>
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+## Next steps
+
+Determine where you stand regarding the deployment of the ELA. Be sure you have developed all the prioritized use cases so you achieve the target deployment pipeline. Is your customer on track to maximize the value of their ELA?
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+
+<Aside>
+
+**Determine where your customer stands regarding burn down of their Diamond ELA catalog**
+
+<Link to='/deploy/ela-pipeline' target='_blank' rel='noreferrer noopener'>Understand Diamond pipeline</Link>
+
+</Aside>
+
+</Column>
+</Row>

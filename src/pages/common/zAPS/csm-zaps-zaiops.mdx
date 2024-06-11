@@ -1,0 +1,262 @@
+---
+title: z AIOPS
+description: z AIOPS
+---
+
+<AnchorLinks small>
+
+  <AnchorLink>Software infrastructure</AnchorLink>
+  <AnchorLink>Detect</AnchorLink>
+  <AnchorLink>Decide</AnchorLink>
+  <AnchorLink>Act</AnchorLink>
+
+</AnchorLinks>
+
+<Row>
+<Column colMd={7} colLg={7}>
+
+## Software infrastructure
+
+**Accelerate the journey to AIOps**
+Assess how problems are resolved today and help identify a better way of resolving problems faster to reduce business impact
+Determine specific business outcomes and objectives for AIOps and set expectations and  measurable ROI
+
+**A holistic approach to AIOps that includes IBM Z**
+You cannot successfully adopt AIOps in pieces or silos. It requires a holistic approach focused on business processes and workflows. The resiliency of a workflow depends on the health of every link in the chain. To succeed, you need visibility and insight throughout the entirety of the workflow.
+
+## Detect
+Monitor hybrid infrastructure and applications and detect issues and anomalies
+
+The goal of the AIOps Detect capability area is to identify issues as soon as possible - ideally before they disrupt your business
+
+**Objectives**
+* Monitor complete infrastructure and end-to-end hybrid application performance
+* Identify monitoring gaps
+* Generate and manage alerts
+* Apply analytics for early incident detection
+* Ensure data collection meets AIOps objectives and ensures system capacity
+
+### Monitoring & observability
+Identify poorly performing tasks quickly for faster resolution with full-stack monitoring for early detection of Z incidents
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Growing complexity <br/> - More metrics & collection points <br/> - Open tooling for analysis in context of modern hybrid cloud applications <br/> - Attracting and retaining the skills and expertise |
+| What's new today vs what I have | - Demand to augment higher-level operational dashboards with performance statistics across the entire IT stack <br/> - Collaboration using preferred chat tools <br/> - IT operations should be able to perform key tasks like first level system triage <br/> - Leverage AI / ML for anomaly detection on collected data and correlate events |
+| IBM solution | - IBM Z Monitoring Suite <br/> - IBM Z Service Management Suite |
+| Value | - **Improve collaboration between teams:** Alert details sent to your collaboration tool for faster problem triage which can be seen by the entire channel <br/> - **Modern, open, hybrid cloud tools** for visualization and analytics <br/> - **Reduce noise and incidents:** Event correlation across the enterprise with AIOps reduces notice by grouping relevant events for targeted problem isolation. <br/> - **Get relevant context:** When an incident occurs, the wider teams are provided with additional context, such as domain dependencies and resource consumption. <br/> - **Automate remedial actions:** Teams can automate problem remediation directly through an event action or interlocking with system automation. |
+
+IBM Z monitoring and observability provides faster problem identification, isolation and resolution with intelligent monitoring and alerting.
+
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/ashok-mahay1/2021/07/20/modernization-of-monitoring-and-observability">Link</a> to the full blog.
+
+
+### Application performance management
+End-to-end tracking visibility across hybrid cloud application
+
+| | |
+| ---------- | ----------- |
+| Challenge | - API-enabled mainframe resources and workloads form the critical foundation of hybrid cloud applications <br/> - Over 70% of enterprises have multiple APM solutions deployed however most lack visibility into the mainframe <br/> - Problem isolation involving both Z and non-Z teams is time-consuming and impacted by siloed visibility |
+| What's new today vs what I have | - End-to-end transaction tracing capability to view application from mobile to mainframe <br/> - Automated full-stack visibility includes Z resources to provide transparency and consistency when troubleshooting <br/> - Real-time detection and mapping of all interdependencies reduces risk by ensuring that you’re always looking at accurate information |
+| IBM solution | - IBM Observability by Instana APM on z/OS <br/> - IBM Z Application Performance Management Connect |
+| Value | - Ensure the mainframe is a first-class participant in hybrid cloud observability through integration with industry leading APM solutions <br/> - Reduce time to isolate application problems by identifying likely cause and the appropriate context to Z subject matter experts to address the issue faster <br/> - Minimize impact to business and protect the client’s digital experience when issues occur |
+
+One of the world’s largest banks application team used IBM Z APM Connect with AppDynamics to isolate the location of performance issue impacting a core application.
+The appropriate Z SMEs inside their organization were alerted to address the issue with their dedicated Z monitoring tools before clients were even impacted, saving the bank valuable time and money.
+
+Enterprise observability across the hybrid cloud requires visibility into business-critical IBM Z services and resources.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/nicole-nemec1/2021/06/18/apm-and-z-role-in-aiops">Link</a> to full blog.
+
+### Anomaly detection
+Intelligent anomaly detection to avoid costly incidents
+
+| | |
+| ---------- | ----------- |
+| Challenge | - As the digital transformation continues, hybrid applications are rapidly changing along with the adoption of DevOps <br/> - Vast amounts of operational data are impossible to manually analyze in real time |
+| What's new today vs what I have | - Leverage machine learning to analyze historical data to understand how your environment behaves day-to-day without the need for static thresholds <br/> - Compare live data to your environment’s normal behavior to detect operational anomalies which may be indicators of current or future issues <br/> - Machine learning analyzes both metric and log data, unattended, and without manual intervention <br/> - Alerts can be generated for anomalous behavior to notify IT Operations of potential problems or integrated intoIBM Cloud Pak® for AIOps to help determine the health of an entire hybrid cloud application |
+| IBM solution | - IBM Z Anomaly Analytics with Watson <br/> - IBM Z Monitoring Suite <br/> - IBM Z Service Management Suite |
+| Value | - Keep critical business applications up and running by reducing the mean time to detect operational issues from hours to real time <br/> - Alerts of anomalous behavior can be integrated directly into your event management systems, service desk solutions, or with IBM Cloud Pak for Watson AI Ops for complete hybrid cloud application visibility |
+
+“A major United States airline has adopted the anomaly detection capability from IBM. They were able to detect operational anomalies in their log data. Had those anomalies gone undetected it would have impacted pilot and crew scheduling systems and left frustrated passengers on the ground”
+
+IBM Z Anomaly Analytics with Watson leverages machine learning to detect operational anomalies.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/daniel-wiegand1/2021/08/23/intelligent-anomaly-detection">Link</a> to the full blog.
+
+
+## Decide
+Analyze issues and anomalies to isolate problems and identify root causes
+
+The goal of the AIOps Decide capability area is to rapidly isolate problems and use analytics, statistical baselines, trend analysis and performance metrics for faster root cause analysis
+
+**Objectives**
+* Review the process for resolving incidents
+* Assess how AI is trained over time to connect dots across data sources to quickly Decide
+* Apply tooling to model different performance and capacity scenarios to enable the most cost-effective and efficient usage of resources
+* Clear goals are set and tracked to ensure ongoing organization improvement
+
+### Cross-domain metrics & trace analysis
+Diagnose application bottlenecks within code, server resources or external dependencies
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Growth of complex application architectures and open mainframe services <br/> - Locating the root cause from among many domain areas <br/> - Collecting and analyzing bottlenecks within application code or subsystem programs |
+| What's new today vs what I have | - Expedite root cause analysis and assist domain experts <br/> - Identify bottlenecks within application code or subsystem program <br/> - Collect traces dynamically and analyze application code <br/> - Share detailed trace reports with program developers to develop fixes rapidly |
+| IBM solution | - IBM Z Monitoring Suite <br/> - IBM Z Service Management Suite |
+| Value | - **Dynamically enable subsystem / application tracing** within subsystems to collect deeper metrics <br/> - **Enable intelligent alerts** to capture diagnostic details inflight <br/> - **Activate CICS® or IMS™ tracing** to view bottlenecks, server resources and external dependencies <br/> - **Utilize proprietary INSPECT feature** to observe load module statistics in real-time <br/> - **Avoids blind spots** with detailed API monitoring support on Z <br/> - **Combine IBM Z and hybrid cloud metrics** to analyze complex cross-platform issues. |
+
+IBM Z provides experts and development teams the input they need to expedite root cause analysis to fast-track problem remediation.  
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/ashok-mahay1/2021/10/05/cross-domain-metrics-and-trace-analysis">Link</a> to the full blog.
+
+### Log analytics
+Accelerate hybrid incident identification with real-time operational analytics
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Increasingly complex environments <br/> - Acceleration of workload volume <br/> - Z skills are becoming harder to acquire <br/> - Difficulty gaining visibility into mainframe |
+| What's new today vs what I have | - Many other areas of the enterprise rely of a robust log analytics platform to visualize and understand their data <br/> - There is a need to visualize and bring Z operational data to the same pane of glass |
+| IBM solution | - IBM Z Operational Log and Data Analytics |
+| Value | - **Reduced cost:** Save on streaming & maximize your log analytics investment <br/>   - Filter & transform before streaming to lower ingestion costs <br/>   - Offload workloads with zIIP processing <br/>   - Leverage your current log analytics platforms <br/> - **Reduced effort:** Leverage the analytics platform of your choice to quickly make sense of your Z data <br/>   - Modern & intuitive dashboards make Z data consumable <br/>   - Training & acquiring skills is easier with platform familiarity <br/> - **Greater visibility:** Contextualize your Z data to uncover & investigate incidents with increased speed and confidence <br/>   - View Z & distributed data on the same pane of glass <br/>   - Minimize time spent in war room scenarios |
+
+IBM provides the platform & integrations to uncover contextualized insights with enhanced visibility into your Z operational data.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/kekahu-aluli/2021/08/31/z-log-and-data">Link</a> to full blog.
+
+### Anomaly correlation
+Correlate anomalous activities across z/OS subsystems
+
+| | |
+| ---------- | ----------- |
+| Challenge | - IBM Z workloads are often a black box where the interdependencies of workload activities are unknown <br/> - When issues arise in an environment, time is lost identifying the true root cause by investigating symptoms of the problem <br/> - Data can be costly, siloed and too voluminous to quickly diagnose performance issues that are often transient in nature |
+| What's new today vs what I have | - IBM z/OS Workload Interaction Correlator generates standardized, synchronized, smarter data that is specifically built for diagnosing workload performance issues – all with low system overhead <br/> - IBM z/OS Workload Interaction Navigator analyzes short intervals of data to temporally correlate and prioritize anomalous workload activities to help identify cause and victim relationships |
+| IBM solution | - IBM z/OS Workload Interaction Navigator |
+| Value | - Gain visibility into how activities across your entire workload interact and share system resources <br/> - Reduce the mean time to identify the root cause of operational issues by understanding cause and victim relationships across multiple workload activities <br/> - Proactive change verification by Analyzing multiple time periods to ensure desired changes to software, workload, or hardware have the desired effect |
+
+“IBM support teams rely on z/OS Workload Interaction Navigator to help diagnose client performance issues. In all cases where it was used, the solution helped determine the root cause of the client critical situations.”
+
+IBM z/OS Workload Interaction Navigator helps you understand your IBM Z environment with exceptional detail.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/daniel-wiegand1/2021/09/14/determine-root-cause-by-correlating-anomalous">Link</a> to full blog.
+
+
+### Performance & capacity planning
+Performance analysis, capacity forecasting and modelling
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Increasingly complex hybrid cloud environments require tools to understand the relationship between applications and resources to ensure that SLAs are met <br/> - Timely access to detailed performance information can be difficult to report on and have high resource overhead <br/> - Capacity forecasting to ensure adequate resources are available to support the business is essential but can require time and skilled personnel <br/> - Growing need to manage workloads under the consumption-based pricing models (Tailored Fit Pricing) to help to keep cost and performance optimized |
+| What's new today vs what I have | - Near real-time access to insights through key performance metrics, out-of-the-box summaries and self-service reporting to empower end users <br/> - Leverage data to provide immediate forecasts and simulations on potential future performance to support capacity planning activities and understand the “what if” impact of environmental changes <br/> - Lower overall processing overhead with exploitation of zIIP processors |
+| IBM solution | - IBM Z Performance and Capacity Analytics |
+| Value | - Access, curate and make performance and operational decisions quickly <br/> - Empower capacity planners to enable smart investments decisions and ensure resources support the business <br/> - Identify optimization opportunities within existing workloads to keep costs in check and improve performance |
+
+A major US-based bank deployed IBM Z Performance and Capacity Analytics to modernize their entire performance management, capacity planning and chargeback processes. They decommissioned their legacy toolsets and reduced the number of tools and licenses to be maintained.
+
+IBM Z delivers a single solution to address performance analysis, capacity forecasting and cost management.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/chris-walker1/2021/08/02/perfor-and-capacity-hybrid">Link</a> to full blog.
+
+
+## Act
+Rapidly respond to reduce impact on the clients with improved resiliency
+
+The goal of the AIOps Act practice is to apply intelligent automation to respond rapidly and preempt disruptions
+
+**Objectives**
+* Review the ability of the business to adapt to change and respond to maintain stability.
+* Increasing the level of automation and self-correcting actions so systems reduce the need for manual intervention
+* Use automation runbooks to support hybrid applications and environments
+
+### Collaborative incident remediation
+Improved collaboration and faster incident resolution through chat-based operations and user-friendly dashboards
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Increasingly hybrid and complex application landscapes <br/> - Information, team, and data silos increase the time to problem resolution <br/> - Collaboration across teams and remote workforce <br/> - Lack of skills <br/> - Many different tools needed |
+| What's new today vs what I have | - ChatOps solutions that foster collaboration and surface relevant data and actions in enterprise chat platforms <br/> - Consolidated web-based dashboards that bring mainframe management information and tasks from disparate sources into a single environment <br/> - Alert the team through chat platforms and use an intelligent chatbot to analyze and operate an IBM Z environment |
+| IBM solution | - IBM Z ChatOps <br/> - IBM Service Management Unite <br/>   - Included within: <br/>     - IBM Z Service Management Suite <br/>     - IBM Z Service Automation Suite <br/>     - IBM Z Monitoring Suite <br/>     - IBM Z System Automation |
+| Value | - Improved collaboration within and across teams <br/> - Faster incident identification and resolution <br/> - Faster onboarding of next generation of Z Operators <br/> - Easy sharing of Z data <br/> - Integration with other tooling |
+
+With IBM Z ChatOps, combined with IBM Service Management Unite, IBM provides unique collaborative incident remediation capabilities!
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/wolfgang-schberle1/2021/07/02/collaborative-incident-remediation">Link</a> to full blog.
+
+### Intelligent automation
+End-to-end, goal-driven and policy-based system automation for a consistent and reliable automation across the enterprise
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Innovation vs stability: 70% of the team is tied up just keeping what they already have alive <br/> - Maintenance cost of automation code <br/> - Skill optimization |
+| What's new today vs what I have | - Growth of hybrid cloud applications that rely on components spanning across different platforms that has dependencies each other <br/> - Documentation on automation code is generally poor and maintenance of that is not cost effective. <br/> - New automation administrators are not familiar with traditional mainframe interfaces |
+| IBM solution | - IBM Z Service Automation Suite: <br/>   - IBM Z System Automation <br/>   - IBM Service Management Unite <br/>   - IBM Z ChatOps <br/>   - IBM Z NetView® |
+| Value | - IBM Z System Automation is a policy-based automation tool that requires less automation code to manage automated resources cross-sysplex and cross-platform <br/> - Service Management Unite provides a modern and user-friendly set of dashboard to manage automated resources in your environment <br/> - IBM Z ChatOps provides a chatbot to interact with Z resources from the chat tool already in use |
+
+“A health insurance company in Germany boosts its system automation efficiency and reduces operating costs when it implements IBM System Automation for z/OS software to replace its existing automation solutions.”
+
+IBM Z is the end-to-end solution delivering intelligent automation across the enterprise.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/domenico-dalterio1/2021/09/28/intelligent-automation">Link</a> to full blog.
+
+### Predictive workload automation
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Growing complexity of workload to be managed, with dependencies between processes (job) running on different platforms <br/> - Shortening batch windows requires continuous optimization of the batch execution, avoiding violation of SLA constraints <br/> - Skill optimization |
+| What's new today vs what I have | - Need to open scheduling to integration in devOps toolchain and hybrid cloud application integration <br/> - Next generation schedulers are not familiar with mainframe traditional interfaces |
+| IBM solution | - IBM Z Service Automation Suite <br/>   - IBM Z Workload Scheduler |
+| Value | - Modern, web-based User Interface (Dynamic Workload Console) to model, monitor and control the scheduling execution cross platform from a single point of control <br/> - Workload Service Assurance and What-if analysis simulator help in get early notification of SLA violation risk and simulate corrective actions to avoid the violations <br/> - Zowe™ extensions for API Mediation Layer and CLI enable an easy integration of scheduling in scripts (devOps) and hybrid Cloud applications.  |
+
+“The information technology services company for a leading bank in Italy significantly reduces costs, mitigates the need to maintain homegrown solutions and gains a single point of control across its server platform when it implements IBM Z Workload Scheduler software to manage workload automation.”
+
+Delivering a predictive workload automation that integrates DevOps with hybrid cloud provides the competitive advantage on IBM Z.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/domenico-dalterio1/2021/11/17/predictive-workload-automation">Link</a> to full blog.
+
+### Storage automation
+Machine aided storage resource management and automated storage tasks across the enterprise for improved SLAs
+
+| | |
+| ---------- | ----------- |
+| Challenge | - Constant risk of costly outages and unexpected events that disrupt storage environments <br/> - Managing and maintaining a complex storage environment <br/> - Anomaly detection and productivity issues <br/> - Lack of skills <br/> - Less expensive options for storing cold data |
+| What's new today vs what I have | - Realtime Data Set Metrics viewer with ‘take action’ capabilities to recall, rename, reorganize, and delete datasets. <br/> - Cloud tier for cold data with updated security options with Life Cycle Encryption <br/> - Enhanced ICF Catalog management through smart alerting and notifications |
+| IBM solution | - IBM Z Advanced Storage Management Suite |
+| Value | - Reduction in human manual intervention using smart alerts and notifications leading to faster incident identification and resolution <br/> - Improved productivity and data availability <br/> - Automated storage space allocation and catalog management <br/> - Keep your DFSMShsm™ environment free of errors and inefficiencies <br/> - Integration with IBM’s Tivoli® Enterprise Portal (TEP) |
+
+“Predictive analytics improve storage efficiencies and the ability to identify anomalies and address those issues without human intervention saves onOPEX and makes a great case to continue investing in storage software as workloads continue to converge”  - IDC
+
+The IBM Z Advanced Storage Management Suite provides the automation to improve SLAs across your enterprise.
+<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/bradley-baumeister1/2021/10/12/storage-automation?CommunityKey=23ea7a1f-d5b7-4b57-bd89-2ea575cc559c">Link</a> to full blog.
+
+</Column>
+<Column colMd={5} colLg={5}>
+
+<br/><br/>
+
+<Aside>
+
+**Strategy**
+
+<a href='https://ibm.seismic.com/Link/Content/DCj8b69c29CBGGcGqXjd48QGd6J3' target='_blank' rel='noreferrer noopener'>Journey to AIOps on IBM zSystems</a><br/>
+
+
+</Aside>
+
+<Aside>
+
+**Recommend the next best step**
+
+<a href='https://epwt-www.mybluemix.net/software/support/trial/cst/welcomepage.wss?siteId=1137&tabId=3005&w=1' target='_blank' rel='noreferrer noopener'>AIOps Client Assessment</a>
+
+</Aside>
+
+<Aside>
+
+**Link to video**
+
+<a href='https://video.ibm.com/recorded/132191827' target='_blank' rel='noreferrer noopener'>User Application Data in IBM Z Operations Log Data Analytics with Common Data Provider</a>
+
+</Aside>
+
+<Aside>
+
+**Link to Redbook**
+
+<a href='https://w3.itso.ibm.com/itsoapps/redbooks.nsf/RedbookAbstracts/redp5705.html?Open' target='_blank' rel='noreferrer noopener'>Accelerate Mainframe Application Modernization with Hybrid Cloud</a>
+
+
+</Aside>
+
+</Column>
+</Row>

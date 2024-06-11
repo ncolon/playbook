@@ -1,0 +1,144 @@
+---
+title: IBM Storage Fusion acceleration play
+description: Practices, tools, learning, quick links
+---
+
+import {Link} from 'gatsby';
+import FileLink from '../../../components/FileLink';
+
+## Scope
+IBM Storage Fusion brings an agile, secure, resilient and highly performant data service foundation for container-based application workloads.  It eases the "Cloud Native" journey with Red Hat OpenShift by bringing enterprise-grade functionality and qualities of service to any hybrid multi-cloud environment.
+It provides a consistent experience across all deployment platforms from HCI (hyper converged infrastructure), bare-metal, virtualized and public Cloud.
+
+## Contacts:
+**Customer Success Practice Leader:** Fraser MacIntosh <br/>
+**Technology Expert Labs WW Storage Delivery Leader:** Par Hettinga <br/>
+**Fusion Product Management Contact:** Matt Kelm<br/>
+**Worldwide Sales Leads:** Bob Kampe / Rob Coventry <br/>
+**WorldWide Tech Sales Leads:** Josh Blumert / Madhav Ponamgi <br/>
+
+## What are the drivers for expansion?
+A client who has already gained experience of container native data services will recognize how they promote reuse, scaling, and efficient delivery of capabilities which enable their operations to be more agile and focused on the needs of their business. Now they might seek support for components they partially integrated and look to expand the landscape of services beyond their original entitlements to serve new workloads.
+
+| Consideration | Description |
+| --- | --- |
+| **Improve user experience** | Delivery of services which are independently managed can create operational challenges. Fusion is led by design to focus on the needs of its identified user personas and includes functionality that enables a client to more readily manage the services it includes. This significantly distinguishes it from its predecessor IBM Storage Suite for Cloud Paks (SS4CP) which was a licensing bundle of services without a user experience feature. |
+| **New capabilities** | Backup and restore is a brand new solution for protecting applications deployed in an OpenShift cluster. This is a container-native implementation with a distributed and scaleable architecture that enables a client to take application-aware backups and restore them in the same cluster or another cluster. It is operationally identical on all Fusion environments on-premises and in the cloud. |
+| **Seamless support** | Independently configured components that were previously used to build a solution for the client; examples are separate object storage access using min.io, or upstream open-source software like Velero, typically have an integrated version or similar feature in Fusion. MultiCloud Object Gateway (MCG) is included with unlimited capacity and provides S3-compatible access for object storage on a wide variety of backends. These components are supported within the Fusion entitlement when they are used for their intended purpose as part of a Fusion deployment. |
+| **Resiliency** | Metro-DR and Regional-DR are not included in the Fusion Essentials entitlement with an IBM Cloud Pak which a client might deploy for PoC or non-production environments. Moving to production might identify a need for resilient Fusion deployment models and upgrading of existing clusters for validation and testing. |
+| **Data sharing** | External data storage using IBM Storage Ceph or IBM Storage Scale for global data access is not included in the Fusion Essentials entitlement with an IBM Cloud Pak. If the client is extending an application to work with an AI pipeline or a data fabric this could signal a need for improved data services available only in a Fusion paid offering. |
+| **Data warehouse** | IBM Fusion HCI has preconfigured solutions available for ordering with IBM Db2 Warehouse that have tee-shirt sizing guaranteed to meet specific requirements. This provides clients with a singular supported cloud-native environment and speed to market for new data warehouse workloads. |
+| **Storage capacity** | Fusion HCI and Fusion SDS can be expanded with additional storage. |
+
+## Resources for Fusion expansion
+
+- <a href='https://ibm.seismic.com/Link/Content/DCgFfq4m3dm9MG7BgD3X6qP7dHWd' target='_blank' rel='noreferrer noopener'>IBM Storage Fusion Sales Kit</a> Seismic
+- <a href='https://www.ibm.com/docs/en/storage-fusion-software/2.7.x?topic=prerequisites-system-requirements' target='_blank' rel='noreferrer noopener'>System requirements for Fusion 2.7.x</a> IBM docs
+- <a href='https://ibm.seismic.com/Link/Content/DCCGcfgQ9gW4JGMR88pd9QPpQ6MP' target='_blank' rel='noreferrer noopener'>Cloud Pak entitlements to Fusion and SS4CP</a> Seismic
+- <a href='https://www.redbooks.ibm.com/abstracts/redp5706.html' target='_blank' rel='noreferrer noopener'>Fusion backup and restore for CP4D</a> IBM Redpaper (*)
+- <a href='https://www.ibm.com/docs/en/storage-fusion-software/2.7.x?topic=data-protection' target='_blank' rel='noreferrer noopener'>IBM Storage Fusion Software data protection</a> IBM docs
+- <a href='https://www.ibm.com/docs/en/storage-fusion-software/2.7.x?topic=disaster-recovery' target='_blank' rel='noreferrer noopener'>IBM Storage Fusion Software disaster recovery</a> IBM docs
+- <a href='https://ibm.seismic.com/Link/Content/DCMDTdp83hQVRGMFFbCj9cVmR76j' target='_blank' rel='noreferrer noopener'>Db2 Warehouse on Fusion reference architecture solutions</a> Seismic
+
+(*) Refers to old backup software in Fusion but illustrates the value proposition of close integration with an IBM Cloud Pak
+
+## Considerations in the expansion process
+
+Expanding Fusion in the context of this acceleration play considers four main scenarios:
+- Replacing SS4CP with Fusion (there is no upgrade part).
+- Introducing Fusion capabilities that are only available in a fully paid entitlement.
+- Moving workloads to Fusion HCI for business agility.
+- Expanding storage capacity or backup coverage of an existing Fusion footprint.
+
+**Preparation:**
+
+1. **Assess needs**: Understand what the client has already got installed and what are their expectations of introducing new capabilities.
+
+2. **Review documentation**: Read the most applicable information in Seismic and define a clear value proposition.
+
+3. **Resource assessment**: Determine any gap between existing deployment and proposed deployment for compute, memory, and storage capacity; covering both infrastructure and licensing needs.
+
+4. **Performance review**: Make sure any performance requirements are documented and reviewed with product SMEs at the earliest opportunity.
+
+**Change management:**
+
+5. **Data locations**: Catalogue the location of all data in the existing environment and consider whether it needs to be migrated or can be directly consumed using the proposed expansion scenario.
+
+6. **Image sources**: Does the existing environment use Red Hat image locations, or open-source, or third-party code? Consider how the new installation will acquire the images needed for deployment.
+
+7. **Operations**: Transitioning from SS4CP to Fusion, or from a bespoke Db2 facility to Fusion HCI, or introducing a new capability, will require education to build and maintain the deployment.
+
+8. **Rollback plan**: Consider how the existing system might continue to work, or how it might be re-instated if the implementation phase is unsuccessful.
+
+**Implementation:**
+
+9. **Testing**: Ensure data access is maintained, all integrations and feature replacements are in-situ, and the overall solution works and performs as expected.
+
+10. **User training**: When new capabilities are introduced in the expansion, make sure the appropriate UI parts are identified to users and any supporting low-level commands are fully documented.
+
+11. **Deployment phasing**: Implement a safe rollout scheme agreed with the client that will minimise risk and uncertainty for their users.
+
+
+### Assessing expansion complexity
+
+| Simple | Standard | Complex |
+| --- | --- | --- |
+| - SS4CP replacement | - Add backup and restore | - Add DR scenario |
+| - Add storage or backup capacity | - Provision Db2 warehouse on HCI | |
+| - Add support for open source software | - Add data sharing | |
+| | - Add data fabric and AI pipeline | |
+
+This is only a guideline to the expectations you should have when approaching an acceleration play. There will be nuances in each of these scenarios that could shift the complexity; typically depending on what the client is already using. Some of the challenges that could arise will be included in detailed use cases below.
+
+## Engagement use case examples
+
+### Scenario 1: SS4CP entitlement period is expiring
+The IBM strategy is to replace SS4CP entitlements with Fusion whenever they are due for renewal. This might be due to a naturally expiring paid license term, or the end of a 36 month trial as part of entitlements which were included with a Cloud Pak.
+
+- Check the Cloud Pak entitlements to determine exactly what features of SS4CP were included.
+- If the client has deployed IBM Cloud Object Storage or IBM Spectrum Virtualize for Public Cloud there are no direct replacement entitlements in IBM Fusion, so additional licensing or alternative deployment scenarios will need to be researched.
+- General storage and compute capacity in Fusion should be the same, but make sure the new Fusion licensing will cover all deployed worker nodes. There might be insufficient coverage if the client has expanded their container application deployment or storage capacity and neglected to assess the licensing implications.
+- SS4CP had a capacity edition providing 20TB per VPC. There is no equivalent edition in Fusion, so 1 VPC of SS4CP may require more VPCs in Fusion, or Fusion expansion capacity entitlements in addition to compute if a client has already deployed a large proportion of their entitled capacity.
+
+### Scenario 2: Client requires backup and restore
+The client might be using Cloud Pak entitlements for Fusion which do not include this capability. The whole deployment must have a paid Fusion license. Implementation will need access to external object storage which the client can choose to provision with Fusion entitlements or through other IBM or third-party products.
+- Validate all the storage capacity is assessed including that required to retain backups.
+- Backup copies use a form of deduplication to reduce the object storage requirements, but you will still need to consider how many backups are to be retained.
+- Adding backup capability should be a simple implementation of the Fusion hub and spoke architecture and training users in the Fusion UI to build schedules and policies.
+- Consider the restore scenarios, e.g. sizing a spare cluster for testing restore of all backups including the largest, or whether backups will only be restored to their original clusters.
+
+### Scenario 3: Streamline supported products in client environment
+This is an approach which has already been used successfully by IBM Cloud Pak for Data to improve support by reducing the number of independent products needing to be maintained by replacing min.io with MultiCloud Object Gateway (MCG). MCG is available as part of Fusion Essentials with the IBM Cloud Paks, and in all paid editions of Fusion, so it gets supported seamlessly as part of the product. Unlike min.io, MCG does not provision storage, it simply gives an S3 compliant access path to existing storage, which could be in a filesystem or object format. Nevertheless this gives the client choice about how they provision the object storage.
+- Consider what other open source and third party products could be brought into support with IBM.
+- Coverage of open source code is extensive when Fusion is coupled with watsonx.ai, watsonx.data.
+- Fusion uses similar code modules to implement backup and restore that a client might select independently. The value proposition for Fusion is a powerful case for consistent support, prebuilt integration, and a coherent user experience.
+
+### Scenario 4: Implementing resiliency
+Metro-DR and Regional-DR are definitely some of the more complex requirements that a client will identify. The deployment will be in a risk-averse production environment so the design, implementation and support all need to be in place.
+- Read IBM Docs for an overview of the disaster recovery pre-requisites.
+- Partner with a Fusion SME to assess client requirements and develop the design.
+- Recognise that additional software such as Red Hat Advanced Cluster Management may be needed.
+
+### Scenario 5: Data sharing and pipelines
+Fusion can be configured to use IBM Storage Ceph or IBM Storage Scale for shared data storage across different workloads and clusters. When the business is implementing data or AI pipelines the ability to leverage data fabric components is one way that solutions can be developed more quickly. A paid Fusion offering is required.
+- IBM Storage Ceph helps with co-located data, typically provisioned to clusters from separate pools, or storing object data, consolidated in a single location. Only object data can be accessed by an existing cluster which already has internal ODF/FDF storage.
+- IBM Storage Scale, also known as Global Data Platform, delivers a single global namespace tailored for high performance workloads and is readily attached to OpenShift clusters that are already using internal ODF/FDF storage.
+- Data Cataloging is the first step in AI pipelines requiring labelled data, with other features that can help profile data consumption for specific roles and manage data retention.
+
+### Scenario 6: Data warehouse
+IBM Fusion HCI can be ordered with well-defined configurations that are fully supported by the Db2 Warehouse product team. This is an ideal solution when the client needs a fast deployment which has a very small impact on their other systems because everything is contained in one rack.
+- Build a solution proposal overview as described in the reference architecture.
+- Match the new HCI solution to existing model.
+- Use IBM Storage Modeller (StorM) to configure a tee-shirt size S,M,L,XL.
+- Engage Expert Lab Services in the solution quote.
+- Offer optional migration and maintenance services.
+
+### Scenario 7: Capacity expansion
+Primary storage and backup storage (measured by front-end capacity), can both be upgraded using independent Fusion parts. Primary storage entitles capacity to be provisioned. When the backup storage is expanded it can be used for data protection of capacity which does not have to be provisioned by Fusion. Fusion Advanced licensing has a flat rate of 12TB per cluster which is one likely reason for a capacity expansion need.
+- Primary storage expansion can be performed within the cluster, or external to it with IBM Storage Fusion because the entitlement includes non-Fusion capacity such as IBM Storage Ceph and IBM Storage Scale.
+- The agent which performs a backup is called the spoke. Total backup capacity addressable by all the spokes must be licensed.
+- The manager which orchestrates activity of the spokes is called the hub. A spoke can operate in the same cluster as the hub to perform backups there.
+- Refer to the earlier backup and restore scenario.
+
+
+---

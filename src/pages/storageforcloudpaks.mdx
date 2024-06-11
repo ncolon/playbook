@@ -1,0 +1,49 @@
+---
+title: Storage for Cloud Paks
+description: Technical content regarding storage for Cloud Paks
+---
+
+<Row>
+
+<Column>
+
+## Storage for IBM Cloud Pak for Integration
+
+| Cloud Pak | Summary | Storage type | Documentation |
+| --- | --- | --- | --- |
+| IBM Cloud Pak for Integration | The Cloud Pak license entitles the customer to use of IBM Spectrum Fusion. The entitlement provides access for a single period of up to one year and up to 6 TB usable capacity for each of IBM Primary Storage, IBM Backup Storage, and Metadata Management | IBM Spectrum Fusion including Red Hat OpenShift Data Foundation Essentials <br/><br/>OpenShift Container Storage Version 4.6 or higher and OpenShift Data Foundation <br/><br/>Portworx Storage Version 2.5.5 or above <br/><br/>IBM Cloud Block storage and IBM Cloud File storage | https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.2?topic=requirements-storage-considerations |
+
+
+## Storage for IBM Cloud Pak for Data
+
+| Cloud Pak | Summary | Storage type | Documentation |
+| --- | --- | --- | --- |
+| IBM Cloud Pak for Data | The Cloud Pak license entitles the customer to use of IBM Spectrum Fusion. The entitlement provides access for a single period of up to one year and up to 6 TB usable capacity for each of IBM Primary Storage, IBM Backup Storage, and Metadata Management <br/><br/>Portworx -> OCS migrations with CPD 3.x -> 4 upgrades<br/>CSM Guidance for<br/>HA/DR<br/>Backup/Restore<br/>Encryption | IBM Spectrum Fusion including Red Hat OpenShift Data Foundation Essentials <br/><br/>Red Hat OpenShift Container Storage Version 4.6 or higher and OpenShift Data Foundation <br/><br/>Network File System (NFS) Version 4 <br/><br/>Portworx Version: <br/> - 2.5.0.1 or later is required for Red Hat OpenShift Version 3.11 <br/> - 2.6.2 or later is required for Red Hat OpenShift Version 4.6 | https://www.ibm.com/docs/en/cloud-paks/cp-data/4.5.x?topic=planning-storage-considerations <br/><br/> https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=planning-storage-considerations <br/><br/>https://www.ibm.com/docs/en/cloud-paks/cp-data/3.5.0?topic=planning-storage-considerations |
+
+
+## Storage for IBM Cloud Pak for Business Automation
+
+| Cloud Pak | Summary | Storage type | Documentation |
+| --- | --- | --- | --- |
+| IBM Cloud Pak for Business Automation | Storage classes must be POSIX-compliant, such as when used with NFS or CIFS.<br/>On IBM Cloud (ROKS), use the gid storage classes: ibmc-file-bronze-gid, ibmc-file-silver-gid, and ibmc-file-gold-gid | Red Hat OpenShift Container Storage Version 4.6 or higher and OpenShift Data Foundation <br/><br/>IBM Spectrum Scale <br/><br/>Network File System (NFS) Version 4 <br/><br/>IBM Cloud File Storage | https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=ppd-storage-considerations |
+
+
+## Storage for IBM Cloud Pak for Watson AIOps
+
+
+| Cloud Pak | Summary | Storage type | Documentation |
+| --- | --- | --- | --- |
+| IBM Cloud Pak for Watson AIOps | The Cloud Pak license entitles the customer to use of IBM Spectrum Fusion. The entitlement provides access for a single period of up to one year and up to 6 TB usable capacity for each of IBM Primary Storage, IBM Backup Storage, and Metadata Management <br/><br/> | IBM Spectrum Fusion including Red Hat OpenShift Data Foundation Essentials <br/><br/>Red Hat OpenShift Container Storage Version 4.6 or higher and OpenShift Data Foundation <br/><br/>Portworx High IO | https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=requirements-storage-considerations |
+
+
+## Storage for IBM Cloud Pak for Security
+
+
+| Cloud Pak | Summary | Storage type | Documentation |
+| --- | --- | --- | --- |
+| IBM Cloud Pak for Security | Supported on IBM Spectrum Fusion, Amazon Web Services (AWS), IBM Cloud®(Classic), IBM Cloud®(VPC2), Microsoft Azure, VMware | Validated storage classes: <br/> - ocs-storagecluster-ceph-rbd (Red Hat ODF, IBM Spectrum Fusion) <br/> - ocs-storagecluster-cephfs (Red Hat ODF, IBM Spectrum Fusion) <br/> - ibm-spectrum-scale-sc (IBM Spectrum Fusion, IBM Spectrum Scale) <br/> - gp2 (AWS) <br/> - gp2-csi (AWS) <br/> - ibmc-block-gold (IBM Cloud) <br/> - ibmc-file-gold-gid (IBM Cloud) <br/> - ibmc-vpc-block-10iops-tier (IBM Cloud VPC2) <br/> - managed-premium (Microsoft Azure) <br/> - portworx-fs (Portworx) <br/> - portworx-shared-sc (Portworx) <br/> - vsphere-storage-blockvsphere-volume(thin) (VMware) | https://www.ibm.com/docs/en/cloud-paks/cp-security/1.10?topic=planning-storage-requirements |
+
+
+</Column>
+
+</Row>

@@ -1,0 +1,455 @@
+---
+title: QRadar
+description: Technical content on QRadar
+keywords: 'QRoC, QRadar SIEM, QRadar EDR/XDR SaaS, SIEM, EDR, XDR, log insights, SOAR, QVA, acceleration, ReaQta'
+date: 15 April 2024
+---
+
+import {Link} from 'gatsby'
+
+<AnchorLinks small>
+<AnchorLink>What is QRadar? What does it do?</AnchorLink>
+<AnchorLink>What are the pain points QRadar address?</AnchorLink>
+<AnchorLink>The steps to deploy and who is responsible for what, when?</AnchorLink>
+<AnchorLink>What do CSM driven deployments look like?</AnchorLink>
+<AnchorLink>How do I expand and grow the usage?</AnchorLink>
+<AnchorLink>There isn't a current use case, where do I start?</AnchorLink>
+<AnchorLink>Frequently asked questions</AnchorLink>
+</AnchorLinks>
+
+<Row className="resource-card-group">
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Detect anomalies and attacks while eliminating many false positives"
+      title="QRadar on Cloud (QRoC)"
+      href="/common/security/csm-security-qroc/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Guide clients with onboarding to expansion opportunities"
+      title="QRadar Cloud-Native SIEM"
+      href="/common/security/csm-security-cloudnative-siem-saas/">
+
+![qradar siem](../images/ibm-security.svg)
+
+</ResourceCard>
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Guide clients with onboarding to expansion opportunities"
+      title="QRadar EDR/XDR SaaS"
+      href="/common/security/csm-security-edr-saas/">
+
+![qradar edr xdr saas](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Guide clients with onboarding to expansion opportunities"
+      title="QRadar Log Insights SaaS"
+      href="/common/security/csm-security-loginsights-saas/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Guide clients with onboarding to expansion opportunities"
+      title="QRadar SIEM SaaS (QRadar on Cloud)"
+      href="/common/security/csm-security-qradarsiem-saas/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Guide clients with onboarding to expansion opportunities"
+      title="QRadar SOAR (SaaS)"
+      href="/common/security/csm-security-soar-saas/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Detect and remediate known and unknown threats in near real-time"
+      title="EDR (ReaQta)"
+      href="/common/security/csm-security-reaqta/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Log management and security observability"
+      title="QRadar Log Insights"
+      href="/common/security/csm-security-loginsights/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Perform QVA"
+      title="QRadar acceleration"
+      href="/common/acceleration-plays/qradar-play/">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+</Row>
+
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+## What is QRadar? What does it do?<br/>
+
+**IBM Security QRadar XDR** is the industry's leading Extended Detection and Response(XDR) suite that helps to detect and eliminate threats faster. It helps security teams prioritize the most relevant threats to the business by providing detailed actionable threat investigations. It is a comprehensive solution that integrates data collected from assets, clouds, networks, endpoints and users and then correlates this data with vulnerability information and threat intelligence. It also performs advanced analytics to identify and track the most serious issues.
+
+This suite also integrates with third-party security solutions. All the threat intel comes from IBM X-Force. The IBM X-Force platform facilitates the sharing of security threats research, intelligence aggregation, and peer collaboration. The full QRadar XDR suite gives complete visibility across data sources from a single interface.
+
+QRadar XDR includes:
+
+- **QRadar® XDR (Extended Detection and Response) Connect:** Connects tools, automate your SOC and streamline workflows.
+- **QRadar® EDR (Endpoint Detection and Response):** Automatically detects and stop threats such as ransomware.
+- **QRadar® NDR (Network detection and response):** Detect hidden threats on your network.
+- **QRadar® SIEM (Security Information and Event Management):** Intelligent security analytics for actionable insight into the most critical threats.
+- **QRadar® SOAR (Security Orchestration, Automation and Response):** Respond to security incidents with confidence, consistency, and collaboration.
+- **Threat Intel:** Advanced real-world, real-time industry curated Cyber intelligence.
+
+## What are the pain points QRadar address?
+
+The key pain points that QRadar addresses are related to the cost reduction and flexibility, such as:
+
+**Pain Point:** Incumbent security tools not detecting critical issues and QRadar Extended Detection and Response overcomes this by superior data acquistion and using analytics to detect issues in real time.
+
+**Pain Point:** Lack of visibility; security data spread across on-premise and cloud environments. By enabling integrations, this can be resolved. QRadar Extended Detection and Response comes with 600+ data integrations inclusing on-premise and cloud helping avoid this problem.
+
+**Pain Point:** Total cost of ownership of current security stack too high. QRadar Extended Detection and Response supports native and hybrid XDR. This does not require any vendor lock-in and thus can reduce the spendings on security Extended Detection and Response.
+
+**Pain Point:** Insufficient skilled resources and staff burnout. QRadar Extended Detection and Response reduces this by increasing analyst efficiency by using Artificial Intelligence and machine learning, reducing MTTR (Mean Time To Repair). It drastically reduces the number of alerts and the time required to conduct investigations.
+
+**Pain Point:** Too many alerts result in alert fatigue, reducing productivity, slowing response times and craeting staff burn out. QRadar helps the analyst to concentrate on most importtant things by providing the initial investigations using analytics.
+
+**Pain Point:** Lack of cohesive incident response plans and processes. QRadar makes this easy by seemlessly integrating with both IBM and third party Extended Detection and Response tools including Splunk.
+
+## The steps to deploy and who is responsible for what, when?
+
+**Identify a pain point, sponsor and use case**<br/>
+The IBM team of Sales, Tech Sales and potentially CSM can use the list of pain points above or a Client Engineering engagement to identify use cases and sponsors.<br/><br/>
+**Demonstrate how a given pain point can be addressed (demo) in the use case**<br/> Help your customers understand <a href="https://ibm.seismic.com/Link/Content/DChWbbCDWgqB88TVFF4dGh9XB8fj" target='_blank' rel='noreferrer noopener'>the value of QRadar XDR</a>.  This client facing deck makes it really clear what capabilities are unique to the QRadar XDR and what is available in it. Also, make use of the <a href="https://techzone.ibm.com/collection/security-live-demos-collection#tab-4" target='_blank' rel='noreferrer noopener'>Tech Zone - Security Live Demos Collection</a>.<br/><br/>
+**Prove value  (proof of experience (PoX) of the use case**<br/>
+Tech Sales, Client Engineering, and CSM can work together to connect the product to the customers' systems and prove the capabilities resolve the pain points.<br/><br/>
+**Implement a project**<br/>
+CSMs can work with the customer to determine how the customer would like to implement their project. Initially, there should be a conversation between Security Technology Expert Labs, yourself, and the client to scope the opportunity and engage our most qualified team. The customer may elect to utilize an implementation partner and/or do the work themselves. Regardless of how the deployment is conducted, ensure that you are involved in the process, keeping close contact with the teams and maintaining a proactive relationship with the client. Please pay close attention to the  <a href='https://w3.ibm.com/w3publisher/pps-shortcuts/sel-offerings' target='_blank' rel='noreferrer noopener'>SEL Offerings</a> as a guideline for any deployment conversations with the client.
+
+## What do CSM driven deployments look like?
+
+<a href='https://ibm.ent.box.com/s/8cdl3xpifea4scojdsuh1og1b4tkwi9w' target='_blank' rel='noreferrer noopener'>Incedo</a> is an example of a CSM driven engagement, where the CSM (Vineet Srivastava) worked with them to deploy QRadar SIEM over AWS infrastructure and complete the onboarding of their first client to start with post SIEM Implementation and eventually SOAR Implementation as well.
+
+## How do I expand and grow the usage?
+
+Start by showing the customer the value of Extended Detection and Response (XDR) platform. Make them aware that QRadar XDR provides a great solution here as IBM can deploy XDR using the client’s existing technology stack, and down the road the client can choose to simplify their stack by replacing certain XDR components with IBM. As part of this implementation, look for opportunities as to how we can expand the usage of other security offerings in the engagement.<br/><br/>
+Use the following conversation starters as references: <a href='https://ibm.seismic.com/Link/Content/DCmXRMX7dXmQb8C2b8qd3848XJf3' target='_blank' rel='noreferrer noopener'>Extend threat management protection</a><br/><a href='https://ibm.seismic.com/Link/Content/DCV6hTgbXDTVP82P98Df4M9XCB3P' target='_blank' rel='noreferrer noopener'>Defend and Block Ransomware</a><br/><a href='https://ibm.seismic.com/Link/Content/DCX99VJpcXVJ28WVRm7Gb2qX6X3G' target='_blank' rel='noreferrer noopener'>Why Change conversation guide</a><br/><br/>We also have case studies here in the <a href="https://csm-usecase.dal1a.cirrus.ibm.com/" target='_blank' rel='noreferrer noopener' >Use Case Repository (deprecated)</a> and the <a href='https://ibm.biz/IBM_STARS' target='_blank' rel='noreferrer noopener'>STARS repository.</a><br/><br/>
+To [expand offerings](../expand-renew/expand-offerings) or [renew offerings](../expand-renew/renew-offerings), make use of <a href="https://w3.ibm.com/w3publisher/ibm-security-americas/customer-workshops/product-value-assessments/qradar" target='_blank' rel='noreferrer noopener'>QRadar Value Assessment</a>.<br/><br/>
+
+#### QRadar Value Assessment (QVA)
+
+<Accordion>
+
+<AccordionItem title='What is a QVA ?'>
+
+A no-fee, three-hour workshop with technical experts that will help assess the current state of your customer's QRadar deployment (On-Prem and On Cloud) and result in actionable recommendations to optimize their existing investment.
+
+#### Assets
+
+<a href="https://w3.ibm.com/w3publisher/ibm-security-americas/customer-workshops/product-value-assessments/qradar" target='_blank' rel='noreferrer noopener'>QRadar Value Assessment</a>
+
+</AccordionItem>
+
+<AccordionItem title='Why do you need a Value Assessment ?'>
+
+* A value assessment helps the CSM to increase the usage and adoption through use case identification and value realization.
+* It helps the CSM to better understand the customer’s QRadar successes, challenges, and broader network security goals, as well as ensure they fully utilize the platform.
+* This enables the CSM to have early conversations with the customers about renewing and expanding contracts, leading to greater license increase opportunities and easier renewals.
+
+</AccordionItem>
+<AccordionItem title='How to run a QVA Workshop ?'>
+
+Step 1: Conduct Workshop<br/>
+Step 2: Debrief and Generate Recommendations<br/>
+Step 3: Compile Deliverable<br/>
+Step 4: Report Presentaion and Action Planning<br/><br/>
+
+#### Executing a QVA Report
+Once a QVA has been scheduled, consider the following steps in executing a successful and effective workshop.
+- Utilize the <a href="https://ibm.box.com/s/s4kktp538qqen4iu5hkaq0aegy5b4in4" target='_blank' rel='noreferrer noopener'>QVA QRadar Questionnaire</a> to guide your conversation, break the question set down into focused segments, and record the customer's responses and comments.
+- For Virtual QVAs: Consider turning your camera on or providing a visual for the customer to look at during the assessment. This <a href="https://ibm.box.com/s/sa8elun5pvy6tdzitjg19p6hwxeawtvt" target='_blank' rel='noreferrer noopener'>slide deck</a> can be used to keep the conversation on track and remind the customer what you are focusing on.
+#### Delivering a QVA Report
+Once a QVA has been executed, use the following resources and templates to prepare a clean and targeted QVA Report.
+- Use this template for the report – <a href="https://ibm.box.com/s/i8iv9g9i6u47gwv6oqi8ib542gmqt7fz" target='_blank' rel='noreferrer noopener'>Template for QVA Report</a>
+- Make use of <a href="https://ibm.box.com/s/mh44530bk3d1ibkzdgl3v7d7q3furk6l" target='_blank' rel='noreferrer noopener'>QVA Customer Data Source Questionnaire</a>
+- While compiling the final report, make use of <a href="https://ibm.box.com/s/sa8elun5pvy6tdzitjg19p6hwxeawtvt" target='_blank' rel='noreferrer noopener'>QVA Report Slide Deck Template</a>.
+
+#### Assets
+
+- <a href="https://ibm.box.com/s/qxsy5njgtstoqta6a2pov72thbsrrjgp" target='_blank' rel='noreferrer noopener'>Workshop Introduction</a>
+- Assessment Template
+  - <a href="https://ibm.box.com/s/s4kktp538qqen4iu5hkaq0aegy5b4in4" target='_blank' rel='noreferrer noopener'>QRadar</a>
+- <a href="https://ibm.box.com/s/i8iv9g9i6u47gwv6oqi8ib542gmqt7fz" target='_blank' rel='noreferrer noopener'>Report Template</a>
+- <a href="https://ibm.box.com/s/sa8elun5pvy6tdzitjg19p6hwxeawtvt" target='_blank' rel='noreferrer noopener'>Report Deck</a>
+
+#### Other Useful Links
+
+- <a href="https://ibm.box.com/s/i8meuebk88b3xyjn5g06un26s11vfcoz" target='_blank' rel='noreferrer noopener'>QRadar Value Assessment Handout</a>
+- <a href="https://ibm.box.com/s/dpsjwmdi9570n1gy4ro0qnwvxinddclm" target='_blank' rel='noreferrer noopener'>QRadar Value Assessment SME Training</a>
+- <a href="https://ibm.box.com/s/ufrynbi0q3etcxrq92hbfa2v0sq0qzae" target='_blank' rel='noreferrer noopener'>How To Guide: QRadar Value Assessment Charts</a>
+- <a href="https://ibm.box.com/s/b5mx32pjavrnmf8ej2ozyd7q16fspjpa" target='_blank' rel='noreferrer noopener'>QRadar Value Assessment Sample Report</a>
+- <a href="https://ibm.box.com/s/lkzobd1vw42v39psx1yy6v25431fqww2" target='_blank' rel='noreferrer noopener'>Log Source Helper (Not for customers)</a>
+- <a href="https://ibm.box.com/s/r1rp9a8w5b64f600lucpfpnj9a4xv9q4" target='_blank' rel='noreferrer noopener'>Completed Assessments</a>
+
+</AccordionItem>
+
+<AccordionItem title='Where to do a QVA ?'>
+
+- QVA done > 1 year
+- Low deployment %
+- Reaching deployment or approaching end of life
+- New client team
+- Actively opening tickets
+- Licensing conversations
+
+</AccordionItem>
+
+<AccordionItem title='QVA Best Practices'>
+
+#### Doing this for first time ? Then ask for help.
+
+If newer to conducting QVAs, don’t fly solo. Have a fellow experienced QRadar CSM join you.
+
+#### Follow Up
+
+- Recurring progress checkpoint on QVA.
+- Helps ensure timely progress on recommended actions.
+- Low hanging fruit that can be completed quickly with big impact – list first.
+- Order the recommendations in a sequence that doesn’t exude sales and revenue first.
+
+#### Request to record the QVA if appropriate
+
+- Request to record the Webex QVA discovery/survey meeting – if appropriate, but not at the expense of the customer being very open.
+- This might allow greater discovery insights, dialog, and more accurate data recording.
+
+#### Know your audience
+
+- Business partner
+- Sometimes – keep IBM attendees to just CSMs or Tech Sales
+
+#### Keep an eye on the forms and deliverables
+
+Know your forms and deliverables.
+- Log Source inventory – not for customers
+- Other Log Source forms are for your benefit only and contain vendor product examples and use cases.
+- QVA Discovery spreadsheet form – Do Not share with the customer
+- QVA customer deliverable – do not use generic responses – ensure all are suited and customized for your customer.
+
+</AccordionItem>
+
+</Accordion>
+
+## There isn't a current use case, where do I start?
+
+Most customers are somewhere on their security journey and if you talk to the right people you will find the pain points that are listed above.
+
+As a CSM, drive to at least gain approval from the customer to run a discovery workshop to identify and prioritize use cases and potential solution designs. Do this with the participation of IT and LOB in the room or MURAL session at the same time. If you need assistance running a workshop reach out the Practice Leaders, Greg Sabatini or Hemankita Perabathini for assistance. You can also ask to have Client Engineering or Security Technology Expert Labs run a session.
+
+#### ![use-case](../images/use-case-14.svg) Use Cases
+
+<Accordion>
+
+<AccordionItem title='Automate your Security Operations Center (SOC)'>
+
+Connect your tools. Automate your SOC. Free up time for what matters most.
+
+#### Assets
+
+<a href="https://www.ibm.com/products/qradar-xdr-connect" target='_blank' rel='noreferrer noopener'>QRadar® XDR Connect</a>
+
+</AccordionItem>
+
+<AccordionItem title='Intelligent security analytics'>
+
+Intelligent security analytics for actionable insight into the most critical threats.
+
+#### Assets
+
+<a href="https://www.ibm.com/products/qradar-siem" target='_blank' rel='noreferrer noopener'>QRadar® SIEM</a>
+
+</AccordionItem>
+
+<AccordionItem title='Real-time network traffic analysis'>
+
+IBM QRadar Network Insights enables deep visibility through real-time network traffic analysis.
+
+#### Assets
+
+<a href="https://www.ibm.com/products/real-time-threat-identification" target='_blank' rel='noreferrer noopener'>QRadar® Network Insights</a>
+
+</AccordionItem>
+
+<AccordionItem title='Case management'>
+
+As an administrator, you can manage cases and collections by using Case Management. You can create cases for collections of documents or packet capture (pcap) files and can also import external files into the IBM® QRadar® Incident Forensics system.
+
+#### Assets
+
+Tune case management to help you.
+
+<a href="https://www.ibm.com/docs/en/qsip/7.5?topic=administration-case-management" target='_blank' rel='noreferrer noopener'>7.5 Case management</a>
+
+
+</AccordionItem>
+
+<AccordionItem title='Simulate an attack on network assets'>
+
+Use a simulation to test your network for vulnerabilities from various sources. Attack simulations can be used to audit device configurations in your network. Simulations display the theoretical path.
+
+#### Assets
+
+<a href="https://www.ibm.com/docs/en/qsip/7.5?topic=simulations-use-case-simulate-attacks-network-assets" target='_blank' rel='noreferrer noopener'>7.5 Use case - Simulate attacks on network assets</a>
+
+
+</AccordionItem>
+
+<AccordionItem title='Device configuration audit'>
+
+Use the configuration information for network devices, which is captured by IBM® QRadar® Risk Manager, for audit compliance and to schedule configuration backups. Configuration backups provide a centralized and automatic method of recording device changes
+
+</AccordionItem>
+
+</Accordion>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<br/><br/>
+
+<Aside>
+
+**Customer Success Practice Leader:** <br/><a href='https://w3.ibm.com/#/people/5D0578897' target='_blank' rel='noreferrer noopener'>Greg Sabatini</a>     <a href='https://ibm.enterprise.slack.com/user/@W4PPX9401' target='_blank' rel='noreferrer noopener'>(@gsabatini)</a><br/><a href='https://w3.ibm.com/#/people/2J5840897' target='_blank' rel='noreferrer noopener'>Jonathan Pechta</a> <a href='https://ibm.enterprise.slack.com/user/@WAPKUCGLQ' target='_blank' rel='noreferrer noopener'>(@jonathan.pechta1)</a><br/>
+**Community:** <br/> <a href='https://w3.ibm.com/w3publisher/customersuccess/community-connections/security-platform-community' target='_blank' rel='noreferrer noopener'>Security Platform Community</a><br/><a href='https://www.ibm.com/developerworks/rfe/execute?use_case=changeRequestLanding&BRAND_ID=301' target='_blank' rel='noreferrer noopener'>Security RFE Community</a><br/>
+**CSM Slack Channels:** <br/><a href='https://ibm-cloud.slack.com/archives/C01L8MBNN6P' target='_blank' rel='noreferrer noopener'>#csm-security</a><br/><a href='https://ibm-cloud.slack.com/archives/CESAJF4PJ' target='_blank' rel='noreferrer noopener'>#cp4sec_sales_enable</a><br/><a href='https://ibm-cloud.slack.com/archives/CRBSLC284' target='_blank' rel='noreferrer noopener'>#cp4sec-tech</a><br/><a href='https://ibm-security.slack.com/archives/C016DAUCFNC' target='_blank' rel='noreferrer noopener'>#cp4saas</a> <br/>
+**Learn:** <br/><a target='_blank' rel='noreferrer noopener' href="https://www.securitylearningacademy.com/">IBM Security Learning Academy</a><br/><a target='_blank' rel='noreferrer noopener' href="https://w3.ibm.com/w3publisher/customersuccess/get-learning/csm-university/cloud-pak-platform">CSM University</a><br/><a target='_blank' rel='noreferrer noopener' href="https://mediacenter.ibm.com/media/IBM+Security+QRadar+XDR/1_qkxo00ij">IBM Security QRadar XDR</a><br/><a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/qradar">QRadar - Documentation</a><br/><a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/qradar#3039019">QRadar - Resources</a><br/>
+**Marketing Page:** <a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/qradar">IBM Security QRadar XDR</a><br/>
+**Demo:** <a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/products/security-intelligence-qradar/demos/use-cases">IBM Security QRadar Demo</a><br/>
+**Roadmap:** <a href='https://w3.ibm.com/w3publisher/security-roadmaps' target='_blank' rel='noreferrer noopener'>Security Offerings Roadmap</a><br/>
+**Competitors:** <br/><a href='https://ibm.seismic.com/Link/Content/DCR7cq69Q6WhGGcD9bmp8TmhhH4G' target='_blank' rel='noreferrer noopener'>XDR Competitive Analysis</a><br/>
+**Sales kit:** <a href='https://ibm.seismic.com/Link/Content/DCS4YrI82oEkOtZmyquwr3fA' target='_blank' rel='noreferrer noopener'>QRadar XDR</a><br/>
+**Tech Zone:** <a href='https://techzone.ibm.com/collection/security-live-demos-collection#tab-4' target='_blank' rel='noreferrer noopener'>Activation Kit</a> with Demo environments and enablement<br/>
+**Architectures:** <a href='https://www.ibm.com/cloud/architecture/architectures/securityArchitecture' target='_blank' rel='noreferrer noopener'>Security architecture for cloud applications</a><br/>
+**Field Guide:** <a href='https://www.ibm.com/cloud/architecture/content/field-guide/security-field-guide/' target='_blank' rel='noreferrer noopener'>IBM Security Field Guide</a><br/>
+**Value Assessment:** <a href='https://ibm.box.com/s/feppjrovdzes7yct5vq6l0qvsfrcpe8l' target='_blank' rel='noreferrer noopener'>IBM QRadar Value Assessment</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Product Support:**<br/> <a href='https://pages.github.ibm.com/csm-playbook/playbook/support/access-ibm-support/#help-your-customer-get-issues-resolved' target='_blank' rel='noreferrer noopener'>IBM Support</a><br/>
+</Aside>
+
+<Aside>
+
+**Build your skills**
+
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-6CAA33EAA07F' target='_blank' rel='noreferrer noopener'>LearnIT Learning Plan</a><br/>
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-4B2518EF5D01' target='_blank' rel='noreferrer noopener'>ApplyIT Learning Plan </a><br/>
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-C4F9B06B5ED0' target='_blank' rel='noreferrer noopener'>DesignIT Learning Plan</a><br/>
+Security Learning Academy: <a href='https://www.securitylearningacademy.com/local/navigator/index.php?level=sisi01' target='_blank' rel='noreferrer noopener'>QRadar XDR - Security Academy</a><br/>
+Learning and Certifications: <a href='https://ibm.seismic.com/Link/Content/DCa9acfMJ2PkOH30KC2r3epQ' target='_blank' rel='noreferrer noopener'>Security Badges and Learning Paths</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Who can help me?**
+
+**Client Engineering** and **Tech Sales** have the skills required to perform engagements.<br/>
+**Technology Expert Labs** can deliver solution design, deploy production environments, deliver full stack observability, create outcome SOW and account plans (for a fee).<br/>
+If you aren't sure, reach out to @gsabatini or @jonathan.pechta1 for help.<br/>
+**Other Contacts** <a href='https://ibm.seismic.com/Link/Content/DCcRsbjzzJ8kCqhI_0SXS3dQ' target='_blank' rel='noreferrer noopener'>QRadar sales, product management, and marketing</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Customer facing case studies?**<br/><a href='https://w3.ibm.com/w3publisher/ibm-security-customer-marketing/available-references' target='_blank' rel='noreferrer noopener'>IBM Security Customer Marketing Case Studies</a><br/><a href='https://csm-usecase.dal1a.cirrus.ibm.com/' target='_blank' rel='noreferrer noopener'>Use Case Repository (deprecated)</a> and the <a href='https://ibm.biz/IBM_STARS' target='_blank' rel='noreferrer noopener'>STARS repository.</a><br/>
+
+</Aside>
+
+<Aside>
+
+**CSM Lifecycle practices**<br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/understand-client-it-landscape' target='_blank' rel='noreferrer noopener'>Understand the customer landscape</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/engage-business-sponsor' target='_blank' rel='noreferrer noopener'>Engage the business sponsor</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/use-case-discovery' target='_blank' rel='noreferrer noopener'>Discover the prioritized use case</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/understand-modernization' target='_blank' rel='noreferrer noopener'>Modernize</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/csm-cocreate' target='_blank' rel='noreferrer noopener'>Co-create the solution</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/architect-the-solution' target='_blank' rel='noreferrer noopener'>Architect a solution</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/deploy/install-provision' target='_blank' rel='noreferrer noopener'>Install and provision</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/implement/scale-workload' target='_blank' rel='noreferrer noopener'>Scale the solution</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Scale the solution**<br/><a href='https://www.securitylearningacademy.com/course/view.php?id=5353' target='_blank' rel='noreferrer noopener'>Giving QRadar Capabilities with CP4S</a><br/>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+_____________________________
+
+## Frequently asked questions
+
+* **Do you have any questions regarding Pricing and Licensing ?**
+
+Refer to the QRadar section of the <a href='https://ibm.seismic.com/Link/Content/DCgtviGYW5xUe3prBew5-B1Q' target='_blank' rel='noreferrer noopener'>IBM Cloud Pak for Security Pricing and Licensing FAQ</a> for more information. Also, check out <a href='https://ibm.seismic.com/Link/Content/DCXWJgqQBc4qm8qWj8DhCX82m4qP' target='_blank' rel='noreferrer noopener'>QRadar XDR Connect Packaging & Pricing</a>.
+
+* **Where can I find QRadar Customer Use Cases ?**
+
+For Customer Use Cases, have a look at <a href='https://www.ibm.com/security/digital-assets/qradar/security-use-cases-ebook/#/' target='_blank' rel='noreferrer noopener'>QRadar Customer Use Cases</a>.
+
+* **What can I do if a customer will lose their QRadar license coverage due to clerical error, partner mistake or oversight?**
+
+Send a message to q1pd@us.ibm.com with the name of the customer, and current entitlements (EPS/FPM) requesting a temporary license. They will need to have details about the deployment but can let him know exactly what is needed. Please copy @GREG SABATINI and @Sterling on the email and we can provide additional context if they need it. The Q1PD team is responsible for existing customers.
+
+</Column>
+</Row>

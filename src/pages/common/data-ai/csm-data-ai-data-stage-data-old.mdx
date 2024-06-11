@@ -1,0 +1,233 @@
+---
+title: DataStage
+description: Technical content on DataStage for Cloud Pak for Data(CP4D)
+keywords: 'datastage modernization, InfoSphere'
+date: 15 April 2024
+---
+
+import {Link} from 'gatsby';
+import FileLink from '../../../components/FileLink';
+
+<AnchorLinks small>
+<AnchorLink>What is DataStage and what does it do?</AnchorLink>
+<AnchorLink>What are the pain points that DataStage addresses?</AnchorLink>
+<AnchorLink>There isn't a current use case, where do I start?</AnchorLink>
+<AnchorLink>How do I modernize existing DataStage customers?</AnchorLink>
+<AnchorLink>What do CSM-driven deployments look like?</AnchorLink>
+<AnchorLink>The steps to deploy and who is responsible for what, when?</AnchorLink>
+<AnchorLink>How do I expand and grow DataStage usage?</AnchorLink>
+</AnchorLinks>
+
+
+<Row className="resource-card-group">
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Move from IBM Infosphere DataStage, IBM Infosphere QualityStage or IBM Information Server to DataStage nextgen."
+      title="DataStage modernization"
+      href="/common/modernization/modernization-datastage/">
+
+![datastage mod](../images/ibm--datastage.svg)
+
+</ResourceCard>
+
+</Column>
+</Row>
+
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+## What is DataStage and what does it do?
+IBM DataStage on IBM Cloud Pak for Data is a modernized data integration solution to collect and deliver trusted data anywhere, at any scale and complexity, on and across multicloud and hybrid cloud environments. Save on data movement costs by bringing a best-in-breed parallel engine to where your data is. Increase the productivity of your business and IT users through automated job design and out-of-the-box, native integration with cloud data lakes, real-time data sources, relational databases, big data, and NoSQL data stores.<br/>
+
+* Design once, run anywhere paradigm allows you to bring data integration to where your data resides.
+A best-in-breed parallel engine processes substantial data volumes, and built-in workload balancing supports multicloud scalability and elasticity.
+* The DataStage service uses Cloud Pak for Data platform connections and integration points, with services like Data Virtualization, to simplify the process of connecting to and accessing your data.<br/>
+With a fully cloud-native architecture, DataStage can dynamically scale workloads and optimize for large data sets. With a few steps, you can deploy IBM DataStage on Cloud Pak for Data in your AWS infrastructure to facilitate cloud-to-cloud, ground-to-cloud, or cloud-to-on-premises tasks.
+
+Some Key Benefits  from the [Data Stage Solution Brief](https://ibm.seismic.com/Link/Content/DCXgpTCPD6CmH84QFppd2hb3WDBB)
+
+* 50% lower cost of operations through simpler operations and maintenance.
+* 30% savings on workload execution time due to elastic scaling and balancing.
+* 50% or more reduction in development costs when running on multiple cloud environments thanks to the design once and run anywhere feature.
+* 87% savings in development cost when using visual and ML-assisted design, as compared to hand coding.
+* Existing customers can retain existing investments in skills and assets and save millions of dollars in license cost savings by eliminating the need to purchase Windows/Citrix thick client licenses.<br/>
+
+**Customer Facing Presentation** [Customer Facing Presention](https://ibm.seismic.com/Link/Content/DCmFW2gPF66Tm8CPW4qGp7TJ674P)<br/>
+
+[What is new in DataStage in CP4D 4.6](https://ibm.seismic.com/Link/Content/DChT8CMXQRPdM8HPG2bPBMjTHD63)<br/>
+
+## What are the pain points that DataStage addresses?
+
+Data Integration and Quality are at the heart of your DataOps value chain:<br/>
+* Provides flexibility on how to integrate your data and at what latency<br/>
+* Provides high scalability across a variety and volume of data<br/>
+* Provides built-in capabilities for data quality, governance and AI<br/>
+
+## There isn't a current use case, where do I start?
+* Focus on modernization discussions
+* Planned data integration projects
+* DataOps led initiatives
+
+As a CSM drive to at least gain approval from the customer to run a discovery workshop to identify and prioritize use cases and potential solution designs.  Do this with the participation of IT and LOB in the room or MURAL session at the same time.  If you need assistance running a workshop, reach out to the Practice Leader: Campbell Robertson for assistance.  You can also ask to have Client Engineering, Data Elite Team, Data Science Elite team or Expert Labs (Paid Engagement)
+
+
+**Simplified architecture leads to reduced administration & overhead**
+Removed WebSphere App Server, metadata repository (DB2, Oracle or SQL Server), no more Windows clients needed (removes Citrix or other workspace solutions); same DataStage parallel engine; simplified high availability.<br/>
+**Simpler upgrades, easy rollbacks**
+Operator framework allows repeatability of installation and upgrades; container images are quick to install and can be rolled back (minutes versus hours; no longer need to patch WAS, Engine, etc.). Monthly minor releases share security fixes; and faster development and delivery of new DataStage features.<br/>
+**Monitoring on a modern stack**
+Monitoring stack based on Prometheus open-source project; built-in logging components (EFK stack); can extend and share DataStage metrics beyond cluster administrators; integration with Splunk, Slack, ServiceNow, etc. possible.<br/>
+**Automated operations**
+Over-the-air updates for components; simplified, unified interface to leverage all the Kubernetes benefits; rich command-line interface (dsjob) allows you to reuse scripts for DataStage operations; APIs/CLIs integration for CI/CD; simplified lifecycle management.<br/>
+**Performance and scalability, availability**
+Multiple DataStage conductors and computes can be deployed quickly; virtually unlimited horizontal and vertical scalability; dynamic scalability and compute bursting are handled automatically by DataStage.<br/>
+**Development ease of use**
+Web-browser-based development environment; substantial productivity enhancements such as automated column propagation; searchable and interactive logs; canvas built on open-source project Elyra; type-ahead for DataStage functions.<br/>
+**Flexibility to deploy on other clouds or on-prem**
+Deploy within minutes (standardized deployment and management); monthly patches can be applied at the push of a button; simple access control and provisioning options; flexible model (self-managed OpenShift, managed OpenShift, SaaS).<br/>
+**DataStage asset modernization effort**
+In-built migration service simplifies importing existing DataStage assets (including parallel jobs and sequence jobs) into new experience; maintains portability with parameter sets; many development months to make this seamless.<br/>
+**Security**
+Highly secure container environment; supports TLS to encrypt data in transit; client-server communications are encrypted; container images go through certification; role-based access controls with Cloud Pak for Data.<br/>
+
+## The steps to deploy and who is responsible for what, when?
+The steps to deploy will depend on whether the client is new or a client migrating or modernizing.  Two teams can assist (either IBM Invest or For Fee)<br/><br/>
+For **modernization projects**, refer to the [CSM DataStage Modernization Journey](/modernization/modernization-datastage)<br/><br/>
+For **new installations**, you can request assistance from Technology Expert Labs: **[Request an Expert Labs Solution Engineer](https://survey.alchemer.com/s3/7197619/Solution-Engineering-Request-Form)**<br/>
+
+### How do I modernize existing DataStage customers?
+DataStage modernization is the process of taking customers from IBM Infosphere DataStage, IBM Infosphere QualityStage or IBM Information Server and moving them to DataStage “nextgen” on OpenShift.<br/>
+In conjunction with Product Management and Technology Expert Labs, the Customer Success team has created “packaged journeys” that detail the steps that are required to go from opportunity identification to assessment and end with an Expert Labs services project for delivery at scale.<br/><br/>
+You’ll find assets such as:<br/>
+-- curated, focused “compelling reason to act” pages that can be used with customers<br/>
+-- comparisons of existing point products and the version that runs on OpenShift<br/>
+-- modernization workshop materials<br/>
+-- assessment questionnaires and processes<br/>
+-- Technology Expert Labs offerings and approaches<br/><br/>
+For **modernization projects**, refer to the <Link to='/common/modernization/modernization-datastage' >CSM DataStage Modernization Journey</Link><br/><br/>
+
+
+### What do CSM-driven deployments look like?
+
+![DataStage Entitlement Options](../images/datastage_options.png)<br/>
+Next Generation DataStage on Cloud Pak for Data Cartridge Sizing https://ibm.seismic.com/Link/Content/DCMHH6X7pHjWc8HRHjD7TRfJTPbj
+Video tutorials on how to use certain stages and connectors, visit: https://video.ibm.com/playlist/650317/video/131718627
+
+## Cloud Pak for Data Reference Architecture (4.x)<br/>
+Please use these diagrams in your archtitecural diagrams and presentations.<br/>
+Latest Reference Architecture for CP4D: https://ibm.biz/BdPZ49<br/>
+Use the Cognitive Solution Architect: https://w3.ibm.com/tools/cogarch/pagelogin<br/>
+## How do I expand and grow DataStage usage?
+
+Starting with Express Parts which provides a rapid lightweight introduction,<br/>
+[Seller 1-Pager](https://ibm.seismic.com/app?ContentId=08894b44-8921-44f2-9d3d-fd7070af936a#/doccenter/f6bc8873-d580-4ee8-a903-c4e0d3a7eee9/doc/%252Fdd85c941b1-5f54-2314-ce72-b98c4c0974c2%252FdfOTRiYmU4NTQtNWY4NC03Y2QyLWZjYWUtOGIxYmFmZjkyZThk%252CPT0%253D%252CUHJvc3BlY3Rpbmc%253D%252Flf642235a3-71fb-4291-9a7f-76d76c78c25b//?mode=view&parentPath=sessionStorage)<br/>
+[Prospecting Guide 1-Pager](https://ibm.seismic.com/app?ContentId=08894b44-8921-44f2-9d3d-fd7070af936a#/doccenter/f6bc8873-d580-4ee8-a903-c4e0d3a7eee9/doc/%252Fdd85c941b1-5f54-2314-ce72-b98c4c0974c2%252FdfOTRiYmU4NTQtNWY4NC03Y2QyLWZjYWUtOGIxYmFmZjkyZThk%252CPT0%253D%252CUHJvc3BlY3Rpbmc%253D%252Flf70907048-707e-47a9-8872-7bd5b5194ecb//?mode=view&parentPath=sessionStorage)<br/>
+[Competitive 1-Pager](https://ibm.seismic.com/app?ContentId=08894b44-8921-44f2-9d3d-fd7070af936a#/doccenter/f6bc8873-d580-4ee8-a903-c4e0d3a7eee9/doc/%252Fdd85c941b1-5f54-2314-ce72-b98c4c0974c2%252FdfOTRiYmU4NTQtNWY4NC03Y2QyLWZjYWUtOGIxYmFmZjkyZThk%252CPT0%253D%252CQ29tcGV0aXRpdmUgcGxheWJvb2s%253D%252Flfbdab93b9-bd03-46bb-8395-1fe7d45d2a81//?mode=view&parentPath=sessionStorage)<br/>
+
+
+Use Case and Sponsors will ensure a successful first project deployment.  From there the positioning of additional services driven by new use cases will validate the need for additional compute or CP4D services.
+
+</Column>
+
+
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<br/><br/>
+
+<Aside>
+
+**Customer Success Practice Leader:** Campbell Robertson (cir@ca.ibm.com)<br/>
+
+**CSM Slack Channel:** <a href='https://ibm-analytics.slack.com/archives/C01L3NASBUJ' target='_blank' rel='noreferrer noopener'>csm-data-ai</a><br/>
+**DataStage Slack Channels:**<br/>
+**Standalone DataStage:** #iis-connectivity or #iis-general<br/>
+**Connectivity:** #cp4d-common-connectivity<br/>
+**Cloud Pak for Data:** #ds-nextgen-internal-users or #cp4d-datastage<br/>
+
+**Modernization:** [DataStage Modernization Journey](/modernization/modernization-datastage)<br/>
+**Learn:** Pre-recorded CSM Data & AI Office Hours **Calls:**<a href='https://ibm.biz/BdPZ4y' target='_blank' rel='noreferrer noopener'>CSM  enablement</a> materials<br/>
+**Roadmap:** <a href='https://ibm.seismic.com/Link/Content/DCqW2XR6Gb9cP8mRF7jT7mRP4RhV' target='_blank' rel='noreferrer noopener'>Data Stage - Date Fabric Integration</a><br/>
+**DataStage Sales Kit:** <a href='https://ibm.seismic.com/Link/Content/DCMbbC7qhpDQf8CCGPjB6qR2QpT8' target='_blank' rel='noreferrer noopener'>Go here for new DataStage discussions.</a> with additional information<br/>
+
+**Demo:** DataStage Free Trial [Link](https://techzone.ibm.com/resource/ibm-data-stage-ghmhd59kd)
+**Tech Zone:**  DataStage with Mettle CI [Link](https://techzone.ibm.com/collection/data-stage-dev-ops-with-mettle-ci)
+**Deployment Options:** SaaS, Virtual Machine, OpenShift
+
+</Aside>
+
+<Aside>
+
+
+**Build Your Skills:**
+
+ [NextGen DataStage Enablement](https://yourlearning.ibm.com/activity/IEC-10261879)
+
+ [Level 1](https://yourlearning.ibm.com/activity/URL-298A5C9871EC)
+
+ [Data Movement with DataStage Level 1](https://yourlearning.ibm.com/activity/URL-59E597AAAF78)
+
+ [Level 2: Multi Cloud Data Integration](https://yourlearning.ibm.com/activity/PLAN-FE12340A116D)
+
+ [Level 3](https://yourlearning.ibm.com/activity/PLAN-3E27BD894F60) course which features a DataStage and Watson Query demo.
+
+</Aside>
+
+<Aside>
+
+**Who can help me?**
+
+**Client Engineering** Slack: #client-eng-data-ai and **Tech Sales** Slack: #cp4d-cpfield have the skills required to perform Proof of Experience (Pox) engagements.<br/>
+**Data & AI Technical Account Managers (TAMs)** have deep skills and experience with the Data & AI portfolio.  Find out if a TAM is assigned to your account here: https://tams.mybluemix.net/
+Work with your account team to determine if there is already a TAM attached to your customer. If you aren't sure reach out to your Data & AI Practice Leader Campbell Robertson @campbell for help.<br/>
+**Technology Expert Labs** can deliver solution design, deploy production environments, deliver full-stack observability, and create outcome SOW and account plans (for a fee).  Slack Channel for Expert Labs: #ask-expert-labs <a href='https://ibm.biz/BdPZX6' target='_blank' rel='noreferrer noopener'>Seismic Link to Expert Labs Homepage</a><br/>
+
+**DataStage Points of Contact: **
+
+Albert Liang -- liangc@us.ibm.com WW Technical Sales - Data Integration and Preparation Lead
+
+DataStage Product Management:
+Scott Brokaw -- slbrokaw@us.ibm.com STSM, Program Director, Product Management
+Daniel Ferranti -- daniel.ferranti@ibm.com CP4D Product Management Lead, Connectivity
+Jessie Snyder -- jessgs@us.ibm.com Product Management Lead, DataStage on CP4DaaS, QualityStage
+Stephanie Valarezo -- stephanie.valarezo1@ibm.com Product Management Lead, DataStage on CP4D
+
+DataStage Support:
+Carl Braganza -- braganza@au1.ibm.com Program Director, WW Client Success  DataStage and WKC
+
+
+</Aside>
+
+<Aside>
+
+**Customer Case Studies?**<br/>
+<a href='https://www.ibm.com/products/datastage/use-cases?mhsrc=ibmsearch_a&mhq=datastage%20use%20cases' target='_blank' rel='noreferrer noopener'>External Use Case Examples</a> <br/>
+ <a href='https://ibm.biz/BdPZ4J' target='_blank' rel='noreferrer noopener'>Internal CSM Use Case Repository (Internal Use Only)(deprecated)</a> <br/>
+ The new <a href='https://ibm.biz/IBM_STARS' target='_blank' rel='noreferrer noopener'>STARS repository</a><br/>
+<a href='https://ibm.seismic.com/Link/Folder/DC886c666' target='_blank' rel='noreferrer noopener'>References and Wins</a> <br/>
+<a href='https://ibm.seismic.com/Link/Content/DCXf8MfRC66PH87Qd8G4P8DfXqJd' target='_blank' rel='noreferrer noopener'>Technology Expert Labs 1,000 Plus Reference, Wins and Success</a> <br/>
+</Aside>
+
+<Aside>
+
+**Frequently Asked Questions**
+<br/>
+ <a href='https://ibm.box.com/s/oov844aofjjk9zdayjd6ddubu87yiz2i' target='_blank' rel='noreferrer noopener'>DataStage NexGen FAQ</a><br/>
+ <a href='https://w3.ibm.com/w3publisher/data-ai-lessons-learned' target='_blank' rel='noreferrer noopener'>DataStage Lessons Learned Blog Post</a><br/>
+
+</Aside>
+
+
+<Aside>
+
+**Technology Expert Labs offerings**
+[CSM DataStage Modernization Journey](/modernization/modernization-datastage)<br/>
+[DataStage Modernization Service Offering](https://ibm.seismic.com/Link/Content/DC6VXhfBm8WJhGmQ4j6b24DBC2Wj)
+
+</Aside>
+
+</Column>
+
+</Row>
+

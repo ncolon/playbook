@@ -1,0 +1,184 @@
+---
+title: Create a Defection Report
+description: A description of how to create a Defection Report
+---
+<AnchorLinks small>
+  <AnchorLink>Create a Defection Report</AnchorLink>
+  <AnchorLink>When do I create a Defection Report?</AnchorLink>
+  <AnchorLink>How do I create a Defection Report in Gainsight?</AnchorLink>
+  <AnchorLink>Build the report</AnchorLink>
+  <AnchorLink>Close the Defection Report</AnchorLink>
+
+</AnchorLinks>
+
+<Row>
+<Column>
+
+## Create a Defection Report
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Create a Defection Report when your retention plan was not successful and your customer is going to churn.
+
+The defection report is a Success Plan type that provides visibility into why a customer churned or will churn despite plans to mitigate this risk. It follows an unsuccessful Retention Plan, so the defection report should not come as a surprise to your manager.
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## When do I create a Defection Report?
+
+Create a defection report when the desired outcome of a retention plan was not reached and resulted in revenue attrition or customer churn.
+
+Examples:
+
+* Customer experiencing financial disruption<br/>
+* Customer expressing frustration<br/>
+* Competitive threat (competitive POC, re-architecting, etc.)<br/>
+* Product functionality<br/>
+* No identified use cases<br/>
+* Revenue moving from one entitlement to the other<br/>
+* Include specific details on why we were not successful in retaining the customer and/or the cause of attrition.
+
+You should also create a defection report for "Perceived Churn". This is when the customer stops using one entitlement in favor of another. For example, a POC or moving from SaaS to On Prem. Use the defection report to explain where the revenue is moving.
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## How do I create a Defection Report in Gainsight?
+
+As you get started, ensure you understand what caused the initial risk (which should be in the retention plan) and explain why it could not be mitigated.
+
+Think through what the desired outcome of the retention plan was. Did you need to identify a use case?  Did you work with other internal stakeholders such as the the annuity team in an attempt to resolve any customer concerns about the renewal?  Were you engaged with other teams at IBM to address the customer's challenges?
+
+Best Practice:  Give your report a descriptive name so that people will know exactly what the plan is about.
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## Build the report
+
+A good defection report includes:
+
+- Clear and concise details why previous attempts at mitigating the risk were unsuccessful<br/>
+- Reason for the defection (drop down list)<br/>
+- Where the workload may be going (if applicable)<br/>
+- Did functionality issues impact the defection? (if applicable)<br/>
+- How much of the ACV will be lost?<br/>
+- Was the entitlement in production? If so, for how long?<br/>
+
+Best Practice: Review the defection report with your manager as a follow up to the retention plan.
+
+</Column>
+
+
+</Row>
+
+<Row>
+<Column>
+
+### Fields in the Defection Report
+
+<Accordion>
+
+<AccordionItem title='Standard fields'>
+
+- **Name:**  A descriptive title that provides the reason for the plan.  This is what will appear in reports so be informative yet brief.
+- **Company:** Auto-populated; the customer for which this plan is being created
+- **Relationship:**  Auto-populated; the customer's offering that is at risk, on which this plan is being created
+- **Type:** Defection plan.  (Other options: growth plan, Retention report, nurture plan (AI Apps)
+- **Due Date:**  Date by which you expect to have the risk mitigated
+- **Status:**
+    - **Draft:** early stages, initial ideas, plan not yet ready to be started
+    - **Active:**  plan is defined and you are ready to start
+    - **Closed:**  all actions are complete or work has been stopped.  Update Plan Closure Info section with details.
+- **Owner:** Auto-populated with the  name of the person who created the plan. Can be changed at any time.
+
+
+</AccordionItem>
+
+<AccordionItem title='Defection reason plan fields'>
+
+- **Why weren't we successful?:** In detail, describe the identified risk, and why we were not successful in mitigating the risk.
+- **Defection Reason:** Indicate what caused the defection.  *See the details in definitions section below.
+- **Competitor:** If Competition was selected as the Reason, enter the name of the Competitor.
+- **Functionality Issue:**  Select the specific function caused the defection, if applicable.  *See details in definition section below.
+- **Projected Loss:**  Select the percentage that represents the expected revenue loss.
+- **Where is the workload going?:** Select the option that best describes where the workload is moving, if applicable.
+- **Length of time in Production:**  How long has the entitlement been in production for, if applicable.
+
+</AccordionItem>
+
+<AccordionItem title='Defection reason definitions'>
+
+| Defection Reason | Definition |
+| --- | --- |
+| Outages | Customer is churning because outages have had a significantly impacted their business. |
+| Customer Mandate | Customer has required a change of direction, business priorities have changed |
+| Business/Financial Disruption | Customer is going out of business/bankrupt, product/service being deprecated or divested, affected by COVID19 |
+| Lack of Value (not for IBM Cloud) | Customer did not get the ROl they were anticipating. |
+| Mergers & Acquisitions | Customer has been acquired by another company who decided to go with incumbent provider |
+| No Use Case | Unable to agree on a way/reason to use the entitlement |
+| Pricing | Customer dissatisfied with pricing model, higher TCO or lower competitive offer that could not be matched |
+| Product/Features/Functionality | Products and features are not meeting the customers needs. **Also see "Functionality Issue" reasons. |
+| Perceived Churn | Entitlement may be churning but the customer is signing a new agreement for cloud |
+| Support Experience | Customer dissatisfied with their support experience of how tickets have been handled |
+| Undisclosed/Unknown | Customer refuses to disclose key reasons on why they are leaving or why they are declining usage |
+| Moved to On Prem | Customer moving away from SaaS to On Prem (customer is not moving away from IBM) |
+| Audit / compliance | Client has requirement for an audit or compliance metric that is not yet available within the IBM offering |
+
+</AccordionItem>
+
+<AccordionItem title='Functionality issue definitions'>
+
+| Defection Reason | Definition |
+| --- | --- |
+| Compliance | Client has requirement for FedRamp / GDPR / HIPPA etc. or other compliance metric that is not yet available within IBM Offering |
+| Functionality/Portfolio Gap | IBM product doesn't have functionality that Competitor can offer OR IBM doesn't have the type of Al client is seeking |
+| Integration with Other Products | Other providers offer better integration to core business applications |
+| Location Availability | Some IBM Offerings are only available in certain data centers |
+| Missing Parity with On Prem | Functionality missing from Cloud Offering that is available On Prem or customer has preference for On Prem |
+| Scalability | Customer wants flexibility to ramp up or down usage or billing & is unhappy with IBM options |
+| Time to Provision/Onboard | Complex, expensive on-boarding or delays in provisioning |
+| DC Migration (Cloud Only) | Customer is closing a datacenter and/or moving to a new datacenter and we don't know if the customer will leave IBM |
+
+</AccordionItem>
+
+
+</Accordion>
+
+</Column>
+
+
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+## Close the Defection Report
+
+After you have created the Defection Report and it has been reviewed by a manager, the next step is to change the Plan Status from Active to Closed.
+
+</Column>
+
+
+</Row>

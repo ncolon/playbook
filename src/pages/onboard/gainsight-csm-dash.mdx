@@ -1,0 +1,67 @@
+---
+title: Manage your CSM Portfolio
+description:  CS brand architect dashboard
+date: 14 December 2023
+---
+
+import {Link} from 'gatsby'
+
+<Row>
+<Column colMd={9} colLg={9}>
+
+The CSM dashboard is for CS Brand Architects to aid in identifying any actions that might be needed for your customers.
+
+## Identify areas that need attention
+
+The following reports on the dashboard provide a quick way to see your customers and highlight possible action areas for you to investigate.
+
+| The widget | Description | Action |
+| --- | --- | --- |
+| My Total # Customers | At a glance, see how many customers you are assigned to. | Drill into this report to go directly to specific customers or entitlements. |
+| Plans Missing Deployment Type | These plans do not have the Deployment Type selected, which is preventing them from being sent to the Deployment Scorecard. | Review your plan and select the Deployment Type.  All types are valid.  Plans with Initial Licenses and Additional Licenses will be sent to the Scorecard, which measures growth.  No Additional Usage plans are still important to keep your customer current and lay the foundation for future growth. Your manager looks all all types of plans. |
+| Plans with Past Go-Live Date | If the forecast production go-live date is in the past but the plan is not yet Deployed, the plan will not be included in the Forecast or sent to the Scorecard. Health scores might also be impacted. | Ensure your forecast dates are accurate and kept up to date. |
+| My CTAs | This report provides a quick view into CTAs assigned to you - and shows those that are overdue. | Ensure you're taking action on all your CTAs and closing them when complete. |
+| My Success Plans | Shows success plans of all types with key information about each. | Check your plan dates, and stages, and ensure that your plans are up to date.  Quickly access your plans from your dashboard. For growth plans, see the date on which the plan moved into each stage. |
+
+
+## Dive deeper into accounts
+
+The next set of reports provides information about your growth plan progression by quarter, enables you to quickly see your Timeline entries, and keeps track of your renewals and support tickets.  Look at your growth plan activity - have you been keeping your plans updated?  How are your health scores?  Do you have customers with Risk that you need to pay attention to?
+
+| The widget | Description | Action |
+| --- | --- | --- |
+| Growth Plans by Quarter | The Project Stage Quarter column shows the quarter in which the growth plan moved into the displayed stage. | One growth plan may have several rows - one row for each stage that it has moved through. Use this report to help you see your plan progression by quarter. |
+| Latest Timeline Entries | Shows all Timeline entries that you have made in the last 30 days, sorted by Last Modified Date. | This report enables you to easily see your recent Timeline entries. Use the Source column to see where the entry was made (R360, Success Plan, etc.) |
+| Upcoming Renewals Next 120 Days | Lists all renewals with a next renewal date in 120 days | Review the renewals that are coming up and touch base with your S&A rep to address any risks or questions they may have. |
+| Open Support Tickets | All open support tickets at your customers, of any severity. | Be aware of these severe issues or items that have been out there for a while. These might be clues that indicate where your customer is not satisfied. |
+| Growth Plans without Recent Updates | There might be a valid reason for a growth plan to not have been updated in the last 15 days (red) or past 30 days (yellow) but you should seek to understand why. | Ensure you're keeping your plans current.  Make Timeline entries to record progress, and refine Objectives to keep your plan on track. |
+| Growth Plan Progression by Deployment Type | Easily see which platforms your growth plans are on and in what deployment stages. | Does this chart show any areas of concern?  Make sure to keep your plans up to date. |
+| Length of Time in Current Stage | Quickly see all growth plans not in the "No Plans to Deploy" or "Deployed" stage, grouped by length of time in the current stage. | Certain offerings may take longer to move through the stages, but if a project has been in the same stage for over 90 days - investigate.  Is this expected or is there a problem? |
+| My Customer List - Health Scores | All your customers and their relationships are listed with their health scores. | Look at reds and yellows and understand why they're scored that way.  Are your growth plans up to date? Have you updated CSM Sentiment and % Revenue at Risk lately?  Use the CSM Sentiment tab to make your updates.  Hovering over the oval indicators will display comments if they exist. |
+| Customers with Risk | All retention plans and project risks are shown here, regardless of whether "help needed" is selected. | Review these with your CSM and figure out how to help mitigate the risk. |
+| My Relationships with Projects and Milestones | Shows a row for every relationship with your customers, with the most advanced project stage, milestone and number of deployments, along with the most recent quarter in which the milestone exists. | This report packs in a lot of data.  You can see how far the relationship has progressed from both a project perspective and a milestone perspective.  If there are multiple deployments, it shows you how many. And it shows the overall health score - if you have a red health with more than 1 deployment, you could be at risk of losing not just 1 but several deployments. |
+
+
+## Deployment outlook
+
+The QTD Deployments and Forecast Info section contains the same widgets that are on the manager Deployment Outlook dashboard.  You can see what your manager sees.  Be sure to filter on Cloud Pak or Growth.
+
+| The widget | Description | Action |
+| --- | --- | --- |
+| The deployment widgets | The number of new deployments in the current quarter <br/>The forecast deployments for CQ and NQ (only those that will impact the scorecard)<br/>The stretch forecasts for CQ and NQ<br/>Non-QTD Scorecard deployments | Use the Cloud Pak or Growth global dashboard filter to adjust the widgets, and see the numbers that your manager is reporting. <br/>The non-scorecard deployments widget shows deployments that you've worked on that are not in the scorecard - such as no annuity revenue to protect, or it was for an upgrade, for example. Your manager still looks at these growth plans!
+| My current quarter forecast dates | A table view of all growth plans with any of the three forecast dates (sponsor, install, deploy) in the current quarter. | Shows ALL growth plans, not just those that will impact the scorecard.  A condensed view of your growth plans with expected dates in the current quarter. |
+
+
+## Data and AI usage on IBM Cloud
+
+The reports in the Data and AI Usage on IBM Cloud section show IBM Cloud reports for DAI services and subscriptions.
+
+| The widget | Description | Action |
+| --- | --- | --- |
+| CS-covered product usage | Contains the last two months of usage by external customers for the CSM-covered IBM Cloud services for customers who have usage. The services being used are listed. | Easily view the usage data for your IBM Cloud DAI customers. |
+| My Watson, watsonx, and CP4DaaS purchases | Includes all active entitlements for customers who have purchased a Watson, watsonx, or CP4DaaS subscription. Includes the Purchase date, renewal date and earliest contract start date on the R360. | Shows you who has purchased DAI Subscriptions.  Follow up on usage - are they using what they purchased? |
+| Burndown by entitlement | Contains all active IBM Cloud PaaS subscriptions with the charge agreement number, total credits and remaining credits. Identifies the type of services being used (Cloud Platform, Integration and DAI) | See how much your DAI customer is using and what's left. | 
+
+</Column>
+</Row>
+

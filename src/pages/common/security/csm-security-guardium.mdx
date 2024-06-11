@@ -1,0 +1,378 @@
+---
+title: Guardium
+description: Technical content on Guardium
+keywords: 'Guardium insights, Guardium insights SaaS, Guardium GMAP, Guardium Value Assessment (GVA), GVA'
+date: 15 April 2024
+---
+
+import {Link} from 'gatsby'
+
+<AnchorLinks small>
+<AnchorLink>What is Guardium and what does it do?</AnchorLink>
+<AnchorLink>What are the pain points that Guardium addresses?</AnchorLink>
+<AnchorLink>What do CSM driven deployments look like?</AnchorLink>
+<AnchorLink>The steps to deploy and who is responsible for what, when?</AnchorLink>
+<AnchorLink>How do I expand and grow Guardium usage?</AnchorLink>
+<AnchorLink>There isn't a current use case, where do I start?</AnchorLink>
+<AnchorLink>Frequently asked questions</AnchorLink>
+</AnchorLinks>
+
+<Row className="resource-card-group">
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Help clients simplify data security architecture"
+      title="Guardium Insights"
+      href="/common/security/csm-security-gi">
+
+![guardium insights](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Provision, deploy and expand"
+      title="Guardium Insights SaaS"
+      href="/common/security/csm-security-guardium-insights-saas">
+
+![guardium insights saas](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Help Guardium Insights clients adopt Red Hat OpenShift"
+      title="Guardium GMAP modernization"
+      href="/common/modernization/modernization-gmap-guardium/">
+
+![guardium insights saas](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+<ResourceCard
+      subTitle="Promote Guardium Value Assessment (GVA)"
+      title="Guardium acceleration"
+      href="/common/acceleration-plays/guardium-play/">
+
+![guardium insights saas](../images/ibm-security.svg)
+
+</ResourceCard>
+
+</Column>
+</Row>
+
+
+<Row>
+<Column colMd={8} colLg={8} noGutterMdLeft>
+
+## What is Guardium and what does it do? <br/>
+
+**IBM Security Guardium** is a data security solution that can adapt as the threat environment changes, providing complete visibility, compliance and protection throughout the data security lifecycle.
+
+It is a modern, scalable data security platform that is ready to meet the demands of today’s progressing environments. It protects sensitive and regulated data across multiple cloud environments while managing compliance obligations, discovering where sensitive data lives, encrypting and monitoring what’s important and reducing your risk while responding to threats.
+
+The Guardium family includes:
+
+- [**IBM Security Guardium Data Protection:**](https://www.ibm.com/products/ibm-guardium-data-protection) Monitor data activity and accelerate compliance auditing and reporting for your data stored anywhere. Discover and classify data and data sources, monitor user activity, and respond to threats in real time.
+- [**IBM Security Guardium Data Encryption:**](https://www.ibm.com/products/guardium-data-encryption) Encrypt sensitive data in all states and across environments: your files, databases, and applications. Address data security and privacy regulations, and control encryption keys for cloud-based data.
+- [**IBM Security Discover and Classify:**](https://www.ibm.com/products/ibm-security-discover-and-classify) Rely on zero-trust based discovery and classification of sensitive and regulated data, wherever it resides: structured or unstructured, at rest or in motion. Provides visibility, context and insight into your data.
+- [**IBM Security Guardium Vulnerability Assessment:**](https://www.ibm.com/products/ibm-guardium-vulnerability-assessment) Scan your data to detect vulnerabilities, threats, and security gaps. Guardium Vulnerability Assessment is delivered as a part of Guardium Data Protection, but can be implemented as a stand-alone offering that serves its own use case.
+- [**IBM Security Guardium Key Lifecycle Manager:**](https://www.ibm.com/products/ibm-security-key-lifecycle-manager) Deliver centralized, secured key management with reduced costs and greater operational efficiency.
+- [**IBM Data Risk Manager:**](https://www.ibm.com/products/data-risk-manager) Uncover, analyze, and visualize data-related business risks so they can take action to protect their business.
+
+### CSM Product Coverage
+
+<Tabs>
+<Tab label="CS Brand Architects">
+
+CS Brand Architects will drive deployment of prioritized products that accelerate modernization/OpenShift, are key acquisition products, and advance IBM's Product Led Growth (PLG) initiatives. For any listed product, all license types are covered (Transactional, Subscription License and XaaS) unless otherwise noted.<br/><br/>
+
+- [Guardium Data Encryption](https://www.ibm.com/products/guardium-data-encryption)
+- [Guardium Data Protection](https://www.ibm.com/products/ibm-guardium-data-protection)
+
+</Tab>
+<Tab label="CS Account Specialists">
+
+CS Account Specialists cover all software in Diamond ELA reporting sections: Catalogs (ACEL), Capped Enterprise Licenses (CEL), Subscriptions, Substitutions, and Unlimited Enterprise License Agreements (UEL).<br/><br/>
+
+[Access the CS Deployment Scorecard PIDS for Architect Coverage here.](https://ibm.box.com/s/ic4oqw2f94d2b9ksd46zgocpmvb0ixmu)<br/><br/>
+
+For questions related to part numbers covered by our CS Architects on Diamond accounts, drill into the details of your clients ELA and use the `CSM Covered flag` to select `CSM Covered = Yes`.  That will filter your view to just the parts included in the program.
+
+</Tab>
+</Tabs>
+
+<InlineNotification>
+
+**Note:** If you want to check out the list of Security CSM covered offerings, refer [Customer Success Covered Products](https://w3.ibm.com/w3publisher/customersuccess/the-practice/csm-covered-offerings#Security) page.
+
+</InlineNotification>
+
+## What are the pain points that Guardium addresses?
+
+**Pain Point:** Secure the sensitive or regulated data and meet compliance with regulations. ***IBM Security Guardium*** helps organizations achieve their data security and compliance goals through its broad portfolio of robust encryption, data activity monitoring, data threat analysis, and compliance reporting tools.
+
+**Pain Point:** Securing data across hybrid multicloud environments. ***IBM Security Guardium Data Protection*** resolves this by supporting hybrid multicloud data protection with consistent data security policies across environments and holistic risk views. It provides broad platform support and massive scalability for the largest on-premise and cloud environments.
+
+**Pain Point:** Encrypted data remains worthless ciphertext without access to encryption keys. But, developing encryption policies, managing the encryption environment and maintaining keys can be challenging. ***IBM Security Guardium Data Encryption*** resolves this by protecting assets residing in cloud, virtual, big data, and physical environments, offering capabilities to encrypt and control access to files, databases, and applications through a unified suite of encryption and key management capabilities for the hybrid multicloud environment.
+
+**Pain Point:** Understanding where sensitive data resides, how it is used through out the organization, differentiating between types of sensitive data and maintaining visibility over this sensitive data is challenging. ***IBM Security Discover and Classify*** (ISDC) will help to address this problem by identifying repositories (databases, applications, file systems, log files, etc.) where sensitive data resides, and scan them to get full visibility into the depth and breadth of the data.
+
+**Pain Point:** With changes in user privileges, roles or configurations and new versions or patches releasing regularly, many organizations lack the centralized visibility and control or skilled resources to review changes systematically to determine if they have introduced security gaps. ***IBM Guardium Vulnerability Assessment*** identifies weaknesses that could be exploited by malicious actors to access sensitive data. This eliminates enormous risk created by insecure data repository configurations, missing patches, weak passwords and other common vulnerability exposures (CVE’s) helping you better understand and then improve your data security posture.
+
+**Pain Point:** Native, full-disk encryption generates large volumes of data-encryption keys, which must be protected and managed. Managing the security of diverse data storge devices can be burdensome. Also, encryption can limit availability of data and end-of-life of storage media can be expensive as well as slow. For all these demands, ***IBM Security Guardium Key Lifecycle Manager*** provides a centralized key management solution.
+
+**Pain Point:** Determining business risks that are associated with information assets, identifying and prioritizing controls implementation is challenging. ***IBM Data Risk Manager*** addresses this by providing business leaders a business-consumable data risk control center that helps to uncover, analyze, and visualize data-related business risks. Business leaders can then proactively address data-related business risks to protect their organizations.
+
+## The steps to deploy and who is responsible for what, when?
+
+**Identify a pain point, sponsor and use case**<br/>
+The IBM team of Sales, Tech Sales and potentially CSM can use the list of pain points above or a Client Engineering engagement to identify use cases and sponsors.<br/><br/>
+**Demonstrate how a given pain point can be addressed (demo) in the use case**<br/> Help your customers understand <a href="https://ibm.seismic.com/Link/Content/DCpfWhbcCMRbH8CRdDgp8jG6cDXP" target='_blank' rel='noreferrer noopener'>the value of IBM Security Guardium</a>.  This deck makes it really clear what capabilities are unique to the IBM Security Guardium and what is available in it. Also, make use of the <a href="https://techzone.ibm.com/collection/security-live-demos-collection#tab-1" target='_blank' rel='noreferrer noopener'>Tech Zone - Security Live Demos Collection</a>.<br/><br/>
+**Prove value (proof of experience (PoX)) of the use case**<br/>
+Tech Sales, Client Engineering, and CSM can work together to connect the product to the customers' systems and prove the capabilities resolve the pain points.<br/><br/>
+**Implement a project**<br/>
+CSMs can work with the customer to determine how the customer would like to implement their project. Initially, there should be a conversation between Security Technology Expert Labs, yourself, and the client to scope the opportunity and engage our most qualified team. The customer may elect to utilize an implementation partner and/or do the work themselves. Regardless of how the deployment is conducted, ensure that you are involved in the process, keeping close contact with the teams and maintaining a proactive relationship with the client. Please pay close attention to the  <a href='https://w3.ibm.com/w3publisher/pps-shortcuts/sel-offerings' target='_blank' rel='noreferrer noopener'>SEL Offerings</a> as a guideline for any deployment conversations with the client.
+
+## What do CSM driven deployments look like?
+
+<a href='https://ibm.ent.box.com/s/x9asukyilnxhloam1io0h73gv1vn98yd' target='_blank' rel='noreferrer noopener'>Banco Central do Brasil</a> is an example of a CSM driven engagement, where the CSM (Henderson Cerqueira) worked with them to use IBM Guardium Insights for increasing and improving visibility as well as monitoring of access to data and systems, in addition to meeting the Bank's LGPD standards.
+
+## How do I expand and grow Guardium usage?
+
+Start by showing the customer the value of IBM Security Guardium platform. As part of this implementation, look for opportunities as to how we can expand the usage of other security offerings in the engagement.<br/><br/>
+Use the following conversation starters as references: <br/><a href='https://ibm.seismic.com/Link/Content/DC79qqR8c24qQ89Fgbmf4BpJmmc8' target='_blank' rel='noreferrer noopener'>IBM Security Guardium Data Protection</a><br/><a href='https://ibm.seismic.com/Link/Content/DCTpFTWqQDjC6G9TbC6hGCD66Djd' target='_blank' rel='noreferrer noopener'>Encryption Key Management (Guardium)</a><br/><a href='https://ibm.seismic.com/Link/Content/DC2jM4Phchm9C84WPhD9fBCfV968' target='_blank' rel='noreferrer noopener'>Guardium for Key Management</a><br/><a href='https://ibm.seismic.com/Link/Content/DCTg2f3VBh9TC8qMqgDPqJfMBg8V' target='_blank' rel='noreferrer noopener'>Guardium for Files and Database Encryption</a><br/><br/>
+We also have a bunch of case studies here in the <a href="https://csm-usecase.dal1a.cirrus.ibm.com/" target='_blank' rel='noreferrer noopener' >Use Case Repository (deprecated)</a> and the <a href='https://ibm.biz/IBM_STARS' target='_blank' rel='noreferrer noopener'>STARS repository.</a><br/><br/>
+To [expand offerings](../expand-renew/expand-offerings) or [renew offerings](../expand-renew/renew-offerings), make use of <a href="https://ibm.seismic.com/Link/Content/DCD6PHTGjQHC88mCjjRmT2jMfQ7P" target='_blank' rel='noreferrer noopener'>Guardium Value Assessment</a>.<br/><br/>
+
+#### Guardium Value Assessment (GVA)
+
+<Accordion>
+
+<AccordionItem title='What is a GVA ?'>
+
+A no-fee, 2-4 hour workshop with technical experts that will help assess the current state of your customer's Guardium deployment and result in actionable recommendations to optimize their existing investment.
+
+#### Assets
+
+<a href="https://ibm.seismic.com/Link/Content/DCD6PHTGjQHC88mCjjRmT2jMfQ7P" target='_blank' rel='noreferrer noopener'>Guardium Value Assessment</a>
+
+</AccordionItem>
+
+<AccordionItem title='Why do you need a Value Assessment ?'>
+
+* A value assessment helps the CSM to increase the usage and adoption through use case identification and value realization.
+* It helps the CSM to better understand the customer’s Guardium successes, challenges, and broader data security goals, as well as ensure they fully utilize the platform.
+* This enables the CSM to have early conversations with the customers about renewing and expanding contracts, leading to greater license increase opportunities and easier renewals.
+
+</AccordionItem>
+<AccordionItem title='How to run a GVA Workshop ?'>
+
+#### Executing a GVA Report
+Once a GVA has been scheduled, consider the following steps in executing a successful and effective workshop.
+1. Start with the <a href="https://ibm.ent.box.com/folder/198964392246" target='_blank' rel='noreferrer noopener'>GVA Snapshot</a>. Send the customer a link to complete the <a href="https://www.surveygizmo.com/s3/6561334/ibmgdr" target='_blank' rel='noreferrer noopener'>GVA Pre-Engagement Survey</a> or send them the <a href="https://ibm.box.com/s/sb2b4wywb6qwgrl498wvqdk3tg2ofan5" target='_blank' rel='noreferrer noopener'>spreadsheet</a> of the questionnaire to go through together. This questionnaire will capture the details of the current state of their environment. If using the online survey tool, you can receive a code from <a href="https://w3.ibm.com/#/people/1J4179897" target='_blank' rel='noreferrer noopener'>Tiana Sullivan</a> or <a href="https://w3.ibm.com/#/people/1J2400897" target='_blank' rel='noreferrer noopener'>Ashish John</a> as well as the survey results.
+2. If the customer would like to get a deeper technical understanding of their Guardium environment, do the full GVA workshop. Utilize the <a href="https://ibm.box.com/s/ge3v6ocrq71z9p25g447b4k3uj9ddssw" target='_blank' rel='noreferrer noopener'>GVA Questionnaire</a> to guide your conversation, break the question set down into focused segments, and record the customer’s responses and comments.
+3. For virtual GVAs: Consider turning your camera on or providing a visual for the customer to look at during the assessment. The <a href="https://ibm.box.com/s/09i64wctd6ncdj988p16qs0tvsl9t6mi" target='_blank' rel='noreferrer noopener'>slide deck</a> can be used to keep the conversation on track and remind the customer what you are on focusing on.
+
+#### Delivering a GVA Report
+Once a GVA has been scheduled, consider the following steps in executing a successful and effective workshop.
+- Use this template for GVA Snapshot - <a href="https://ibm.box.com/s/3kasrsbltmdqhx7zst9shvtiaiwdgw74" target='_blank' rel='noreferrer noopener'>Template for GVA Snapshot Report</a>
+- Use this template for GVA Report - <a href="https://ibm.box.com/s/4xmkj40x7b8uneetal7629nhxtdrj26p" target='_blank' rel='noreferrer noopener'>Template for GVA Recommendations Report</a>
+- Make use of <a href="https://ibm.box.com/s/yhxfkihhdfju84a3gg6d376vwxbalbkh" target='_blank' rel='noreferrer noopener'>Library of Recommendations</a>
+- While compiling the final slide deck, make use of Template for <a href="https://ibm.box.com/s/aaqokxnx5ivvjtfk900y28uv69ze933x" target='_blank' rel='noreferrer noopener'>GVA Report Slide Deck</a>
+
+Your completed GVA report and all relevant materials should be posted in the <a href="https://ibm.box.com/s/ukvrg5kimeuh0rk0j6gmikkog8koow5p" target='_blank' rel='noreferrer noopener'>Completed Assessments</a> subfolder.
+
+#### Assets
+
+- <a href="https://ibm.seismic.com/Link/Content/DCc7jPhHpJFV98WMHdmHqG7GCT98" target='_blank' rel='noreferrer noopener'>GVA Tutorial</a>
+- <a href="https://ibm.box.com/s/k106d01q39mgge1rlie0b81mpt1sjh95" target='_blank' rel='noreferrer noopener'>GVA Box Folder</a>
+- <a href="https://ibm.box.com/s/5sroxpf6zijld7mtuqzr46535brefthk" target='_blank' rel='noreferrer noopener'>GVA Box Folder Walkthrough</a>
+- <a href="https://ibm.box.com/s/qg6ed678qk9nbs11xrk4qcwssgqxkpmg" target='_blank' rel='noreferrer noopener'>GVA Pre-engagement Information Gathering</a>
+- <a href="https://ibm.box.com/s/ysn99wu3gat3n3k0whl1z13j9ruma9hh" target='_blank' rel='noreferrer noopener'>Create GVA Snapshot Recording</a>
+- <a href="https://ibm.box.com/s/a4ndg6s5faumj4b46qnd6jks8wadf983" target='_blank' rel='noreferrer noopener'>GVA Workshop Report Deliverable</a>
+
+</AccordionItem>
+
+<AccordionItem title='Where to do a GVA ?'>
+
+- GVA done > 1 year
+- Low deployment %
+- Reaching deployment or approaching end of life
+- New client team
+- Actively opening tickets
+- Licensing conversations
+
+</AccordionItem>
+
+<AccordionItem title='GVA Best Practices'>
+
+#### Doing this for first time ? Then ask for help.
+
+If newer to conducting GVAs, don’t fly solo. Have a fellow experienced Guardium CSM join you.
+
+#### Follow Up
+
+- Recurring progress checkpoint on GVA.
+- Helps ensure timely progress on recommended actions.
+- Low hanging fruit that can be completed quickly with big impact – list first.
+- Order the recommendations in a sequence that doesn’t exude sales and revenue first.
+
+#### Request to record the GVA if appropriate
+
+- Request to record the Webex GVA discovery/survey meeting – if appropriate, but not at the expense of the customer being very open.
+- This might allow greater discovery insights, dialog, and more accurate data recording.
+
+#### Know your audience
+
+- Business partner
+- Sometimes – keep IBM attendees to just CSMs or Tech Sales
+
+#### Keep an eye on the forms and deliverables
+
+Know your forms and deliverables.
+- Pre-GVA Survey/Spreadsheet – Send to customer prior to GVA Workshop for generating GVA Snapshot.
+- GVA Questionnaire spreadsheet form – Do Not share with the customer.
+- GVA Recommendations Library – Make use of the relevant recommendations in the final deliverable form. Also, if any new recommendations identified, state them in this form.
+- GVA customer deliverable – do not use generic responses – ensure all are suited and customized for your customer.
+
+</AccordionItem>
+
+</Accordion>
+
+## There isn't a current use case, where do I start?
+
+Most customers are somewhere on their security journey and if you talk to the right people you will find the pain points that are listed above.
+
+As a CSM, drive to at least gain approval from the customer to run a discovery workshop to identify and prioritize use cases and potential solution designs. Do this with the participation of IT and LOB in the room or MURAL session at the same time. If you need assistance running a workshop reach out the Practice Leaders, Greg Sabatini or Hemankita Perabathini for assistance. You can also ask to have Client Engineering, or Security Technology Expert Labs.
+
+#### ![use-case](../images/use-case-14.svg) Use Cases
+
+#### Guardium Data Protection
+
+<Accordion>
+
+<AccordionItem title='Data governance'>
+
+Discovery and classify all sensitive data in their environment and set access policy as to which users have access to that data.
+
+#### Assets
+
+- <a href="https://www.ibm.com/downloads/cas/VJEXYRZK" target='_blank' rel='noreferrer noopener'>Guardium solution brief</a>
+
+</AccordionItem>
+
+<AccordionItem title='Data security'>
+
+Monitoring access to sensitive or regulated data in real time, detecting anomalous activity, and identifying and remediating threats.
+
+#### Assets
+
+- <a href="https://www.ibm.com/downloads/cas/VJEXYRZK" target='_blank' rel='noreferrer noopener'>Guardium solution brief</a>
+
+</AccordionItem>
+
+</Accordion>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterMdLeft>
+
+<br/><br/>
+
+<Aside>
+
+**Customer Success Practice Leader:** <br/><a href='https://w3.ibm.com/#/people/5D0578897' target='_blank' rel='noreferrer noopener'>Greg Sabatini</a>     <a href='https://ibm.enterprise.slack.com/user/@W4PPX9401' target='_blank' rel='noreferrer noopener'>(@gsabatini)</a><br/><a href='https://w3.ibm.com/#/people/2J5840897' target='_blank' rel='noreferrer noopener'>Jonathan Pechta</a> <a href='https://ibm.enterprise.slack.com/user/@WAPKUCGLQ' target='_blank' rel='noreferrer noopener'>(@jonathan.pechta1)</a><br/>
+**Community:** <br/> <a href='https://w3.ibm.com/w3publisher/customersuccess/community-connections/security-platform-community' target='_blank' rel='noreferrer noopener'>Security Platform Community</a><br/><a href='https://www.ibm.com/developerworks/rfe/execute?use_case=changeRequestLanding&BRAND_ID=301' target='_blank' rel='noreferrer noopener'>Security RFE Community</a><br/>
+**CSM Slack Channel:** <br/><a href='https://ibm-cloud.slack.com/archives/C01L8MBNN6P' target='_blank' rel='noreferrer noopener'>#csm-security</a><br/><a href='https://ibm-cloud.slack.com/archives/CESAJF4PJ' target='_blank' rel='noreferrer noopener'>#cp4sec_sales_enable</a><br/><a href='https://ibm-cloud.slack.com/archives/CRBSLC284' target='_blank' rel='noreferrer noopener'>#cp4sec-tech</a><br/><a href='https://ibm-security.slack.com/archives/C016DAUCFNC' target='_blank' rel='noreferrer noopener'>#cp4saas</a> (This channel requires the access to the IBM Security workspace) <br/>
+**Learn:** <br/><a target='_blank' rel='noreferrer noopener' href="https://www.securitylearningacademy.com/">IBM Security Learning Academy</a><br/><a target='_blank' rel='noreferrer noopener' href="https://w3.ibm.com/w3publisher/customersuccess/get-learning/csm-university/cloud-pak-platform">CSM University</a><br/><a target='_blank' rel='noreferrer noopener' href="https://mediacenter.ibm.com/media/IBM+Security+Guardium+Data+Protection+helps+companies+of+all+sizes+addresses+common+data+risk+use+cases/1_8086fc8v">IBM Security Guardium</a><br/><a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/docs/en/guardium/">Guardium - Documentation</a><br/>
+**Marketing Page:** <br/><a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/guardium">IBM Security Guardium</a><br/>
+**Demo:** <br/><a target='_blank' rel='noreferrer noopener' href="https://www.ibm.com/security/digital-assets/guardium/data-protection-demo/">IBM Security Guardium Data Protection</a><br/>
+**Roadmap:** <a href='https://w3.ibm.com/w3publisher/security-roadmaps' target='_blank' rel='noreferrer noopener'>Security Offerings Roadmap</a><br/>
+**Sales kit:** <br/><a href='https://ibm.seismic.com/Link/Content/DCf0nLG6KlSUyjfyBAndUbww' target='_blank' rel='noreferrer noopener'>Data Security & Protection (Guardium)</a><br/><a href='https://ibm.seismic.com/Link/Content/DCQR4H9292gVmGMHMDCbp49mphCV' target='_blank' rel='noreferrer noopener'>Guardium Data Protection</a><br/><a href='https://ibm.seismic.com/Link/Content/DCTbH3pVdcW2Q8QMCHM822XTghTP' target='_blank' rel='noreferrer noopener'>Guardium Data Encryption</a><br/><a href='https://ibm.seismic.com/Link/Content/DC6b4PgMfT6bT87FpDV7cjd9P8Bj' target='_blank' rel='noreferrer noopener'>Discover and Classify</a><br/><a href='https://ibm.seismic.com/Link/Content/DCBQHH62BHMqmGqQP2qpQcMGF7H8' target='_blank' rel='noreferrer noopener'>Guardium Key Lifecycle Manager</a><br/><a href='https://ibm.seismic.com/Link/Content/DC9WFF4dg7m6HG7H4phFQCT4237G' target='_blank' rel='noreferrer noopener'>Data Risk Manager</a><br/>
+**Tech Zone:** <a href='https://techzone.ibm.com/collection/security-live-demos-collection#tab-1' target='_blank' rel='noreferrer noopener'>Activation Kit</a> with Demo environments and enablement<br/>
+**Architectures:** <a href='https://www.ibm.com/cloud/architecture/architectures/securityArchitecture' target='_blank' rel='noreferrer noopener'>Security architecture for cloud applications</a><br/><a href='https://www.ibm.com/cloud/architecture/architectures/data-security-arch' target='_blank' rel='noreferrer noopener'>Data security architecture</a><br/>
+**Field Guide:** <a href='https://www.ibm.com/cloud/architecture/content/field-guide/security-field-guide/' target='_blank' rel='noreferrer noopener'>IBM Security Field Guide</a><br/>
+**Value Assessment:** <a href='https://ibm.box.com/s/k106d01q39mgge1rlie0b81mpt1sjh95' target='_blank' rel='noreferrer noopener'>IBM Guardium Value Assessment</a><br/>
+**Technology Pattern:** <a href='https://data-security.tech-patterns.techzone.ibm.com/' target='_blank' rel='noreferrer noopener'>Data Security</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Product Support:**<br/> <a href='https://pages.github.ibm.com/csm-playbook/playbook/support/access-ibm-support/#help-your-customer-get-issues-resolved' target='_blank' rel='noreferrer noopener'>IBM Support</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Build your skills**
+
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-A9E2D1013609' target='_blank' rel='noreferrer noopener'>LearnIT Learning Plan</a><br/>
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-3B0280744AB7' target='_blank' rel='noreferrer noopener'>ApplyIT Learning Plan </a><br/>
+CSM U: <a href='https://yourlearning.ibm.com/activity/PLAN-326991BB204F' target='_blank' rel='noreferrer noopener'>MasterIT Learning Plan</a><br/>
+Security Learning Academy: <a href='https://www.securitylearningacademy.com/local/navigator/index.php?level=dsds01' target='_blank' rel='noreferrer noopener'>Guardium - Security Academy</a><br/>
+Learning and Certifications: <a href='https://ibm.seismic.com/Link/Content/DCa9acfMJ2PkOH30KC2r3epQ' target='_blank' rel='noreferrer noopener'>Security Badges and Learning Paths</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Who can help me?**<br/><br/>
+**Client Engineering** and **Tech Sales** have the skills required to perform engagements.<br/><br/>
+**Technology Expert Labs** can deliver solution design, deploy production environments, deliver full stack observability, create outcome SOW and account plans (for a fee).<br/><br/>
+If you aren't sure, reach out to <a href='https://ibm.enterprise.slack.com/user/@W4PPX9401' target='_blank' rel='noreferrer noopener'>@gsabatini</a> or <a href='https://ibm.enterprise.slack.com/user/@WAPKUCGLQ' target='_blank' rel='noreferrer noopener'>(@jonathan.pechta1)</a> for help.
+
+</Aside>
+
+<Aside>
+
+**Customer facing case studies?**<br/><a href='https://w3.ibm.com/w3publisher/ibm-security-customer-marketing/available-references' target='_blank' rel='noreferrer noopener'>IBM Security Customer Marketing Case Studies</a><br/><a href='https://csm-usecase.dal1a.cirrus.ibm.com/' target='_blank' rel='noreferrer noopener'>Use Case Repository (deprecated)</a> and the <a href='https://ibm.biz/IBM_STARS' target='_blank' rel='noreferrer noopener'>STARS repository.</a><br/>
+
+</Aside>
+
+<Aside>
+
+**CSM Lifecycle practices**<br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/understand-client-it-landscape' target='_blank' rel='noreferrer noopener'>Understand the customer landscape</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/engage-business-sponsor' target='_blank' rel='noreferrer noopener'>Engage the business sponsor</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/use-case-discovery' target='_blank' rel='noreferrer noopener'>Discover the prioritized use case</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/onboard/understand-modernization' target='_blank' rel='noreferrer noopener'>Modernize</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/csm-cocreate' target='_blank' rel='noreferrer noopener'>Co-create the solution</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/architect-the-solution' target='_blank' rel='noreferrer noopener'>Architect a solution</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/deploy/install-provision' target='_blank' rel='noreferrer noopener'>Install and provision</a><br/><a href='https://pages.github.ibm.com/csm-playbook/playbook/implement/scale-workload' target='_blank' rel='noreferrer noopener'>Scale the solution</a><br/>
+
+</Aside>
+
+<Aside>
+
+**Scale the solution**<br/><a href='https://www.securitylearningacademy.com/course/view.php?id=5788' target='_blank' rel='noreferrer noopener'>Integrate CP4S with Guardium Insights</a><br/>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+_____________________________
+
+## Frequently asked questions
+
+* **Do you want to get answers to the most commonly asked questions about IBM Security Guardium Data Protection ?**
+
+Refer to <a href='https://www.ibm.com/products/ibm-guardium-data-protection/faq' target='_blank' rel='noreferrer noopener'>IBM Security Guardium Data Protection FAQs</a>.
+
+* **Do you want to get answers to the most commonly asked questions about IBM Security Guardium Data Encryption ?**
+
+Refer to <a href='https://www.ibm.com/products/guardium-data-encryption/pricing' target='_blank' rel='noreferrer noopener'>IBM Security Guardium Data Encryption FAQs</a>.
+
+* **Do you have any questions regarding Pricing and Licensing ?**
+
+Refer to the Guardium Solution section of the <a href='https://ibm.seismic.com/Link/Content/DCgtviGYW5xUe3prBew5-B1Q' target='_blank' rel='noreferrer noopener'>IBM Cloud Pak for Security Pricing and Licensing FAQ</a> for more information.
+
+</Column>
+</Row>

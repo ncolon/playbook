@@ -1,0 +1,170 @@
+---
+title: QRadar SIEM SaaS (QRadar on Cloud)
+description: Content on QRadar SIEM (SaaS)
+keywords: 'QRadar SIEM (SaaS) QRoC'
+date: 9 February 2024
+---
+
+import {Link} from 'gatsby'
+
+<InlineNotification kind="warning">
+
+**Note: The <i>AUTOMATED</i> deployment metrics are pending sign-off and should be considered in progress until this notice is removed.**
+
+The following considerations should be taken when reporting on SaaS deployments:
+- All deployments for SaaS should follow the same process as non-SaaS / on-prem deployments
+- Create one Growth Plan per use case
+- Growth Plan project stages will be used to determine milestone status
+- Deployed growth plans require a success plan review by a manager before being counted in the CSM scorecard
+- All 3 deployment questions must be answered for the Growth Plan before being counted in the CSM scorecard
+
+</InlineNotification>
+
+
+## Contacts
+
+| WW contact | Name |
+| --- | --- |
+| **Customer Success Practice Leaders:** | Greg Sabatini (<gsabatini@us.ibm.com>) &<br /> Jonathan Pechta (<jonathan.pechta1@ibm.com>)  |
+| **Digital Customer Success & PLG:** | Kerry Bridges |
+| **Technology Expert Labs Delivery:** | TBD | 
+| **SRE:** | TBD | 
+
+<Row>
+<Column colMd={9} colLg={9}>
+
+## Overview
+As a CSM, your focus will be to guide and nurture your customers, who have QRadar SIEM (SaaS) entitlement. You will guide the customer with provisioning through to onboarding, and help advise customers on getting data in to QRadar SIEM (SaaS), general product questions, and helping with integrations (log sources) and related questions.
+
+You can learn more about QRadar SIEM (SaaS) on the <a href="https://pages.github.ibm.com/csm-playbook/playbook/common/security/csm-security-qroc/" target='_blank' rel='noreferrer noopener'>playbook page</a>.
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+| FAQ | Answer |
+| --- | --- |
+| What is the relationship name in Gainsight? | QRadar on Cloud. **Note**: Product name changing to QRadar SIEM (SaaS) |
+| Which Clouds does this product run on? | IBM Cloud |
+| How is SaaS usage calculated? | Peak daily EPS. Data is collected as daily usage is reported for all clients and added to Gainsight as 30-day windows. If a special report is required, you can contact the SRE team |
+| Where is the documentation? | <a href="https://www.ibm.com/docs/en/qradar-on-cloud" target='_blank' rel='noreferrer noopener'>QRadar SIEM (SaaS) Documentation</a> |
+| For each SaaS property, is it running in OpenShift? | No |
+| How do product upgrades work? | Users are upgraded by DevOps teams after confirming a change window with the customer. QRadar SIEM (SaaS), previously known as QRadar on Cloud uses the QRadar ISO files released with QRadar SIEM (Classic) and DevOps owns upgrading the customers directly and informing them of outage windows. |
+| Does QRadar SIEM (SaaS) run on OpenShift? | No. QRadar SIEM (SaaS), which was formerly known as QRadar on Cloud is typically deployed as physical appliances (bare metal servers) in Softlayer, which is infrastructure within IBM Cloud. |
+| Is QRadar SIEM (SaaS) consumable or ratable revenue? | Ratable. The unit of consumption is Events per second (EPS).|
+| Who triggers deployment? |  Growth Plan and manager assessed (until instrumented) |
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={9} colLg={9}>
+
+### CSM Scorecard Milestones based on usage
+SaaS milestones for the CSM Scorecard are based on usage. To progress from Planning to Deploying to Deployed, see <Link to='/common/saas-growth/#security-milestones-based-on-usage'>Security milestones based on usage</Link>.
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+
+<Accordion>
+<AccordionItem title="SaaS Adoption Journey Insights">
+SaaS has an additional level of insights that are used to track the adoption journey. These provide an additional level of detail specifically for SaaS adoption.  For QRadar SIEM (SaaS), they are shown below:
+
+| <div style="width:100px">Insight</div> | <div style="width:150px">Description</div> |
+| --- | --- | 
+| Paid Provisioned | Customer has purchased the product |
+| Paid Onboarded | Completion of the Onboarding Checklist |
+| Paid Deployed | >1,000 Peak EPS one time a week for 2 months |
+</AccordionItem>
+</Accordion>
+
+### QRadar SIEM (SaaS) Product Feature Adoption and Value Realized Indicators
+QRadar SIEM (SaaS)|QRadar on Cloud does not include 'Product Feature Adoption' and 'Value Realized Indicators'. These Novice, Intermediate, or Advanced configurations can be instrumented in to the product. At this time, value indicators are not available for QRadar SIEM (SaaS)|QRadar on Cloud. 
+<Accordion>
+<AccordionItem title="Novice level indicators">
+
+| Product Feature | Description | 
+| --- | --- | 
+| TBD| TBD | 
+| TBD| TBD | 
+| TBD| TBD | 
+
+</AccordionItem>
+
+<AccordionItem title="Intermediate level indicators">
+
+| Product Feature | Description | 
+| --- | --- | 
+| TBD| TBD | 
+| TBD| TBD | 
+| TBD| TBD | 
+
+
+</AccordionItem>
+
+<AccordionItem title="Advance level indicators">
+
+| Product Feature | Description | 
+| --- | --- | 
+| TBD| TBD | 
+| TBD| TBD | 
+| TBD| TBD | 
+
+</AccordionItem>
+
+</Accordion>
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={9} colLg={9}>
+
+## Post-Sales Journey 
+As a CSM with a QRadar SIEM (SaaS) entitlement, it is your responsibility to help the customer adopt the product, bring use cases into production and renew their subscriptions.
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+### Provisioned
+
+| **Led by** | **Outcome** | **Assets & Activities** |
+| --- | --- | --- |
+| QRadar SIEM (SaaS) SRE | QRadar SIEM (SaaS) SaaS instance provisioned and the customer has access. | The QRadar SIEM (SaaS) SaaS instance is not multi-tenant and one environment per customer. There is no trial for QRadar SIEM (SaaS) for customers to transition from a trial to paid service. The client will be required to create an <a href="https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776" target='_blank' rel='noreferrer noopener'>IBMid account</a>. <br/><br/> **Option to a trial**<br/> 1. Log in to the <a href="https://www.ibm.com/community/101/qradar/ce/" target='_blank' rel='noreferrer noopener'>QRadar CE page</a>. <br/> 2. Registered customers can download and install QRadar CE to experience QRadar functionality. This version is currently released on QRadar 7.3.3, but an open feature request for a 7.5.0 version is posted on IBM Ideas to release an updated version. <br/> 3. No guided tour is available, but advice is available on the <a href="https://www.ibm.com/community/101/qradar/ce/" target='_blank' rel='noreferrer noopener'>QRadar CE page</a> for customers to download the free version and try out the functionality. **Note**: Entitled customers who have an S&S license can get a 30-day version of QRadar 7.5.0 by downloading the latest ISO from IBM Fix Central. |
+
+### Onboarded
+
+| **Led by** | **Outcome** | **Assets & Activities** |
+| --- | --- | --- |
+| QRadar SIEM (SaaS) SRE and CSM | Customer has validated access to their QRadar SIEM (SaaS) SaaS instance using their IBMid and added a target. | After the QRadar SIEM (SaaS) instance has been provisioned, a customer can access their instance URL from the email. <br/> By default, the IAM for the instance is configured with IBM Verify and using IBMid.  A customer can configure the instance to use a different access management system but will need to work with support. <br/><br/> If no activity has been taken by the client, an <a href="https://ibm.box.com/s/nil1v27b0pa4ngsc86syogm20iygqicu" target='_blank' rel='noreferrer noopener'>Onboarding Nudge Email Template</a> can be sent with instructions to add a target. <br/><br/> After the onboarding process has been completed, a <a href="https://ibm.box.com/s/3vk07v03zquu1i5yqa2c1dsc82dwfuei" target='_blank' rel='noreferrer noopener'>Onboarded Email Template</a> is available to advise the client to take the next step of their journey to take an action. |
+
+### Deployed
+
+| **Led by** | **Outcome** | **Assets & Activities** |
+| --- | --- | --- |
+| CSM or Technology Expert Labs | Client has implemented actions that consume at least 10% of the purchased subscription capacity that must be in use to be receiving value and considered "deployed". | The image below captures the QRadar SIEM (SaaS) ARM Journey providing the customer with visibility of their on-prem, public Cloud and containerized environments, automated decisions that can be taken manually and ultimately, working towards allowing QRadar SIEM (SaaS) to take automated actions. You can learn more about QRadar SIEM (SaaS) on the <a href="https://pages.github.ibm.com/csm-playbook/playbook/common/automation/csm-automation-QRadar SIEM (SaaS)/" target='_blank' rel='noreferrer noopener'>playbook page</a>.<br/><br/> It is the responsibility of the CSM to guide the customer through the deployment phase, utilizing Technology Expert Labs to perform the configuration and testing required to get to automated actions being performed.<br/><br/> **Technology Expert Labs Offerings:** TBD <br/><br/>When the client has successfully taken an action, a <a href="https://ibm.box.com/s/hb6rj3uziesqus03vok5sxil34q65auk" target='_blank' rel='noreferrer noopener'>Deployed Email Template</a> can be sent to guide setting up automation in the environment. |
+
+
+## Confirm Value & Expand
+
+| **Led by** | **Outcome** | **Assets & Activities** |
+| --- | --- | --- |
+| CSM | Customer has realized value and expanding usage to new business units. | Set up an <a href="https://pages.github.ibm.com/csm-playbook/playbook/onboard/executive-business-review/" target='_blank' rel='noreferrer noopener'>EBR (executive business review)</a> with the client sponsor and executives to align and review the adoption, value seen and confirm the customer's strategic goals have been met. <br/><br/> A CSM should continue to drive usage of Technology Expert Labs services, look for opportunities to add more automation of actions, and try to expand the adoption with other business units.
+
+## Renewed
+
+| **Led by** | **Outcome** | **Assets & Activities** |
+| --- | --- | --- |
+| CSM or Technical Sales | The client has confirmed that they are using the product and will continue to renew their entitlement. | |
+
+</Column>
+</Row>

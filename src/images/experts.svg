@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1.2px;
+      }
+    </style>
+  </defs>
+  <path id="professional--marketplace" class="cls-1" d="M24,30.67H42.67V44H24Zm13.33,0v-4h-8v4M24,36h6.67M36,36h6.67M36,34.67H30.67v2.66H36Zm-9.53-11a6.08,6.08,0,1,0-4.94,0A10.67,10.67,0,0,0,13.33,34V44m8.25-31.5a6.08,6.08,0,1,0-8,3.13A10.67,10.67,0,0,0,5.33,26V36m37.34-9.33V26a10.68,10.68,0,0,0-8.2-10.38,6.07,6.07,0,1,0-8-3.13"/>
+</svg>

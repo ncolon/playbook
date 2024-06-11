@@ -1,0 +1,330 @@
+---
+title: Deploying
+description: Install and provision, build, deploying
+date: 30 January 2024
+---
+
+import {Link} from 'gatsby'
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+The Deploying phase in Gainsight includes installation and build. For all installations consider the following:
+
+* Infrastructure requirements beyond the resources to install (hardware, networking, etc).
+* The number of environments that should be configured based on DevOps best practices (Dev, Test, Prod) and the MVP architecture (HA, etc).
+* How to provision storage capacity using approved options refer to <Link to="/common/storageforcloudpaks">storage guidance for all Cloud Paks</Link>.
+
+</Column>
+</Row>
+
+
+<Row>
+
+<Column colMd={3} colLg={4}>
+
+![build](../../images/build.jpg)
+
+</Column>
+
+<Column colMd={6} colLg={6}>
+
+<br/>
+
+### Consider infrastructure requirements beyond installation.
+
+</Column>
+
+</Row>
+
+--------
+
+<AnchorLinks small>
+  <AnchorLink>Enlist the right resources for a successful installation</AnchorLink>
+  <AnchorLink>Assist in product installation or provisioning</AnchorLink>
+  <AnchorLink>Consider using IBM Cloud for additional workloads</AnchorLink>
+  <AnchorLink>Request access to an AWS or Azure account</AnchorLink>
+  <AnchorLink>Build the solution</AnchorLink>
+  <AnchorLink>Enable the customer to take ownership</AnchorLink>
+  <AnchorLink>Stay focused on the implementation of the use case</AnchorLink>
+  <AnchorLink>Scale out the workload</AnchorLink>
+  <AnchorLink>Proceed to move to production</AnchorLink>
+</AnchorLinks>
+
+----------
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+
+## Enlist the right resources for a successful installation
+
+If you have an IBM Cloud Pak entitlement, after you have defined the workload, the customer will need to install and configure the product. You can help the customer with guidance on the installation but the customer has to commit resources and expertise to do the installation themselves or engage Technology Expert Labs for a paid engagement.  If you are working with a Business Partner, define the install roles and responsibilities up front.
+
+If you do not have a Cloud Pak entitlement, you are responsible for understanding and installing the product. Be sure to understand the role of any partners involved as well.
+
+For all installations:
+
+* Consider infrastructure requirements beyond the resources to install (hardware, networking, etc).
+* Consider the number of environments that should be configured based on DevOps best practices (Dev, Test, Prod) and the MVP architecture (HA, etc).
+* Consider how to provision storage capacity using approved options refer to <Link to="/common/storageforcloudpaks">storage guidance for all Cloud Paks</Link>.
+
+</Column>
+
+
+<Column colMd={3} colLg={3}>
+
+<br/>
+<br/>
+<Aside>
+
+
+**Request Cloud Pak install help**
+
+<a href="https://w3.ibm.com/w3publisher/cloud-pak-for-data-swat-team/" target='_blank' rel='noreferrer noopener'>Contact Technology Expert Labs</a>
+
+
+</Aside>
+
+<Aside>
+
+**Ensure you have the right resources**
+
+<a href="https://pages.github.ibm.com/csm-playbook/playbook/plan-deployment/#identify-the-resources-needed-to-deliver">Identify the resources to deliver</a>
+<br/><br/>
+Technology Expert Labs services offering <a href="https://soda.dal1a.ciocloud.nonprod.intranet.ibm.com/" target='_blank' rel='noreferrer noopener'>directory</a>
+
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Assist in product installation or provisioning
+
+* Share the product documentation with your customer and/or Business Partner.
+* Document the deployment platform target for your customer in your Gainsight growth plan.
+
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Consider using IBM Cloud for additional workloads
+
+Often customers do not have the necessary hardware infrastructure for additional workloads. When this occurs, propose an implementation on the IBM Cloud to showcase ROKS and our one-click install capability and our bare metal offerings.
+
+</Column>
+
+<Column colMd={3} colLg={3}>
+
+<br/>
+
+<Aside>
+
+**Start a new IBM Cloud account**
+
+<a href='https://cloud.ibm.com/docs/overview?topic=overview-get-started-checklist'>Get started checklist</a>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Request access to an AWS or Azure account
+
+[IBM Technology Zone](https://techzone.ibm.com) already offers access to a set of
+offerings on [AWS](https://techzone.ibm.com/environments?VisibilityFilter=%5B%22IBMers%22%5D&InfrastructureFilter=%5B%22AWS%22%5D)
+and [Azure](https://techzone.ibm.com/environments?VisibilityFilter=%5B%22IBMers%22%5D&InfrastructureFilter=%5B%22Azure%22%5D)
+(ie. managed and un-managed OpenShift on AWS/Azure, VMs on AWS/Azure, etc).  An account on
+ Google Cloud is currently not available.
+
+Access to an AWS or Azure account requires a custom request and it must satisfy the following conditions:
+
+* Please allow **3-5** North American business days for our team to evaluate your request. Review calls specifically take place every Tuesday and Thursday.
+* Note, our team has limited capacity and resources for custom requests, therefore, all requests are vetted and prioritized. Requests tied to an opportunity must meet a **minimum size of $1M to be reviewed**. Opportunity codes that meet this requirement will be reviewed and prioritized first over non-client-facing requests.
+* Some submissions may be routed to your Geo or Market Leader for further evaluation and approval.
+* We highly encourage you to submit your request **2 weeks before the planned event** to ensure it can be reviewed and ready to deploy before the requested start date.
+* Active opportunity number(s) or Business Justification are required.
+
+If your request meets these conditions, complete and submit this [request form](https://custom-requests.ideas.aha.io/ideas/new).
+
+</Column>
+
+</Row>
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Build the solution
+
+To build the solution and put it in production, you will require an additional set of stakeholders. For example, you might need to engage: additional tool owners, security or networking stakeholders, the operations team, etc.
+
+**Note:** CSMs should not deliver free services that could otherwise be paid for. If you are unsure of a situation, discuss it with your manager.
+
+### Production environment guidance
+
+As a CSM, your mission is to do everything you can to help your customer successfully consume IBM products and use them to build solutions that satisfy their business needs.  There are a few limitations that you must keep in mind as you work with your customer.
+
+If you find that your customer wants you to do work in their production environment, stop.  Do not proceed to work in their environment.  Immediately contact your practice leader to ask for guidance.  Working in a production environment carries liability and cannot be done without a statement of work (SOW) in place.  Your practice lead can direct you to the appropriate legal and management resources who can help you in this situation.
+
+</Column>
+
+<!---
+
+<Column colMd={3} colLg={3}>
+
+<br/><br/>
+
+<Aside>
+
+**When can I work in a customer's production environment?**
+
+<Link to='/deploy/need-for-sow' target='_blank' rel='noreferrer noopener'>When do I need an SOW?</Link>
+
+</Aside>
+
+</Column>
+
+-->
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Demo the solution for your sponsors
+
+With your customer and partner counterparts, jointly review the outcomes against the agreed-upon success criteria.
+
+The playback includes:
+
+* Demonstration of the live workload against requirements
+* Feedback from users who tested out the new implementation
+* Measurable outcomes against the success KPIs
+
+Be candid on lessons learned:
+
+* What worked in their environment?
+* What were the challenges?
+* Any additional recommendations when scaling out the workload?
+
+In addition, include a proposal for how to move forward:
+
+* If successful, what is required for the customer to move forward and take the workload into production?
+* Do they have the resources required or is additional investment needed? (infrastructure, licensing, staffing, etc)
+
+</Column>
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## Executive Business Reviews (EBRs)
+
+What your client’s executive team thinks of your product or service carries a lot of weight, and Executive Business Reviews (EBRs) are the perfect time to show exactly how big an impact you’ve had on their business.
+
+* Meet with your technical sponsors after each milestone to understand the successful outcome.
+* Meet with your business sponsor at least quarterly to review and ensure things are progressing as expected and the direction is still aligned.
+* After deploying the workload, meet with your business sponsor to ensure business value is realized.
+
+**Note:** EBRs are required quarterly for Diamond Accounts. Monthly reviews are highly encouraged.
+
+</Column>
+
+<Column colMd={4} colLg={3}>
+
+<br/><br/>
+
+<Aside>
+
+<Link to='/onboard/executive-business-review' target='_blank' rel='noreferrer noopener'>How to hold a successful EBR</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Enable the customer to take ownership
+
+Use this opportunity to make the customer shadow and take ownership of some of the tasks so they can learn in the process.
+
+Consider what additional education your customer might need.  This could take many forms:
+
+* Training for new resources for scaling the workload.
+* Bootcamps for users that will use the new workload.
+* Paid training offered by IBM.
+
+## Stay focused on the implementation of the use case
+
+Start with the functional requirements, but remember you are building the use case to eventually scale. Support your customer through the production deployment by listening for roadblocks and sharing expertise to achieve the optimal outcome, while you continue to work on a "what's next" plan.
+
+Note: If you are working with a Business Partner they may be taking on some of the responsibilities of the customer from the PoX build to the fully scaled implementation. Adapt your plans to reflect the agreed upon arrangements with your partner.
+
+</Column>
+
+</Row>
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Scale out the workload
+
+After you have co-created a solution with your customer, it is important to step back and evaluate whether the solution delivers the expected outcome. Embrace continuous experimentation and delivery. Adapt as you go to ensure that your customer achieves the desired outcome.
+
+Remember that scaling to production can include platform and application installation, configuration and management, test, and helping to set up DevOps.
+
+There are common objectives shared by all customers; however, it is important to tailor this phase to your customer's expectations.
+
+</Column>
+
+</Row>
+<Row>
+
+<Column colMd={9} colLg={9}>
+
+## Proceed to move to production
+
+* Build a plan with the customer and/or partner to scale out.
+* Consider Technology Expert Labs or Business Partner proposals to accelerate outcomes.
+* Start to consider the next workload to explore.
+
+</Column>
+
+<Column colMd={3} colLg={3}>
+
+<br/><br/>
+
+<Aside>
+
+**When can I work in a customer's production environment?**
+
+<Link to="/deploy/install-provision#production-environment-guidance">production environment guidance</Link>
+
+</Aside>
+
+</Column>
+</Row>

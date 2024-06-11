@@ -1,0 +1,556 @@
+---
+title: IBM Cloud Pak for Multicloud Management
+description: Technical content on IBM Cloud Pak for Multicloud Management
+---
+
+import {Link} from 'gatsby'
+
+<InlineNotification kind="warning">
+Cloud Pak for Multicloud Management is scheduled to be **End-of-Market on September 2023** and **End-of-Service on December 2025**.
+Guidance and directions for CP4MCM customers is available in this Seismic <a href="https://ibm.seismic.com/Link/Content/DChpbC28WQFfTG4P3JPM6FM2D4pj">link</a>.
+<br />
+<br />
+Refer to this <a href="https://ibm.seismic.com/Link/Content/DC7bdmdmdGPVDGfDdXhff8mBq6qP">deck</a> for options to move forward with Cloud Pak for AIOps or Instana, pricing and licensing conversion, trade-up process and a sample conversion use case.
+A recording of the <a href="https://ibm.seismic.com/Link/Content/DChTbdG9Fj6JVGmFj6f98bFdDfM8">enablement session</a> held on Feb 8 is also available.
+<br />
+<br />
+A <a href="https://ibm.seismic.com/Link/Content/DCV8DMHqRQJmT8Q2J7cVRXjmmPGB">tradeup promotion</a> is available but it is a “no mid term modification” and can only be used when the ELA expires.
+</InlineNotification>
+
+<AnchorLinks small>
+<AnchorLink>General product resources</AnchorLink>
+<AnchorLink>Use cases</AnchorLink>
+<AnchorLink>Addressing roadmap questions on Cloud Pak for Multicloud Management</AnchorLink>
+<AnchorLink>Storage guidance</AnchorLink>
+<AnchorLink>Sales & value resources</AnchorLink>
+<AnchorLink>Technical resources</AnchorLink>
+</AnchorLinks>
+
+<Row>
+<Column colMd={3} colLg={3} noGutterMdLeft>
+<ArticleCard
+      subTitle="Visit the community"
+      title="Automation platform community"
+      href="https://w3.ibm.com/w3publisher/customersuccess/community-connections/automation-platform-community">
+
+![Visit the community](../images/community-icon.svg)
+
+</ArticleCard>
+
+</Column>
+<Column colMd={3} colLg={3} noGutterMdLeft>
+<ArticleCard
+      subTitle="Slack channels"
+      title="#csm-mcm"
+      href="https://ibm-cloud.slack.com/archives/C01LK8130V7">
+
+![Slack channel](../images/slack-icon.svg)
+
+</ArticleCard>
+
+</Column>
+<Column colMd={3} colLg={3} noGutterMdLeft>
+<ArticleCard
+      subTitle="CSM University"
+      title="CSM - IBM Cloud Pak for Multicloud Management"
+      href="https://w3.ibm.com/w3publisher/customersuccess/get-learning/csm-university/cloud-pak-platform">
+
+![CSM University](../images/csm-university.svg)
+
+</ArticleCard>
+
+</Column>
+<Column colMd={3} colLg={3} noGutterMdLeft>
+<ArticleCard
+      subTitle="Product support"
+      title="Support for IBM Cloud Paks"
+      href="https://pages.github.ibm.com/csm-playbook/playbook/support/access-ibm-support#help-your-customer-get-issues-resolved">
+
+![Support](../images/support-17.svg)
+
+</ArticleCard>
+
+</Column>
+</Row>
+
+<Row>
+
+<Column>
+
+## General product resources
+
+<a href="https://www.ibm.com/cloud/cloud-pak-for-watson-aiops" target='_blank' rel='noreferrer noopener'>Product marketing page</a>
+<br/>
+<a href="https://www.ibm.com/support/knowledgecenter/en/SSFC4F/product_welcome_cloud_pak.html" target='_blank' rel='noreferrer noopener'>Documentation</a>
+<br/>
+Review the <a href="https://www.ibm.com/cloud/garage/content/field-guide/devops-field-guide/" target='_blank' rel='noreferrer noopener'>IBM Cloud DevOps Field Guide</a>
+<br/>
+Build a <a href="https://ibm.seismic.com/Link/Content/DCbwCuS2cbYk6Kzq3BVob-EA#/?anchorId=eb9ae48f-527a-4d39-b66b-f5c4a300f842" target='_blank' rel='noreferrer noopener'>Cloud Pak demo</a>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+## ![use-case](../images/use-case-14.svg) Use Cases
+
+IBM Cloud Pak for Multicloud Management provides governance and management capabilities required to implement your customer's use cases
+
+Three entry points are implemented using one or more of the capabilities that are part of IBM Cloud Pak for Multicloud Management
+
+#### Governance, risk, and compliance
+
+Enforces policies and ensure compliance across hybrid infrastructures and applications.
+Scans and monitors workloads continuously for vulnerabilities and mutations. Creates auditability of all policies, known vulnerability exposures and regulatory requirement tracking.
+
+**Reference Architecture:**
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/sm-aiops" target='_blank' rel='noreferrer noopener'>AI for IT Operations architecture</a>
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/serviceManagementArchitecture" target='_blank' rel='noreferrer noopener'>Cloud service management and operations architecture</a>
+
+**Assets:**
+
+<a href="https://ibm.seismic.com/Link/Content/DCO65npJcODkCRbCmtGRml9A" target='_blank' rel='noreferrer noopener'>Cloud Pak for MCM 101 Presentation</a>
+
+<a href="https://ibm.seismic.com/Link/Content/DCylfoqN57ykKCtqnbj7HNrQ" target='_blank' rel='noreferrer noopener'>GRC 101/201 Presentation</a>
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cp-management/2.3.x?topic=administration-governance-compliance" target='_blank' rel='noreferrer noopener'>Product Documentation</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/aiops-field-guide" target='_blank' rel='noreferrer noopener'>IBM AIOps Field Guide</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/csmo-field-guide" target='_blank' rel='noreferrer noopener'>IBM Cloud Service Management and Operations Field Guide</a>
+
+#### Cluster management
+
+If you need cluster management capabilities for managing multiple clusters or, you need application management capabilities for Kubernetes-based application resources then an integration with Red Hat® Advanced Cluster Management for Kubernetes is a must
+
+**Practice Leader Comments:** Cluster Management is achieved using Red Hat Advanced Cluster Management (RHACM). RHACM continues to be part of CP4MCM and customers can and should deploy it using their CP4MCM entitlement.
+
+**Reference Architecture:**
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/sm-aiops" target='_blank' rel='noreferrer noopener'>AI for IT Operations architecture</a>
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/serviceManagementArchitecture" target='_blank' rel='noreferrer noopener'>Cloud service management and operations architecture</a>
+
+**Assets:**
+
+<a href="https://ibm.seismic.com/Link/Content/DCO65npJcODkCRbCmtGRml9A" target='_blank' rel='noreferrer noopener'>Cloud Pak for MCM 101 Presentation</a>
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cp-management/2.3.x?topic=application-management" target='_blank' rel='noreferrer noopener'>Product Documentation</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/aiops-field-guide" target='_blank' rel='noreferrer noopener'>IBM AIOps Field Guide</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/csmo-field-guide" target='_blank' rel='noreferrer noopener'>IBM Cloud Service Management and Operations Field Guide</a>
+
+#### Infrastructure management
+
+Infrastructure management delivers the insight, control, and automation enterprises need to address the challenges of managing virtual environments. This technology enables enterprises to improve visibility and control with virtual infrastructures.
+
+**Practice Leader Comments:** Infrastructure management is achieved using CloudForms, CAM, and Terraform.
+
+**Reference Architecture:**
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/sm-aiops" target='_blank' rel='noreferrer noopener'>AI for IT Operations architecture</a>
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/serviceManagementArchitecture" target='_blank' rel='noreferrer noopener'>Cloud service management and operations architecture</a>
+
+
+**Assets:**
+
+<a href="https://ibm.seismic.com/Link/Content/DCO65npJcODkCRbCmtGRml9A" target='_blank' rel='noreferrer noopener'>Cloud Pak for MCM 101 Presentation</a>
+
+<a href="https://ibm.seismic.com/Link/Content/DCjJrDcQTOb0SD5Vcw0yLZgA" target='_blank' rel='noreferrer noopener'>Infrastructure Management 101/201 Presentation</a>
+
+<a href="https://www.ibm.com/docs/en/cloud-paks/cp-management/2.3.x?topic=management-infrastructure" target='_blank' rel='noreferrer noopener'>Product Documentation</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/aiops-field-guide" target='_blank' rel='noreferrer noopener'>IBM AIOps Field Guide</a>
+
+<a href="https://www.ibm.com/cloud/architecture/content/field-guide/csmo-field-guide" target='_blank' rel='noreferrer noopener'>IBM Cloud Service Management and Operations Field Guide</a>
+
+## Addressing roadmap questions on Cloud Pak for Multicloud Management
+
+IBM has decided to merge Cloud Pak for Multicloud Management (CP4MCM) in to Cloud Pak for AIOps (CP4AIOPS) but has not announced End of Marketing or End of Support for CP4MCM yet. Please review the content in the links below to ensure that you understand the strategy and how to answer any questions your customer might have.
+
+<a href="https://ibm.seismic.com/Link/Content/DCMvv4LxmN002lvXlDYMkxLA" target='_blank' rel='noreferrer noopener'>Combined roadmap</a> for Cloud Pak for Multicloud Management and Cloud Pak for AIOps.
+
+<a href="https://ibm.seismic.com/Link/Content/DCOLYzjB1mtUWqrPk2BPEaBA" target='_blank' rel='noreferrer noopener'>Detailed strategy document</a> for Cloud Pak for Multicloud Management and Cloud Pak for AIOps.
+
+<a href="https://ibm.ent.box.com/notes/772818762914?s=4aff1jko2axenmoxoj73nk07rlelkmxg" target='_blank' rel='noreferrer noopener'>FAQ</a> regarding the merge of Cloud Pak for Multicloud Management and Cloud Pak for AIOps.
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+## Sales & value resources
+
+### Understand the customer landscape
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+For customers that do not have a defined use case, use the <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCL5kXvj_Z3Ee90ghXeMs-QA">product entry points</a>:
+
+   * Visibility across hybrid environments
+   * IT ops transformation
+   * Application modernization and management
+   * Governance and compliance management
+
+Review the <a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCGf2UzGHx20uIzwocnJQHTQ">recorded demonstrations</a>
+
+DTE Activation Kit <a target='_blank' rel='noreferrer noopener' href="https://dte2.us1a.cirrus.ibm.com/collection/cloud-pak-for-multicloud-management-activation-kit">Entry Points</a>
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+<a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCO65npJcODkCRbCmtGRml9A">Customer 101 presentation</a>
+
+<a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCVx8mbXNoQU63GacBU_xzMw">Customer 201 Presentation</a>
+
+Review Cloud Pak for Multicloud Management capabilities with the  account team. Focus on the product entry points:
+
+* Visibility Across Hybrid Environment
+* IT Ops Transformation
+* Application Modernization and Management
+* Governance and Compliance Management
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/onboard/understand-client-it-landscape" target='_blank' rel='noreferrer noopener'>Understand the customer landscape</Link>
+
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Engage the business sponsor
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+Review the Fast Start 2021 session - Cloud Pak for Multicloud Management-Uncovering the sponsor facing a challenge. Watch <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/771623956768" target='_blank' rel='noreferrer noopener'>the video</a>. Review <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/771614340316" target='_blank' rel='noreferrer noopener'>the deck</a>
+
+<a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCGf2UzGHx20uIzwocnJQHTQ">Recorded Demos and Presentations</a>
+
+<a target='_blank' rel='noreferrer noopener' href="https://ibm.seismic.com/Link/Content/DCbwCuS2cbYk6Kzq3BVob-EA">Tech Sales Resources</a>
+
+<a target='_blank' rel='noreferrer noopener' href="https://dte2.us1a.cirrus.ibm.com/collection/cloud-pak-for-multicloud-management-activation-kit">DTE 2.0 Activation Kit</a>
+
+<a href="https://ibm.seismic.com/Link/Content/DCB6Y5MGMSUkmyFO3PXIfkdg" target='_blank' rel='noreferrer noopener'>Deliver the IBM 2021 strategy</a>
+
+<a href="https://ibm.seismic.com/Link/Content/DCGwT8nAwDGkqiIPsubKrJZg" target='_blank' rel='noreferrer noopener'>Deal Expansion with Cloud Paks</a>
+
+<a href="https://ibm.seismic.com/Link/Content/DCaypVW_MsBk6tqvBWu7iM-Q" target='_blank' rel='noreferrer noopener'>Accelerate Cloud Pak adoption & consumption</a>
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/onboard/engage-business-sponsor" target='_blank' rel='noreferrer noopener'>Engage the business sponsor</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Discover the prioritized use case
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+Review the Fast Start 2021 session - Cloud Pak for Multicloud Management-Identifying a use case. Watch <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/771625508460" target='_blank' rel='noreferrer noopener'>the video</a>. Review <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/771611648596" target='_blank' rel='noreferrer noopener'>the deck</a>
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/use-case-discovery" target='_blank' rel='noreferrer noopener'>Discover the prioritized use case</Link>
+
+</Aside>
+
+</Column>
+</Row>
+
+<Row>
+<Column>
+
+## Technical resources
+
+### Technical discovery
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+The IBM Cloud Pak for Multicloud Management calculator helps you quantify costs and ROI for your customer's IT environment by examining operational expenses such as administration, automation and governance. IBM Cloud for Multicloud Management can increase operational efficiency with its intelligent data analysis, predictive golden signals, and built-in support for compliance management
+
+Capture necessary information to create a solid proposal with customer provided input
+
+Gain insight into your customer's cloud landscape and future plans for cloud deployment
+
+Think of the ROI calculator as a conversation starter with your customer
+
+<a href="https://ibm.ent.box.com/s/bslt93x35d90gs7g20lmbjksexrid52h" target='_blank' rel='noreferrer noopener'>ROI Calculator</a>, (also available in a <a href="https://ibm.ent.box.com/v/cloudpakformcmroicalculator" target='_blank' rel='noreferrer noopener'>Spreadsheet version</a>)
+
+<a href="https://w3.ibm.com/w3publisher/cloud-paks-skills-and-certification/cloud-pak-for-mcm" target='_blank' rel='noreferrer noopener'>JIT learning</a> to guide the customer through delivery - IBM Internal
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+Courses available to help build customer skills:
+
+<a target='_blank' rel='noreferrer noopener' href="https://www.onlinedigitallearning.com/course/view.php?id=5599">Self-paced session</a> (20 hours)
+
+<a href="https://www.ibm.com/training/path/6">IBM Learning Module</a>
+<br/>
+<a href="https://rol.redhat.com/">Red Hat Learning</a> (requires subscription)
+   DO180 - Red Hat OpenShift I: Containers & Kubernetes
+
+   DO280 - Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster
+
+   DO288 - Red Hat OpenShift Development II: Containerizing Applications
+
+   Red Hat Ansible
+
+</Column>
+
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Modernize your applications
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+Review the Fast Start 2021 session - Cloud Pak for Multicloud Management-Voyage to Modernization - Don't let your customer fall behind. Watch the <a target='_blank' rel='noreferrer noopener' href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/772819873853">video</a>. Review <a target='_blank' rel='noreferrer noopener' href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/772823259454">the deck</a>
+
+Cloud Pak for Multicloud Management does not provide tooling to modernize the workload itself, but does provide some concepts that will enable you to modernize the continuous delivery aspect
+
+Learn more about the application deployment model using the links below:
+
+
+<a target='_blank' rel='noreferrer noopener' href="https://ibm-garage-tsa.github.io/cp4mcm-demohub/skytap/appmgmt/">DTE MCM Application Model Lab</a>
+
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/onboard/understand-modernization" target='_blank' rel='noreferrer noopener'>Modernize your applications</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Design a solution
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+Review the Fast Start 2021 session - Cloud Pak for Multicloud Management-Preparing to Launch- Setting your MVP up for Success. Watch <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/773824167818" target='_blank' rel='noreferrer noopener'>the video</a>. Review
+<a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/772734849783" target='_blank' rel='noreferrer noopener'>the deck</a>
+
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/csm-cocreate" target='_blank' rel='noreferrer noopener'>Co-create the solution</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Architect a solution
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+Review the Fast Start 2021 session - Cloud Pak for Multicloud Management-Bring Your Use Case to Life Through Architectural Design. Watch <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/772255463333" target='_blank' rel='noreferrer noopener'>the video</a>. Review <a href="https://ibm.ent.box.com/s/6nut310dhxurf00imnqk3ssfu3vylgvx/file/772257072089" target='_blank' rel='noreferrer noopener'>the deck</a>
+
+<a href="https://www.ibm.com/cloud/architecture/architectures/multicloudManagementArchitecture" target='_blank' rel='noreferrer noopener'>Understand the IBM Multicloud Management Architecture</a>
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/architect-the-solution" target='_blank' rel='noreferrer noopener'>Architect a solution</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
+
+<Row>
+
+<Column>
+
+### Install and provision
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![learn](../images/learn.svg) Learn
+
+
+The Cloud Pak for Multicloud Management Documentation provides information about installing and using the offering
+
+Before installing IBM Cloud Pak solutions, ensure that you also have a compatible version of OpenShift Container Platform. You can check version compatibility here: <a href="https://www.ibm.com/docs/en/cloud-paks/1.0?topic=clusters-openshift-platform-compatibility" target='_blank' rel='noreferrer noopener'>Cloud Pak and OCP Version Compatibility Table</a>
+
+Learn <a href="https://www.ibm.com/docs/en/cloud-paks/1.0?topic=clusters-red-hat-mixed-entitlement-faq" target='_blank' rel='noreferrer noopener'>how Cloud Pak OCP entitlements work</a>
+
+Review <a href="https://www.ibm.com/docs/en/cloud-paks/1.0?topic=clusters-obtaining-your-entitlement-key" target='_blank' rel='noreferrer noopener'>How to get entitlement keys</a>
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+### ![deliver](../images/deliver.svg) Deliver
+
+<a href="https://github.com/ibm-garage-tsa/cp4mcm-installer" target='_blank' rel='noreferrer noopener'>Automated installation scripts to assist with installation and configuration</a>
+
+</Column>
+
+<Column colMd={4} colLg={4}>
+
+<br/>
+<br/>
+
+<Aside>
+
+**Read the CSM lifecycle Practice**
+
+<Link to="/deploy/install-provision" target='_blank' rel='noreferrer noopener'>Install and provision</Link>
+
+</Aside>
+
+</Column>
+
+</Row>
